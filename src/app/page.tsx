@@ -1,6 +1,6 @@
 "use client"
 
-import { DualHeroSection } from "@/components/hero/DualHeroSection";
+import { HeroSection } from "@/components/hero/HeroSection";
 import { FeaturesSection } from "@/components/features/FeaturesSection";
 import { TestimonialsSection } from "@/components/testimonials/TestimonialsSection";
 import { FAQSection } from "@/components/faq/FAQSection";
@@ -12,7 +12,7 @@ import { Footer } from "@/components/footer/Footer";
 export default function Home() {
   return (
     <main>
-      <DualHeroSection />
+      <HeroSection />
       <FeaturesSection />
       <ProcessSection />
       <FAQSection />
