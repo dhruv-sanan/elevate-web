@@ -1,6 +1,6 @@
 "use client"
 
-import { useState, useEffect } from "react"
+import { useState, useEffect, Fragment } from "react"
 import {
     TrendingUp,
     Users,
@@ -550,9 +550,8 @@ function TrustBadgesRow() {
 
             <div className="relative grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-[auto_1px_auto_1px_auto_1px_auto_1px_auto] gap-8 items-center justify-items-center">
                 {badges.map((badge, i) => (
-                    <>
+                    <Fragment key={i}>
                         <motion.div
-                            key={i}
                             initial={{ opacity: 0, y: 20 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
@@ -568,7 +567,7 @@ function TrustBadgesRow() {
                         {i < badges.length - 1 && (
                             <div className="hidden lg:block w-px h-16 bg-gradient-to-b from-transparent via-white/10 to-transparent" />
                         )}
-                    </>
+                    </Fragment>
                 ))}
             </div>
         </div>
