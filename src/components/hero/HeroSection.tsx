@@ -3,7 +3,6 @@
 import { HeroLeft } from "./HeroLeft"
 import { HeroRight } from "./HeroRight"
 import { ClientLogos } from "./ClientLogos"
-import { ThemeToggle } from "@/components/ui/ThemeToggle"
 import { ChevronDown } from "lucide-react"
 import { motion } from "framer-motion"
 
@@ -11,7 +10,6 @@ export function HeroSection() {
     return (
         <section className="relative w-full min-h-screen overflow-hidden bg-white dark:bg-black transition-colors duration-500">
             <div className="absolute inset-0 bg-white dark:bg-black opacity-100 dark:opacity-100 transition-opacity duration-500" />
-            {/* <ThemeToggle /> */}
 
             {/* Main Layout Container */}
             <div className="container mx-auto px-4 md:px-6 pt-20 min-h-screen flex flex-col justify-between max-w-[1400px]">

@@ -64,7 +64,16 @@ function TeamCard({ image, name, role, quote, handles, email, phone, whatsapp, d
             {/* Header */}
             <div className="flex items-center gap-6 mb-8">
                 <div className="w-24 h-24 md:w-32 md:h-32 shrink-0 rounded-full border-4 border-[#00d9a3] overflow-hidden relative shadow-lg">
-                    <Image src={image} alt={name} fill className="object-cover" />
+                    <Image
+                        src={image}
+                        alt={name}
+                        fill
+                        className="object-cover"
+                        sizes="(max-width: 768px) 96px, 128px"
+                        priority
+                        placeholder="blur"
+                        blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAIAAoDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAUH/8QAIRAAAgIBAwUBAAAAAAAAAAAAAQIDBAAFESEGEhMxQWH/xAAVAQEBAAAAAAAAAAAAAAAAAAADBP/EABoRAAICAwAAAAAAAAAAAAAAAAECABEDITH/2gAMAwEAAhEDEEEAP//aAIUNq0NjpyXQhBgrzR4YfS2z45/cYyRIhbIxGJMr2tn/2Q=="
+                    />
                 </div>
                 <div>
                     <h3 className="font-space-grotesk text-2xl font-bold">{name}</h3>

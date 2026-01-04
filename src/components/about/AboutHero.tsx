@@ -61,6 +61,10 @@ export function AboutHero() {
                             alt="Dhruv & Ghanishth"
                             fill
                             className="object-cover"
+                            sizes="(max-width: 1024px) 100vw, 50vw"
+                            priority
+                            placeholder="blur"
+                            blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAIAAoDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAUH/8QAIRAAAgIBAwUBAAAAAAAAAAAAAQIDBAAFESEGEhMxQWH/xAAVAQEBAAAAAAAAAAAAAAAAAAADBP/EABoRAAICAwAAAAAAAAAAAAAAAAECABEDITH/2gAMAwEAAhEDEQA/ANQoatDY6cl0IQYq80eGH0ts+OfvGMkSIWyMRiTK9rZ//9k="
                         />
                         {/* 
                            NOTE: Since user provided two individual images but asked for a 'Team Photo', 
@@ -72,15 +76,42 @@ export function AboutHero() {
                         */}
                         <div className="hidden absolute inset-0 md:grid grid-cols-2 h-full">
                             <div className="relative h-full">
-                                <Image src="/Dhruv_Sanan.png" alt="Dhruv Sanan" fill className="object-cover" />
+                                <Image
+                                    src="/Dhruv_Sanan.png"
+                                    alt="Dhruv Sanan"
+                                    fill
+                                    className="object-cover"
+                                    sizes="50vw"
+                                    priority
+                                    placeholder="blur"
+                                    blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAIAAoDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAUH/8QAIRAAAgIBAwUBAAAAAAAAAAAAAQIDBAAFESEGEhMxQWH/xAAVAQEBAAAAAAAAAAAAAAAAAAADBP/EABoRAAICAwAAAAAAAAAAAAAAAAECABEDITH/2gAMAwEAAhEDEQA/ANQoatDY6cl0IQYq80eGH0ts+OfvGMkSIWyMRiTK9rZ//9k="
+                                />
                             </div>
                             <div className="relative h-full">
-                                <Image src="/Ghanishth_Mehra.jpg" alt="Ghanishth Mehra" fill className="object-cover" />
+                                <Image
+                                    src="/Ghanishth_Mehra.jpg"
+                                    alt="Ghanishth Mehra"
+                                    fill
+                                    className="object-cover"
+                                    sizes="50vw"
+                                    priority
+                                    placeholder="blur"
+                                    blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAIAAoDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAUH/8QAIRAAAgIBAwUBAAAAAAAAAAAAAQIDBAAFESEGEhMxQWH/xAAVAQEBAAAAAAAAAAAAAAAAAAADBP/EABoRAAICAwAAAAAAAAAAAAAAAAECABEDITH/2gAMAwEAAhEDEQA/ANQoatDY6cl0IQYq80eGH0ts+OfvGMkSIWyMRiTK9rZ//9k="
+                                />
                             </div>
                         </div>
                         {/* Mobile stacked fallback or single visible */}
                         <div className="md:hidden absolute inset-0">
-                            <Image src="/Dhruv_Sanan.png" alt="Team" fill className="object-cover" />
+                            <Image
+                                src="/Dhruv_Sanan.png"
+                                alt="Team"
+                                fill
+                                className="object-cover"
+                                sizes="100vw"
+                                priority
+                                placeholder="blur"
+                                blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAIAAoDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAUH/8QAIRAAAgIBAwUBAAAAAAAAAAAAAQIDBAAFESEGEhMxQWH/xAAVAQEBAAAAAAAAAAAAAAAAAAADBP/EABoRAAICAwAAAAAAAAAAAAAAAAECABEDITH/2gAMAwEAAhEDEQA/ANQoatDY6cl0IQYq80eGH0ts+OfvGMkSIWyMRiTK9rZ//9k="
+                            />
                         </div>
                     </div>
                     {/* Floating Badge */}
