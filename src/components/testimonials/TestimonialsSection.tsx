@@ -29,7 +29,7 @@ import { cn } from "@/lib/utils"
 
 export function TestimonialsSection() {
     return (
-        <section className="relative w-full py-24 md:py-32 px-6 bg-background overflow-hidden border-t border-white/5">
+        <section className="relative w-full py-12 md:py-16 px-6 bg-background overflow-hidden border-t border-white/5">
             <div className="max-w-[1400px] mx-auto">
                 <SectionHeader />
                 {/* <StatsBar />
@@ -548,7 +548,7 @@ function TrustBadgesRow() {
                 Trusted by Amritsar&apos;s Best
             </p>
 
-            <div className="relative grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-[auto_1px_auto_1px_auto_1px_auto_1px_auto] gap-8 items-center justify-items-center">
+            <div className="relative flex flex-nowrap overflow-x-auto gap-8 items-center px-4 md:grid md:grid-cols-2 lg:grid-cols-[auto_1px_auto_1px_auto_1px_auto_1px_auto] md:justify-items-center snap-x snap-mandatory">
                 {badges.map((badge, i) => (
                     <Fragment key={i}>
                         <motion.div
@@ -556,7 +556,7 @@ function TrustBadgesRow() {
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
                             transition={{ delay: i * 0.1 }}
-                            className="flex flex-col items-center text-center group"
+                            className="flex flex-col items-center text-center group min-w-[160px] snap-center"
                         >
                             <div className="w-16 h-16 bg-[#00d9a3]/5 border border-[#00d9a3]/20 rounded-2xl flex items-center justify-center mb-4 text-[#00d9a3] group-hover:scale-110 transition-transform duration-300">
                                 <badge.icon className="w-8 h-8" />

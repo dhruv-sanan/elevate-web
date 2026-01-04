@@ -52,10 +52,10 @@ export function FAQSection() {
                         <div className="bg-gray-100 dark:bg-white/5 border border-white/10 rounded-xl p-4">
                             <div className="flex justify-between items-center mb-2">
                                 <span className="font-space-grotesk text-base font-semibold dark:text-white text-gray-900">One-Time Setup</span>
-                                <span className="font-space-grotesk text-xl font-bold text-[#00d9a3]">₹15,000 - ₹55,000</span>
+                                <span className="font-space-grotesk text-xl font-bold text-[#00d9a3]">₹25,000 - ₹60,000</span>
                             </div>
                             <p className="text-sm text-gray-400">
-                                Depends on your tier (Smart Visiting Card, Commission Killer, or Brand Domination).
+                                Depends on your tier (Smart Visiting Card, The Commission Killer, or Brand Powerhouse).
                                 This is a <strong className="dark:text-white text-gray-900">one-time payment</strong>—no recurring charges.
                             </p>
                         </div>
@@ -89,7 +89,7 @@ export function FAQSection() {
                         <Calculator className="w-5 h-5 text-[#00d9a3] shrink-0 mt-0.5" />
                         <p className="text-sm text-gray-700 dark:text-gray-300">
                             <strong className="dark:text-white text-gray-900">ROI Example:</strong> If you&apos;re paying Zomato ₹70,000/month in commissions,
-                            my Tier 2 system (₹35,000 one-time) pays for itself in <strong className="dark:text-white text-gray-900">2 weeks</strong>.
+                            my Tier 2 system (₹40,000 one-time) pays for itself in <strong className="dark:text-white text-gray-900">2 weeks</strong>.
                         </p>
                     </div>
 
@@ -606,7 +606,7 @@ export function FAQSection() {
     }, [filteredFAQs])
 
     return (
-        <section id="faq" className="bg-background py-24 md:py-32 px-6 overflow-hidden">
+        <section id="faq" className="bg-background py-12 md:py-8 px-6 overflow-hidden">
             <div className="max-w-[1200px] mx-auto">
                 {/* Header */}
                 <div className="text-center mb-12">

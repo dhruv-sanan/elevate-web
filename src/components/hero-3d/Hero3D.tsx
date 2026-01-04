@@ -75,7 +75,7 @@ export function Hero3D() {
 
                     {/* Scroll Indicator */}
                     <motion.div
-                        className="absolute bottom-10 left-4 md:left-6 text-sm text-gray-400 font-medium flex flex-col items-center gap-2"
+                        className="absolute bottom-10 left-4 md:left-6 text-sm text-gray-400 font-medium hidden md:flex flex-col items-center gap-2"
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         transition={{ delay: 1, duration: 1 }}
@@ -93,7 +93,7 @@ export function Hero3D() {
                 </div>
 
                 {/* Right Visual (3D Phone) */}
-                <div className="w-full lg:w-1/2 h-[600px] lg:h-auto flex items-center justify-center relative pointer-events-none lg:pointer-events-auto mt-10 lg:mt-0">
+                <div className="w-full lg:w-1/2 h-[600px] lg:h-auto flex items-center justify-center relative pointer-events-auto mt-10 lg:mt-0">
                     <motion.div
                         initial={{ opacity: 0, scale: 0.8, rotate: -10 }}
                         animate={{ opacity: 1, scale: 1, rotate: 0 }}

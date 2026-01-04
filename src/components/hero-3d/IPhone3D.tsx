@@ -1,53 +1,20 @@
 "use client"
 
-import { motion, useScroll, useTransform, useSpring, useMotionValue, useMotionTemplate } from "framer-motion"
+import { motion } from "framer-motion"
 import { useRef, useState } from "react"
-import { Coffee, ShoppingCart, Star, Plus, Check } from "lucide-react"
+import { Coffee, ShoppingCart, Star } from "lucide-react"
 
 export function IPhone3D() {
     const ref = useRef<HTMLDivElement>(null)
 
     // 3D Rotation Animation Helpers
-    const mouseX = useMotionValue(0)
-    const mouseY = useMotionValue(0)
-
-    const rotateX = useSpring(useTransform(mouseY, [-0.5, 0.5], [15, -15]), { stiffness: 150, damping: 20 })
-    const rotateY = useSpring(useTransform(mouseX, [-0.5, 0.5], [-15, 15]), { stiffness: 150, damping: 20 })
-
-    const handleMouseMove = (e: React.MouseEvent) => {
-        const rect = ref.current?.getBoundingClientRect()
-        if (rect) {
-            const width = rect.width
-            const height = rect.height
-            const mouseXRelative = e.clientX - rect.left
-            const mouseYRelative = e.clientY - rect.top
-            mouseX.set(mouseXRelative / width - 0.5)
-            mouseY.set(mouseYRelative / height - 0.5)
-        }
-    }
-
-    const handleMouseLeave = () => {
-        mouseX.set(0)
-        mouseY.set(0)
-    }
-
     return (
         <motion.div
             ref={ref}
-            className="relative w-[300px] h-[600px] md:w-[320px] md:h-[650px] perspective-1000"
-            onMouseMove={handleMouseMove}
-            onMouseLeave={handleMouseLeave}
-            style={{
-                transformStyle: "preserve-3d"
-            }}
+            className="relative w-[300px] h-[600px] md:w-[320px] md:h-[650px]"
         >
             <motion.div
                 className="w-full h-full relative"
-                style={{
-                    rotateX,
-                    rotateY,
-                    transformStyle: "preserve-3d",
-                }}
             >
                 {/* 3D Phone Body */}
                 <div className="absolute inset-0 bg-gray-900 rounded-[55px] border-[8px] border-zinc-800 shadow-2xl overflow-hidden transform-gpu"
@@ -74,82 +41,20 @@ export function IPhone3D() {
                             </div>
                         </div>
 
-                        {/* App Header */}
-                        <div className="pt-2 px-4 pb-4">
-                            <div className="flex justify-between items-center mt-6 mb-4">
-                                <button className="p-2 hover:bg-gray-100 dark:hover:bg-zinc-800 rounded-full transition-colors">
-                                    <ChevronLeftIcon />
-                                </button>
-                                <h3 className="text-xl font-bold dark:text-white">Menu</h3>
-                                <button className="p-2 text-orange-500 hover:bg-orange-50 rounded-full transition-colors relative">
-                                    <ShoppingCart size={20} />
-                                    <span className="absolute top-1 right-1 w-2 h-2 bg-red-500 rounded-full border border-white" />
-                                </button>
-                            </div>
-                        </div>
-
-                        {/* Scrollable Content */}
-                        <div className="h-full overflow-y-auto pb-32 px-4 scrollbar-hide">
-
-                            <motion.div
-                                initial={{ opacity: 0, y: 20 }}
-                                animate={{ opacity: 1, y: 0 }}
-                                transition={{ delay: 0.2 }}
-                            >
-                                <h4 className="text-sm font-bold text-gray-500 uppercase tracking-wider mb-2">Morning Brew</h4>
-                                <p className="text-xs text-gray-400 mb-4">Start your day right.</p>
-
-                                <div className="space-y-3">
-                                    <MenuItem
-                                        name="Caramel Latte"
-                                        desc="Oat milk • Extra foam"
-                                        price="₹350"
-                                        img="☕️"
-                                        color="bg-amber-100"
-                                    />
-                                    <MenuItem
-                                        name="Avo Toast"
-                                        desc="Sourdough • Poached Egg"
-                                        price="₹550"
-                                        img="🥑"
-                                        color="bg-green-100"
-                                    />
-                                    <MenuItem
-                                        name="Berry Bowl"
-                                        desc="Fresh fruits • Granola"
-                                        price="₹450"
-                                        img="🫐"
-                                        color="bg-purple-100"
-                                    />
-                                </div>
-                            </motion.div>
-
-                            <motion.div
-                                initial={{ opacity: 0, y: 20 }}
-                                animate={{ opacity: 1, y: 0 }}
-                                transition={{ delay: 0.4 }}
-                                className="mt-6"
-                            >
-                                <h4 className="text-sm font-bold text-gray-500 uppercase tracking-wider mb-2">Sweet Treats</h4>
-                                <div className="space-y-3">
-                                    <MenuItem
-                                        name="Croissant"
-                                        desc="Butter • Flaky"
-                                        price="₹250"
-                                        img="🥐"
-                                        color="bg-orange-50"
-                                    />
-                                </div>
-                            </motion.div>
-
+                        {/* Website Iframe */}
+                        <div className="absolute top-0 left-0 w-full h-full z-10 pt-[30px] pb-[20px]">
+                            <iframe
+                                src="https://yummin.vercel.app/menu"
+                                className="w-full h-full border-none"
+                                title="Yummin Menu Demo"
+                                allow="autoplay; fullscreen"
+                            />
                         </div>
 
                         {/* Bottom Action Button (Floating on phone) */}
-                        <div className="absolute bottom-6 left-4 right-4 z-20">
-                            <button className="w-full bg-slate-800 text-white font-medium py-4 rounded-2xl shadow-lg shadow-slate-300 dark:shadow-black active:scale-95 transition-transform flex items-center justify-center gap-2">
-                                <span>Checkout • ₹1250</span>
-                            </button>
-                            <div className="h-1 w-1/3 bg-black/20 dark:bg-white/20 mx-auto rounded-full mt-3" />
+                        {/* Home Indicator Overlay */}
+                        <div className="absolute bottom-2 left-0 right-0 z-20 flex justify-center pointer-events-none">
+                            <div className="h-1 w-1/3 bg-black/20 dark:bg-white/20 rounded-full" />
                         </div>
                     </div>
                 </div>
@@ -173,25 +78,7 @@ export function IPhone3D() {
     )
 }
 
-function MenuItem({ name, desc, price, img, color }: { name: string, desc: string, price: string, img: string, color: string }) {
-    return (
-        <div className="flex gap-4 p-3 rounded-2xl bg-gray-50 hover:bg-gray-100 dark:bg-zinc-900/50 dark:hover:bg-zinc-800 transition-colors group">
-            <div className={`w-16 h-16 ${color} rounded-xl flex items-center justify-center text-2xl shadow-sm`}>
-                {img}
-            </div>
-            <div className="flex-1 flex flex-col justify-center">
-                <h5 className="font-bold text-gray-900 dark:text-white">{name}</h5>
-                <p className="text-xs text-gray-500 line-clamp-1">{desc}</p>
-                <div className="flex justify-between items-center mt-1">
-                    <span className="text-sm font-semibold text-orange-600">{price}</span>
-                    <button className="w-6 h-6 rounded-full bg-orange-500 text-white flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
-                        <Plus size={14} />
-                    </button>
-                </div>
-            </div>
-        </div>
-    )
-}
+
 
 function FloatingBadge({ icon, text, x, y, delay }: { icon: any, text: string, x: number, y: number, delay: number }) {
     return (

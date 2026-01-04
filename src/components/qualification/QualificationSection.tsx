@@ -252,8 +252,8 @@ export function QualificationSection() {
                             </div>
 
                             <p className="text-[#00d9a3] text-sm font-medium flex items-center justify-center gap-2">
-                                <Shield className="w-4 h-4" />
-                                I only take 3-4 new clients per month. If we're a fit, let's lock in your spot.
+                                <Shield className="w-4 h-4 shrink-0" />
+                                <span className="text-left">I only take 3-4 new clients per month. If we're a fit, let's lock in your spot.</span>
                             </p>
 
                         </div>

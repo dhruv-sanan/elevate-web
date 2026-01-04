@@ -187,10 +187,10 @@ export default function Navbar() {
                             <span className="font-semibold text-sm">Chat Now</span>
                         </motion.a>
 
-                        {/* Cafe Vibe Toggle */}
-                        {/* <div className="hidden lg:block">
+                        {/* Cafe Vibe Toggle  TODO*/}
+                        <div className="hidden lg:block">
                             <CafeVibeToggle />
-                        </div> */}
+                        </div>
 
                         {/* Mobile Menu Button */}
                         <motion.button
