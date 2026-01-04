@@ -3,7 +3,7 @@
 import { HeroLeft } from "./HeroLeft"
 import { HeroRight } from "./HeroRight"
 import { ClientLogos } from "./ClientLogos"
-// import { ThemeToggle } from "@/components/ui/ThemeToggle"
+import { ThemeToggle } from "@/components/ui/ThemeToggle"
 import { ChevronDown } from "lucide-react"
 import { motion } from "framer-motion"
 
