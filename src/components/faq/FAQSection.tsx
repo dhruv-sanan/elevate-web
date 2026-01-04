@@ -66,7 +66,7 @@ export function FAQSection() {
                                 <span className="font-space-grotesk text-xl font-bold text-[#00d9a3]">₹1,500 - ₹8,000</span>
                             </div>
                             <p className="text-sm text-gray-400">
-                                Only if you want me to handle hosting, updates, and SEO. You can skip this
+                                Only if you want us to handle hosting, updates, and SEO. You can skip this
                                 and manage it yourself—or add it later.
                             </p>
                         </div>
@@ -89,7 +89,7 @@ export function FAQSection() {
                         <Calculator className="w-5 h-5 text-[#00d9a3] shrink-0 mt-0.5" />
                         <p className="text-sm text-gray-700 dark:text-gray-300">
                             <strong className="dark:text-white text-gray-900">ROI Example:</strong> If you&apos;re paying Zomato ₹70,000/month in commissions,
-                            my Tier 2 system (₹40,000 one-time) pays for itself in <strong className="dark:text-white text-gray-900">2 weeks</strong>.
+                            our Tier 2 system (₹40,000 one-time) pays for itself in <strong className="dark:text-white text-gray-900">2 weeks</strong>.
                         </p>
                     </div>
 
@@ -105,7 +105,7 @@ export function FAQSection() {
         {
             id: 1,
             category: "setup",
-            question: "How long does setup take? Will my restaurant be offline?",
+            question: "How long does set up take? Will my restaurant be offline?",
             answer: (
                 <>
                     <p className="mb-6 font-inter text-base text-gray-700 dark:text-gray-300 leading-relaxed">
@@ -115,10 +115,10 @@ export function FAQSection() {
 
                     <div className="relative pl-8 mb-6 flex flex-col gap-6 before:content-[''] before:absolute before:left-[11px] before:top-0 before:bottom-0 before:w-0.5 before:bg-gradient-to-b before:from-[#00d9a3] before:to-[#00d9a3]/20">
                         {[
-                            { day: "Day 1-4", title: "Discovery Call", desc: "We discuss your menu, branding, photos. I send you a checklist of what I need (logo, menu items, pricing)." },
-                            { day: "Day 5-10", title: "Build & Design", desc: "I build the site. You keep running your restaurant normally—nothing changes on your end yet." },
-                            { day: "Day 11-12", title: "Your Review", desc: "I send you a preview link. You test it, request changes. Usually takes 1-2 revision rounds." },
-                            { day: "Day 14", title: "Go Live", desc: "Site goes live. I train you (or your staff) on how to use the admin panel. You are commission-free from day 1." },
+                            { day: "Day 1-4", title: "Discovery Call", desc: "We discuss your menu, branding, photos. We send you a checklist of what we need (logo, menu items, pricing)." },
+                            { day: "Day 5-10", title: "Build & Design", desc: "We build the site. You keep running your restaurant normally—nothing changes on your end yet." },
+                            { day: "Day 11-12", title: "Your Review", desc: "We send you a preview link. You test it, request changes. Usually takes 1-2 revision rounds." },
+                            { day: "Day 14", title: "Go Live", desc: "Site goes live. We train you (or your staff) on how to use the admin panel. You are commission-free from day 1." },
                         ].map((item, i) => (
                             <div key={i} className="relative">
                                 <div className="absolute -left-12 top-0 w-12 font-space-grotesk text-xs font-bold text-[#00d9a3] text-center">
@@ -174,9 +174,9 @@ export function FAQSection() {
 
                     <div className="flex flex-col gap-4 mb-6">
                         {[
-                            { icon: Smartphone, title: "Admin Panel = WhatsApp Simple", desc: 'Log in from your phone. Click "Edit Menu." Change price. Click "Save." Done. No coding, no calling me every time.' },
-                            { icon: Video, title: "Video Training Included", desc: "I record a 10-minute walkthrough video showing you how to update menu, add items, toggle Open/Closed, create promo codes." },
-                            { icon: MessageCircle, title: "WhatsApp Support Anytime", desc: "Stuck? WhatsApp me a screenshot. I'll guide you through it. Most issues are solved in 2 minutes." },
+                            { icon: Smartphone, title: "Admin Panel = WhatsApp Simple", desc: 'Log in from your phone. Click "Edit Menu." Change price. Click "Save." Done. No coding, no calling us every time.' },
+                            { icon: Video, title: "Video Training Included", desc: "We record a 10-minute walkthrough video showing you how to update menu, add items, toggle Open/Closed, create promo codes." },
+                            { icon: MessageCircle, title: "WhatsApp Support Anytime", desc: "Stuck? WhatsApp us a screenshot. We'll guide you through it. Most issues are solved in 2 minutes." },
                         ].map((item, i) => (
                             <div key={i} className="flex items-start gap-4 bg-gray-100 dark:bg-white/5 rounded-xl p-4">
                                 <div className="w-12 h-12 bg-[#00d9a3]/10 border border-[#00d9a3]/30 rounded-lg flex items-center justify-center shrink-0 text-[#00d9a3]">
@@ -253,7 +253,7 @@ export function FAQSection() {
                     <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-6">
                         {[
                             { icon: CheckCircle, title: "Your Domain", desc: "yourrestaurant.in is registered in your name. You control it." },
-                            { icon: CheckCircle, title: "Your Code", desc: "I give you full access to all files. Want to hire someone else? They can take over anytime." },
+                            { icon: CheckCircle, title: "Your Code", desc: "We give you full access to all files. Want to hire someone else? They can take over anytime." },
                             { icon: CheckCircle, title: "Your Data", desc: "Customer emails, order history—it's all yours. Export it whenever you want." },
                         ].map((item, i) => (
                             <div key={i} className="bg-gray-100 dark:bg-white/5 border border-white/10 rounded-xl p-6 text-center">
@@ -267,7 +267,7 @@ export function FAQSection() {
                     <div className="flex items-start gap-3 bg-[#00d9a3]/10 border border-[#00d9a3]/30 border-l-[3px] border-l-[#00d9a3] rounded-lg p-4 mt-6">
                         <Shield className="w-5 h-5 text-[#00d9a3] shrink-0 mt-0.5" />
                         <p className="text-sm text-gray-700 dark:text-gray-300">
-                            <strong className="dark:text-white text-gray-900">My philosophy:</strong> I build trust, not dependencies.
+                            <strong className="dark:text-white text-gray-900">Our philosophy:</strong> We build trust, not dependencies.
                             If you&apos;re not happy, you&apos;re free to leave—no questions asked.
                         </p>
                     </div>
@@ -281,7 +281,7 @@ export function FAQSection() {
             answer: (
                 <>
                     <p className="mb-6 font-inter text-base text-gray-700 dark:text-gray-300 leading-relaxed">
-                        <strong className="dark:text-white text-gray-900">100% safe. I integrate RazorPay or PayU—</strong>same gateways
+                        <strong className="dark:text-white text-gray-900">100% safe. We integrate RazorPay or PayU—</strong>same gateways
                         used by Amazon, Flipkart, and yes, even Zomato.
                     </p>
 
@@ -320,7 +320,7 @@ export function FAQSection() {
                     <div className="flex items-start gap-3 bg-[#00d9a3]/10 border border-[#00d9a3]/30 border-l-[3px] border-l-[#00d9a3] rounded-lg p-4 mt-6">
                         <Info className="w-5 h-5 text-blue-400 shrink-0 mt-0.5" />
                         <p className="text-sm text-gray-700 dark:text-gray-300">
-                            <strong className="dark:text-white text-gray-900">Important:</strong> I never see or touch customer payment details.
+                            <strong className="dark:text-white text-gray-900">Important:</strong> We never see or touch customer payment details.
                             Everything is handled by the payment gateway—same security as your bank app.
                         </p>
                     </div>
@@ -345,7 +345,7 @@ export function FAQSection() {
                             </div>
                             <ul className="space-y-2">
                                 {[
-                                    "Bugs caused by my code (first 30 days guaranteed)",
+                                    "Bugs caused by our code (first 30 days guaranteed)",
                                     "Security updates & critical patches",
                                     "SSL certificate renewals",
                                     "Basic troubleshooting via WhatsApp"
@@ -394,7 +394,7 @@ export function FAQSection() {
             answer: (
                 <>
                     <p className="mb-6 font-inter text-base text-gray-700 dark:text-gray-300 leading-relaxed">
-                        <strong className="dark:text-white text-gray-900">Yes—SEO is built into every site.</strong> Here&apos;s what I do:
+                        <strong className="dark:text-white text-gray-900">Yes—SEO is built into every site.</strong> Here&apos;s what we do:
                     </p>
 
                     <div className="flex flex-col gap-6 mb-6">
@@ -475,7 +475,7 @@ export function FAQSection() {
                             </div>
                             <h5 className="font-space-grotesk text-lg font-semibold dark:text-white text-gray-900 mb-2">Tier 2: Commission Killer (Pay Difference Only)</h5>
                             <p className="text-sm text-gray-400">You already paid ₹15,000. Tier 2 costs ₹35,000. So you pay ₹15,000 more—
-                                not the full ₹35,000. I add ordering, WhatsApp automation, admin panel.</p>
+                                not the full ₹35,000. We add ordering, WhatsApp automation, admin panel.</p>
                         </div>
 
                         <div className="flex flex-col items-center gap-2">
@@ -510,14 +510,14 @@ export function FAQSection() {
             answer: (
                 <>
                     <p className="mb-6 font-inter text-base text-gray-700 dark:text-gray-300 leading-relaxed">
-                        <strong className="dark:text-white text-gray-900">Fair question. Here&apos;s my honest answer:</strong>
+                        <strong className="dark:text-white text-gray-900">Fair question. Here&apos;s our honest answer:</strong>
                     </p>
 
                     <div className="flex flex-col gap-2 mb-6">
                         <div className="grid grid-cols-1 sm:grid-cols-3 gap-2 bg-white/5 p-3 rounded-t-lg font-space-grotesk font-bold dark:text-white text-gray-900 max-sm:hidden">
                             <div></div>
                             <div>Big Agency</div>
-                            <div className="bg-[#00d9a3]/10 border border-[#00d9a3]/30 dark:text-white text-gray-900 font-medium p-1 rounded">Me (Dhruv)</div>
+                            <div className="bg-[#00d9a3]/10 border border-[#00d9a3]/30 dark:text-white text-gray-900 font-medium p-1 rounded">ElevateWeb</div>
                         </div>
 
                         <div className="grid grid-cols-1 sm:grid-cols-3 gap-2 bg-gray-100 dark:bg-white/5 border border-white/10 p-3 rounded-lg items-center">
@@ -525,7 +525,7 @@ export function FAQSection() {
                             <div className="text-sm text-gray-700 dark:text-gray-300">2-3 days (ticket system)</div>
                             <div className="bg-[#00d9a3]/10 border border-[#00d9a3]/30 p-2 rounded flex items-center gap-2 dark:text-white text-gray-900 font-medium text-sm">
                                 <CheckCircle className="w-4 h-4 text-[#00d9a3]" />
-                                2 hours (WhatsApp me directly)
+                                2 hours (WhatsApp us directly)
                             </div>
                         </div>
 
@@ -534,7 +534,7 @@ export function FAQSection() {
                             <div className="text-sm text-gray-700 dark:text-gray-300">Junior developer (outsourced)</div>
                             <div className="bg-[#00d9a3]/10 border border-[#00d9a3]/30 p-2 rounded flex items-center gap-2 dark:text-white text-gray-900 font-medium text-sm">
                                 <CheckCircle className="w-4 h-4 text-[#00d9a3]" />
-                                I build it myself (10+ years experience)
+                                We build it ourselves (10+ years experience)
                             </div>
                         </div>
 
@@ -561,7 +561,7 @@ export function FAQSection() {
                             <div className="text-sm text-gray-700 dark:text-gray-300">Generic templates</div>
                             <div className="bg-[#00d9a3]/10 border border-[#00d9a3]/30 p-2 rounded flex items-center gap-2 dark:text-white text-gray-900 font-medium text-sm">
                                 <CheckCircle className="w-4 h-4 text-[#00d9a3]" />
-                                I know Amritsar food scene personally
+                                We know the Amritsar food scene personally
                             </div>
                         </div>
                     </div>
@@ -569,7 +569,7 @@ export function FAQSection() {
                     <div className="flex items-start gap-3 bg-[#00d9a3]/10 border border-[#00d9a3]/30 border-l-[3px] border-l-[#00d9a3] rounded-lg p-4 mt-6">
                         <MapPin className="w-5 h-5 text-[#00d9a3] shrink-0 mt-0.5" />
                         <p className="text-sm text-gray-700 dark:text-gray-300">
-                            <strong className="dark:text-white text-gray-900">Bottom line:</strong> I&apos;m Amritsar-based, always reachable, and I eat
+                            <strong className="dark:text-white text-gray-900">Bottom line:</strong> We're Amritsar-based, always reachable, and we eat
                             at your restaurants. Big agencies? They&apos;re in Bangalore building cookie-cutter sites.
                         </p>
                     </div>
@@ -611,7 +611,7 @@ export function FAQSection() {
                 {/* Header */}
                 <div className="text-center mb-12">
                     <p className="font-inter text-sm font-semibold tracking-wider uppercase text-[#00d9a3] mb-4">
-            // GOT QUESTIONS?
+            // HAVE QUESTIONS?
                     </p>
                     <h2 className="font-space-grotesk text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-foreground mb-6">
                         Everything You Need to Know About
@@ -715,7 +715,7 @@ export function FAQSection() {
                         <HelpCircle className="w-16 h-16 text-[#00d9a3] mx-auto mb-6" />
                         <h3 className="font-space-grotesk text-3xl font-bold dark:text-white text-gray-900 mb-4">Still Have Questions?</h3>
                         <p className="font-inter text-lg dark:text-gray-200 text-gray-900 mb-8 leading-relaxed">
-                            I&apos;m just one WhatsApp message away. Ask me anything—I&apos;ll respond within 2 hours
+                            We're just one WhatsApp message away. Ask us anything—we'll respond within 2 hours
                             (usually way faster).
                         </p>
                         <div className="flex flex-col sm:flex-row justify-center gap-4 mb-6">
@@ -733,11 +733,11 @@ export function FAQSection() {
                                 className="inline-flex items-center justify-center gap-3 bg-white/10 border dark:border-white/20 border-black/20 dark:text-white text-gray-900 font-inter text-lg font-semibold px-8 py-4 rounded-xl hover:bg-white/15 hover:translate-y-[-2px] backdrop-blur-md transition-all duration-300"
                             >
                                 <Phone className="w-5 h-5" />
-                                Book Free Call
+                                Book a Free Call
                             </a>
                         </div>
                         <p className="font-inter text-sm dark:text-white text-gray-900 italic">
-                            No sales pressure. Just honest answers from someone who actually builds the sites.
+                            No sales pressure. Just honest answers from a team that actually builds the sites.
                         </p>
                     </div>
                 </div>

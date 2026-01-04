@@ -66,9 +66,9 @@ export function HeroLeft() {
                 variants={itemVariants}
                 className="font-inter text-lg md:text-xl text-gray-500 dark:text-gray-400 leading-relaxed max-w-2xl"
             >
-                I build premium websites with direct ordering, WhatsApp automation,
-                and AI chatbots—so Amritsar's restaurants, cafés, and hotels can own
-                their customer relationships and keep every rupee.
+                We build premium websites with direct ordering, WhatsApp automation,
+                and AI chatbots—helping restaurants, cafés, and hotels in Amritsar
+                own their customer relationships and keep 100% of their revenue.
             </motion.p>
 
             {/* 04. CTA BUTTONS */}
@@ -77,7 +77,7 @@ export function HeroLeft() {
                 className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto mt-2"
             >
                 <a
-                    href="https://yummin.vercel.app/"
+                    href="https://yummin.vercel.app/menu"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center justify-center gap-2 bg-[#00d9a3] hover:bg-[#00c291] text-black font-semibold px-8 py-4 rounded-xl text-lg transition-all duration-300 hover:scale-105 hover:shadow-[0_0_30px_rgba(0,217,163,0.5)] cursor-pointer"
@@ -93,7 +93,7 @@ export function HeroLeft() {
                     className="flex items-center justify-center gap-2 bg-white/10 hover:bg-white/20 border border-black/10 dark:border-white/20 text-gray-900 dark:text-white font-semibold px-8 py-4 rounded-xl text-lg transition-all duration-300 hover:scale-105 cursor-pointer"
                 >
                     <Calendar className="w-5 h-5" />
-                    Book 15-Min Call
+                    Book a Free Call
                 </a>
             </motion.div>
 
@@ -102,7 +102,7 @@ export function HeroLeft() {
                 variants={itemVariants}
                 className="flex flex-wrap gap-6 text-sm text-gray-500 mt-6"
             >
-                {["Setup in 14 days", "Minimal monthly fees", "Amritsar-based support"].map((text) => (
+                {["Set up in 14 days", "Minimal monthly fees", "Amritsar-based support"].map((text) => (
                     <div key={text} className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-[#00d9a3]" />
                         <span>{text}</span>

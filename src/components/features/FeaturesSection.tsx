@@ -74,7 +74,7 @@ export function FeaturesSection() {
                             Zero Commission Ordering
                         </h3>
                         <p className="font-inter text-muted-foreground text-lg leading-relaxed mb-8">
-                            Stop paying Zomato 40% per order. Customers order directly from your menu—WhatsApp confirms instantly. You keep 100% revenue.
+                            Stop paying Zomato 40% per order. Customers order directly from your menu—WhatsApp confirms instantly. You keep 100% of the revenue.
                         </p>
 
                         {/* Savings Visual */}
@@ -127,7 +127,7 @@ export function FeaturesSection() {
                             QR Table Ordering
                         </h3>
                         <p className="font-inter text-muted-foreground text-sm leading-relaxed mb-6">
-                            Customers scan, order, pay—no waiter needed. Faster service. Higher tips.
+                            Customers can scan, order and pay—no waiter needed. Faster service.
                         </p>
                         <div className="flex justify-center mt-auto">
                             <div className="relative w-24 h-24 bg-foreground/5 border border-[#00d9a3]/30 rounded-xl flex items-center justify-center overflow-hidden">
@@ -179,7 +179,7 @@ export function FeaturesSection() {
                                     Admin Dashboard
                                 </h3>
                                 <p className="font-inter text-muted-foreground text-base leading-relaxed mb-4">
-                                    Update menu, toggle Open/Closed, add promo codes, track orders—all from your phone. No calling a developer.
+                                    Update menu, toggle Open/Closed, add promo codes, track orders—all from your phone. No need to call a developer.
                                 </p>
                                 <div className="space-y-2">
                                     {["Update prices in 30 seconds", "Add daily specials instantly", "Create discount codes"].map((item) => (
@@ -377,7 +377,7 @@ export function FeaturesSection() {
                                     </div>
                                 </div>
                                 <div className="mt-2 text-xs text-muted-foreground bg-white/5 rounded-full px-2 py-1 flex items-center gap-1">
-                                    <Type className="w-3 h-3" /> Type...
+                                    Type...
                                 </div>
                             </div>
                         </div>

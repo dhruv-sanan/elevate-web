@@ -1,7 +1,7 @@
 "use client"
 
 import { useState, useEffect } from "react"
-import { Calculator, MessageCircle, TrendingUp, IndianRupee, Star } from "lucide-react"
+import { Calculator, MessageCircle, TrendingUp, Star } from "lucide-react"
 import { useCountUp } from "@/hooks/useCountUp"
 import { useCalculator } from "@/context/CalculatorContext"
 import { cn } from "@/lib/utils"
@@ -179,7 +179,7 @@ export function HeroRight() {
                 className="hidden md:flex gap-8 justify-center items-center bg-white/5 backdrop-blur-xl border border-white/10 rounded-full px-8 py-4 shadow-xl z-20 whitespace-nowrap"
             >
                 <StatItem icon={<TrendingUp className="text-[#00d9a3]" />} value={`+${statsOrders}`} label="Orders Today" />
-                <StatItem icon={<IndianRupee className="text-[#00d9a3]" />} value={`₹${statsRevenue.toLocaleString()}`} label="Revenue" />
+                <StatItem icon={<TrendingUp className="text-[#00d9a3]" />} value={`₹${statsRevenue.toLocaleString()}`} label="Revenue" />
                 <StatItem icon={<Star className="text-yellow-400" />} value="4.8" label="Rating" color="text-yellow-400" />
             </motion.div>
 

@@ -21,7 +21,7 @@ export function CalendlyWidget() {
                         Not Ready to Commit? Let's Talk First
                     </h2>
                     <p className="text-muted-foreground max-w-2xl mx-auto text-lg leading-relaxed">
-                        Book a free 15-minute discovery call. We'll discuss your business, show you demos, and explain how we can help you go commission-free.
+                        Book a free 15-minute call. We'll discuss your business, show you demos, and explain how we can help you go commission-free.
                     </p>
                 </div>
 
@@ -41,7 +41,7 @@ export function CalendlyWidget() {
                             <p className="text-sm text-muted-foreground">Select a time that works for you on Calendly</p>
                         </div>
                         <span className="inline-flex items-center gap-2 font-bold text-[#00d9a3] mt-2 group-hover:gap-3 transition-all">
-                            Book Free Call <ArrowRight className="w-5 h-5" />
+                            Book a Free Call <ArrowRight className="w-5 h-5" />
                         </span>
                     </a>
                 </div>

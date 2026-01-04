@@ -363,7 +363,7 @@ export function PricingSection() {
                                 className="flex items-center gap-3 bg-foreground/5 hover:bg-foreground/10 border border-foreground/10 text-foreground font-inter font-semibold px-8 py-4 rounded-xl text-lg backdrop-blur-md transition-all duration-300 hover:-translate-y-1"
                             >
                                 <Calendar className="w-5 h-5" />
-                                Book Free Consultation
+                                Book a Free Call
                             </a>
                         </div>
                         <p className="font-inter text-sm text-muted-foreground">
@@ -446,7 +446,7 @@ function PricingCard({ tierName, bestFor, originalPrice, currentPrice, savings, 
                 <ArrowRight className="w-5 h-5" />
             </button>
             <p className="font-inter text-xs text-muted-foreground text-center mt-4">
-                Setup in 14 days • Minimal monthly fees
+                Set up in 14 days • Minimal monthly fees
             </p>
         </motion.div>
     )

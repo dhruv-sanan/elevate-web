@@ -107,7 +107,7 @@ export function ProcessSection() {
                     </div>
 
                     <p className="font-sans text-base leading-[1.7] text-gray-300 mb-8">
-                        We hop on a call (or meet in person if you're in Amritsar). I ask
+                        We hop on a call (or meet in person if you're in Amritsar). We ask
                         about your business, menu, current pain points, and what you want
                         your website to do.
                     </p>
@@ -132,7 +132,7 @@ export function ProcessSection() {
                                 You'll Receive:
                             </h5>
                             <p className="font-sans text-sm text-gray-300">
-                                A simple checklist of everything I need from you (menu, photos,
+                                A simple checklist of everything we need from you (menu, photos,
                                 logo, etc.)
                             </p>
                         </div>
@@ -140,7 +140,7 @@ export function ProcessSection() {
 
                     <RealExample
                         iconColor="text-yellow-400"
-                        text='"Simran from Bakeman Cake & Pastry Palace didn&apos;t have professional photos. I told her: &apos;Just click 10-15 pics on your iPhone—good lighting, clean background.&apos; Turned out perfect."'
+                        text='"Simran from Bakeman Cake & Pastry Palace didn&apos;t have professional photos. We advised her: &apos;Just click 10-15 pics on your iPhone—good lighting, clean background.&apos; Turned out perfect."'
                     />
                 </TimelineStep>
 
@@ -156,39 +156,39 @@ export function ProcessSection() {
                         <DurationBadge icon={Clock} text="2-3 days (your pace)" />
                     </div>
                     <p className="font-sans text-base leading-[1.7] text-gray-300 mb-8">
-                        You gather the content I need. Don't stress—most clients send
-                        everything via WhatsApp in one sitting. I guide you through what
+                        You gather the content we need. Don't stress—most clients send
+                        everything via WhatsApp in one sitting. We guide you through what
                         works and what doesn't.
                     </p>
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
                         <RequirementCard
                             icon={ImageIcon}
                             title="Photos"
-                            text="10-20 food/interior shots. iPhone quality is fine. I'll optimize them."
+                            text="10-20 food/interior shots. iPhone quality is fine. We'll optimize them."
                             tip="💡 Tip: Natural lighting + clean plates = best results"
                         />
                         <RequirementCard
                             icon={FileText}
                             title="Menu & Pricing"
-                            text="Send your current menu (even a PDF or photo works). I'll format it beautifully."
+                            text="Send your current menu (even a PDF or photo works). We'll format it beautifully."
                             tip="💡 Tip: If prices change often, mark seasonal items"
                         />
                         <RequirementCard
                             icon={Palette}
                             title="Logo & Colors"
-                            text="Your logo file (PNG/JPEG). If you don't have one, I can create a simple text logo."
+                            text="Your logo file (PNG/JPEG). If you don't have one, we can create a simple text logo."
                             tip="💡 Tip: Send any packaging/signage for color matching"
                         />
                         <RequirementCard
                             icon={Type}
                             title="Business Details"
                             text="Address, phone, hours, social media links. The basics."
-                            tip="💡 Tip: I'll write the &quot;About Us&quot; section for you"
+                            tip="💡 Tip: We'll write the &quot;About Us&quot; section for you"
                         />
                     </div>
                     <RealExample
                         iconColor="text-yellow-400"
-                        text='"Rajveer sent me his entire menu as a WhatsApp voice note while driving. I transcribed it, formatted it, and sent back a preview. He approved in 10 minutes."'
+                        text='"Rajveer sent us his entire menu as a WhatsApp voice note while driving. We transcribed it, formatted it, and sent back a preview. He approved in 10 minutes."'
                     />
                 </TimelineStep>
 
@@ -202,17 +202,17 @@ export function ProcessSection() {
                 >
                     <div className="details-header flex flex-wrap gap-4 mb-6">
                         <DurationBadge icon={Clock} text="5-6 days (my side)" />
-                        <StatusBadge icon={Zap} text="I'm Building" type="working" />
+                        <StatusBadge icon={Zap} text="We're Building" type="working" />
                     </div>
 
                     <p className="font-sans text-base leading-[1.7] text-gray-300 mb-8">
-                        This is where the magic happens. You relax, I build. Your restaurant
+                        This is where the magic happens. You relax, we build. Your restaurant
                         operates normally—nothing changes on your end yet.
                     </p>
 
                     <div className="mb-8">
                         <h4 className="font-[family-name:var(--font-space-grotesk)] text-lg font-semibold text-white mb-4">
-                            What I'm Building:
+                            What We're Building:
                         </h4>
                         <div className="flex flex-col gap-6">
                             <BuildStage
@@ -240,7 +240,7 @@ export function ProcessSection() {
                                 Behind the Scenes:
                             </h5>
                             <p className="font-sans text-sm text-gray-300">
-                                I'm also setting up SEO (so Google loves you), security (SSL
+                                We're also setting up SEO (so Google loves you), security (SSL
                                 certificate), and speed optimization (3-second load times or
                                 less).
                             </p>
@@ -248,7 +248,7 @@ export function ProcessSection() {
                     </div>
                     <RealExample
                         iconColor="text-yellow-400"
-                        text='"Built Café Nomad&apos;s entire site in 2.5 days because they had everything ready. Sometimes it takes longer if we&apos;re waiting on payment gateway approval (bank side, not me)."'
+                        text='"Built Café Nomad&apos;s entire site in 2.5 days because they had everything ready. Sometimes it takes longer if we&apos;re waiting on payment gateway approval (bank side, not us)."'
                     />
                 </TimelineStep>
 
@@ -264,15 +264,15 @@ export function ProcessSection() {
                         <DurationBadge icon={Clock} text="4-6 hours (back & forth)" />
                     </div>
                     <p className="font-sans text-base leading-[1.7] text-gray-300 mb-8">
-                        I send you a private preview link. You test it on your phone, laptop,
+                        We send you a private preview link. You test it on your phone, laptop,
                         iPad. Click everything. Order something fake. See how it feels.
                     </p>
 
                     <div className="flex flex-col gap-4 mb-8">
                         <FlowItem
                             number={1}
-                            title="I Send Preview Link"
-                            text='"Here&apos;s your site—pretend you&apos;re a customer and order Butter Chicken. Tell me what feels off."'
+                            title="We Send Preview Link"
+                            text='"Here&apos;s your site—pretend you&apos;re a customer and order Butter Chicken. Tell us what feels off."'
                         />
                         <ArrowDown className="w-6 h-6 text-gray-600 mx-auto" />
                         <FlowItem
@@ -283,8 +283,8 @@ export function ProcessSection() {
                         <ArrowDown className="w-6 h-6 text-gray-600 mx-auto" />
                         <FlowItem
                             number={3}
-                            title="I Make Changes (Usually Same Day)"
-                            text="Most edits take 10-30 minutes. I send updated link. We repeat until you say &quot;Perfect, let's go live.&quot;"
+                            title="We Make Changes (Usually Same Day)"
+                            text="Most edits take 10-30 minutes. We send updated link. We repeat until you say &quot;Perfect, let's go live.&quot;"
                         />
                     </div>
 
@@ -303,7 +303,7 @@ export function ProcessSection() {
                     </div>
                     <RealExample
                         iconColor="text-yellow-400"
-                        text='"Bakeman Cake & Pastry Palace asked for 8 changes. I fixed all of them in 45 minutes. She replied: &apos;Dhruv, this is EXACTLY what I imagined. Go live tonight.&apos;"'
+                        text='"Bakeman Cake & Pastry Palace asked for 8 changes. We fixed all of them in 45 minutes. She replied: &apos;Dhruv, this is EXACTLY what I imagined. Go live tonight.&apos;"'
                     />
                 </TimelineStep>
 
@@ -319,7 +319,7 @@ export function ProcessSection() {
                         <DurationBadge icon={Clock} text="15-20 minutes" />
                     </div>
                     <p className="font-sans text-base leading-[1.7] text-gray-300 mb-8">
-                        Quick screen-share call (or in-person if you prefer). I show you how
+                        Quick screen-share call (or in-person if you prefer). We show you how
                         to manage your site—so simple, your staff can do it.
                     </p>
 
@@ -342,7 +342,7 @@ export function ProcessSection() {
                         <TrainingModule
                             icon={Bell}
                             title="Check New Orders"
-                            text="Orders show up in your admin panel + WhatsApp. I'll show you how to mark them &quot;preparing&quot; or &quot;delivered.&quot;"
+                            text="Orders show up in your admin panel + WhatsApp. We'll show you how to mark them &quot;preparing&quot; or &quot;delivered.&quot;"
                         />
                     </div>
 
@@ -353,7 +353,7 @@ export function ProcessSection() {
                                 Bonus: Video Recording
                             </h5>
                             <p className="font-sans text-sm text-gray-300">
-                                I record the entire training session and send it to you. Watch
+                                We record the entire training session and send it to you. Watch
                                 it anytime you forget something (or show it to your team).
                             </p>
                         </div>
@@ -376,7 +376,7 @@ export function ProcessSection() {
                         <DurationBadge icon={Zap} text="Launch Day" type="success" />
                     </div>
                     <p className="font-sans text-base leading-[1.7] text-gray-300 mb-8">
-                        Your site goes live. I flip the switch, and boom—you're officially
+                        Your site goes live. We flip the switch, and boom—you're officially
                         commission-free. Time to tell the world.
                     </p>
 
@@ -401,8 +401,8 @@ export function ProcessSection() {
                                 First Week Support:
                             </h5>
                             <p className="font-sans text-sm text-gray-300">
-                                I'm on standby all week. Any glitch, confusion, or "how do
-                                I...?" question—WhatsApp me. Response within 1 hour.
+                                We're on standby all week. Any glitch, confusion, or "how do
+                                I...?" question—WhatsApp us. Response within 1 hour.
                             </p>
                         </div>
                     </div>
@@ -454,8 +454,8 @@ export function ProcessSection() {
                         />
                     </div>
                     <p className="font-sans text-base leading-[1.7] text-gray-300 mb-8">
-                        Your site is live. You're making money. Now what? I'm here if you
-                        need me—but most clients rarely do after the first month.
+                        Your site is live. You're making money. Now what? We're here if you
+                        need us—but most clients rarely do after the first month.
                     </p>
 
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
@@ -464,7 +464,7 @@ export function ProcessSection() {
                                 FREE Forever:
                             </h5>
                             <ul className="flex flex-col gap-2">
-                                <SupportItem text="Bug fixes (if it's my code)" />
+                                <SupportItem text="Bug fixes (if it's our code)" />
                                 <SupportItem text="Security updates" />
                                 <SupportItem text="WhatsApp troubleshooting" />
                                 <SupportItem text="&quot;How do I...?&quot; questions" />
@@ -491,7 +491,7 @@ export function ProcessSection() {
                             </h5>
                             <p className="font-sans text-sm text-gray-300">
                                 Add features later: AI chatbot, loyalty program, second
-                                location, mobile app. I'll guide you on what makes sense when.
+                                location, mobile app. We'll guide you on what makes sense when.
                             </p>
                         </div>
                     </div>
@@ -546,7 +546,7 @@ export function ProcessSection() {
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                     <ChecklistItemBox
                         title="Menu & Pricing"
-                        text="Your current menu (PDF, Excel, or even a photo works). I'll format it beautifully."
+                        text="Your current menu (PDF, Excel, or even a photo works). We'll format it beautifully."
                     />
                     <ChecklistItemBox
                         title="Business Info"
@@ -554,11 +554,11 @@ export function ProcessSection() {
                     />
                     <ChecklistItemBox
                         title="Photos"
-                        text="10-20 food/interior shots. iPhone quality works—I optimize everything."
+                        text="10-20 food/interior shots. iPhone quality works—we optimize everything."
                     />
                     <ChecklistItemBox
                         title="Logo (Optional)"
-                        text="If you have one, great. If not, I can create a simple text-based logo for free."
+                        text="If you have one, great. If not, we can create a simple text-based logo for free."
                     />
                 </div>
             </div>
@@ -571,7 +571,7 @@ export function ProcessSection() {
                         Ready to Stop Paying Commissions?
                     </h3>
                     <p className="font-sans text-lg leading-[1.7] text-gray-300 mb-10">
-                        Let's start with a quick call. I'll show you exactly how this works
+                        Let's start with a quick call. We'll show you exactly how this works
                         for YOUR business—no sales pitch, just honest guidance.
                     </p>
                     <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
@@ -587,11 +587,11 @@ export function ProcessSection() {
                             className="inline-flex items-center gap-3 bg-white/10 border border-white/20 text-white font-sans text-lg font-semibold px-10 py-5 rounded-xl backdrop-blur-md transition-all duration-300 hover:bg-white/15 hover:-translate-y-0.5"
                         >
                             <Calendar className="w-5 h-5" />
-                            Book Discovery Call
+                            Book a Free Call
                         </Link>
                     </div>
                     <p className="font-sans text-sm text-gray-400">
-                        ✓ 14-day guaranteed setup • ✓ No hidden fees • ✓ Cancel anytime
+                        ✓ 14-day guaranteed set up • ✓ No hidden fees • ✓ Cancel anytime
                     </p>
                 </div>
             </div>

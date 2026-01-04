@@ -63,7 +63,7 @@ export function Hero3D() {
                         className="flex items-center gap-4 pt-4"
                     >
                         <a
-                            href="https://yummin.vercel.app/"
+                            href="https://yummin.vercel.app/menu"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="group relative px-8 py-4 bg-gray-900 dark:bg-white text-white dark:text-black rounded-2xl font-bold text-lg hover:shadow-2xl hover:shadow-orange-500/20 transition-all duration-300 active:scale-95 flex items-center gap-2"

@@ -7,7 +7,7 @@ import { ArrowRight, DollarSign, Clock, Wrench, HelpCircle } from "lucide-react"
 export function FAQQuickLinks() {
     const links = [
         { icon: DollarSign, text: "How much does it cost?", href: "/pricing" },
-        { icon: Clock, text: "How long does setup take?", href: "/timeline" },
+        { icon: Clock, text: "How long does set up take?", href: "/timeline" },
         { icon: HelpCircle, text: "Can I manage it myself?", href: "/#faq" },
     ];
 

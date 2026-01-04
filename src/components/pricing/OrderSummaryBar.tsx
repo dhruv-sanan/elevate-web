@@ -23,7 +23,7 @@ export function OrderSummaryBar({ maintenancePlanName, maintenancePrice, selecte
         if (selectedAddons.length > 0) {
             text += `\n\n➕ Add-ons:`
             selectedAddons.forEach(addon => {
-                text += `\n- ${addon.name} (Setup: ₹${addon.setupFee}, Monthly: ₹${addon.monthlyFee})`
+                text += `\n- ${addon.name} (Set up: ₹${addon.setupFee}, Monthly: ₹${addon.monthlyFee})`
             })
         }
         text += `\n\n💰 *Total Monthly:* ₹${totalMonthly}`
@@ -47,7 +47,7 @@ export function OrderSummaryBar({ maintenancePlanName, maintenancePrice, selecte
                             <p className="text-xs text-gray-400 mb-1 uppercase tracking-wider font-semibold">Your Package Summary</p>
                             <div className="flex flex-wrap items-baseline gap-x-6 gap-y-1">
                                 <div className="flex items-center gap-2">
-                                    <span className="text-gray-400 text-sm">One-Time Setup:</span>
+                                    <span className="text-gray-400 text-sm">One-Time Set up:</span>
                                     <span className="font-space-grotesk font-bold text-white text-xl">₹{totalOneTime.toLocaleString()}</span>
                                 </div>
                                 <div className="flex items-center gap-2">

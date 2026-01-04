@@ -63,7 +63,7 @@ export function QualificationSection() {
                         </span>
                     </h2>
                     <p className="text-gray-400 text-lg leading-relaxed max-w-3xl mx-auto font-inter">
-                        I turn away 60% of inquiries. Not because I'm arrogant—because bad-fit
+                        We turn away 60% of inquiries. Not because we're arrogant—because bad-fit
                         clients waste your time and mine. Let's be honest upfront.
                     </p>
                 </motion.div>
@@ -101,7 +101,7 @@ export function QualificationSection() {
                                 {[
                                     {
                                         title: "You're looking for a cheap ₹5,000 template",
-                                        desc: "Fiverr exists for a reason. I build custom systems that generate ROI, not disposable websites that look like everyone else's."
+                                        desc: "Fiverr exists for a reason. We build custom systems that generate ROI, not disposable websites that look like everyone else's."
                                     },
                                     {
                                         title: "You think Instagram is the only marketing you need",
@@ -134,7 +134,7 @@ export function QualificationSection() {
 
                             <div className="flex items-center gap-3 p-5 rounded-xl bg-red-500/15 border border-red-500/30 text-red-400 font-medium text-sm font-inter mt-auto">
                                 <AlertTriangle className="w-5 h-5 shrink-0" />
-                                <p>If you nodded at any of these, hire someone else. I mean that respectfully.</p>
+                                <p>If you nodded at any of these, hire someone else. We mean that respectfully.</p>
                             </div>
                         </div>
                     </motion.div>
@@ -161,7 +161,7 @@ export function QualificationSection() {
                             </div>
 
                             <p className="text-gray-300 text-base leading-relaxed font-inter">
-                                This is who I love working with. Serious owners who understand business,
+                                This is who we love working with. Serious owners who understand business,
                                 not just "vibes."
                             </p>
 
@@ -247,13 +247,13 @@ export function QualificationSection() {
                                     className="inline-flex items-center gap-3 bg-white/10 border border-white/20 text-white text-lg font-semibold py-4 px-8 rounded-xl backdrop-blur-md hover:bg-white/15 hover:translate-y-[-2px] transition-all duration-300"
                                 >
                                     <Calendar className="w-5 h-5" />
-                                    <span>Book Discovery Call</span>
+                                    <span>Book a Free Call</span>
                                 </a>
                             </div>
 
                             <p className="text-[#00d9a3] text-sm font-medium flex items-center justify-center gap-2">
                                 <Shield className="w-4 h-4 shrink-0" />
-                                <span className="text-left">I only take 3-4 new clients per month. If we're a fit, let's lock in your spot.</span>
+                                <span className="text-left">We only take 3-4 new clients per month. If we're a fit, let's lock in your spot.</span>
                             </p>
 
                         </div>

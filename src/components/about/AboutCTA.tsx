@@ -39,7 +39,7 @@ export function AboutCTA() {
                         rel="noopener noreferrer"
                         className="px-8 py-4 rounded-xl bg-[#00d9a3] hover:bg-[#00c291] text-black font-bold text-lg transition-all hover:-translate-y-1 hover:shadow-lg hover:shadow-[#00d9a3]/20 flex items-center justify-center gap-2"
                     >
-                        Book Discovery Call <ArrowRight className="w-5 h-5" />
+                        Book a Free Call <ArrowRight className="w-5 h-5" />
                     </a>
                     <a
                         href="https://wa.me/917973634588?text=Hi%20Ghanishth!%20I'd%20like%20to%20discuss%20a%20project."

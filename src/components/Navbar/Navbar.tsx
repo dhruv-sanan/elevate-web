@@ -33,7 +33,7 @@ export default function Navbar() {
     }, [pathname]);
 
     const navLinks = [
-        { name: 'Demos', href: 'https://yummin.vercel.app', target: '_blank' },
+        { name: 'Demos', href: 'https://yummin.vercel.app/menu', target: '_blank' },
         { name: 'Timeline', href: '/timeline' },
         { name: 'Pricing', href: '/pricing' },
         { name: 'About', href: '/about' },
