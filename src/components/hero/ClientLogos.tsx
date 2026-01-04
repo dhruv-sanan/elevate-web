@@ -3,9 +3,9 @@
 import { cn } from "@/lib/utils"
 
 const clients = [
-    "Punjabi Rasoi",
+    "Tamra Restaurant",
     "Golden Fork Café",
-    "Sweet Tooth Bakery",
+    "Bakeman Cake & Pastry Palace",
     "Heritage Hotel",
     "Amritsari Kulcha Hub",
     "Café Nomad"

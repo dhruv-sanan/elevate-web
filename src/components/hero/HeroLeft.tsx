@@ -47,7 +47,7 @@ export function HeroLeft() {
             {/* 02. HERO HEADLINE */}
             <motion.h1
                 variants={itemVariants}
-                className="font-space-grotesk text-5xl md:text-6xl lg:text-7xl font-bold leading-[1.1] tracking-tight text-foreground"
+                className="font-space-grotesk text-4xl md:text-5xl lg:text-6xl font-bold leading-[1.1] tracking-tight text-foreground"
             >
                 <span className="block dark:hidden">
                     Stop Paying <span className="bg-gradient-to-r from-red-500 to-orange-500 bg-clip-text text-transparent">40% Commission</span> to Zomato.
@@ -76,15 +76,25 @@ export function HeroLeft() {
                 variants={itemVariants}
                 className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto mt-2"
             >
-                <button className="flex items-center justify-center gap-2 bg-[#00d9a3] hover:bg-[#00c291] text-black font-semibold px-8 py-4 rounded-xl text-lg transition-all duration-300 hover:scale-105 hover:shadow-[0_0_30px_rgba(0,217,163,0.5)] cursor-pointer">
+                <a
+                    href="https://yummin.vercel.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center justify-center gap-2 bg-[#00d9a3] hover:bg-[#00c291] text-black font-semibold px-8 py-4 rounded-xl text-lg transition-all duration-300 hover:scale-105 hover:shadow-[0_0_30px_rgba(0,217,163,0.5)] cursor-pointer"
+                >
                     <Eye className="w-5 h-5" />
                     See Live Demo
-                </button>
+                </a>
 
-                <button className="flex items-center justify-center gap-2 bg-white/10 hover:bg-white/20 border border-black/10 dark:border-white/20 text-gray-900 dark:text-white font-semibold px-8 py-4 rounded-xl text-lg transition-all duration-300 hover:scale-105 cursor-pointer">
+                <a
+                    href="https://calendly.com/dhruvsanan2001/free-website-demo"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center justify-center gap-2 bg-white/10 hover:bg-white/20 border border-black/10 dark:border-white/20 text-gray-900 dark:text-white font-semibold px-8 py-4 rounded-xl text-lg transition-all duration-300 hover:scale-105 cursor-pointer"
+                >
                     <Calendar className="w-5 h-5" />
                     Book 15-Min Call
-                </button>
+                </a>
             </motion.div>
 
             {/* 05. TRUST INDICATORS */}
@@ -92,7 +102,7 @@ export function HeroLeft() {
                 variants={itemVariants}
                 className="flex flex-wrap gap-6 text-sm text-gray-500 mt-6"
             >
-                {["Setup in 7 days", "No monthly fees", "Amritsar-based support"].map((text) => (
+                {["Setup in 14 days", "Minimal monthly fees", "Amritsar-based support"].map((text) => (
                     <div key={text} className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-[#00d9a3]" />
                         <span>{text}</span>

@@ -2,20 +2,16 @@
 
 import { motion } from "framer-motion"
 import { ArrowRight, Sparkles } from "lucide-react"
-import { CafeVibeToggle } from "./CafeVibeToggle"
 import { IPhone3D } from "./IPhone3D"
 
 export function Hero3D() {
     return (
-        <section className="relative w-full min-h-screen overflow-hidden bg-orange-50/50 dark:bg-zinc-950 transition-colors duration-500">
+        <section className="relative w-full min-h-screen overflow-hidden bg-white dark:bg-black transition-colors duration-500">
 
             {/* Background Ambient Gradients */}
             <div className="absolute top-0 left-0 w-full h-[500px] bg-gradient-to-b from-orange-100/40 to-transparent dark:from-indigo-950/20 dark:to-transparent pointer-events-none" />
             <div className="absolute -top-40 right-0 w-[500px] h-[500px] bg-orange-200/30 dark:bg-purple-900/20 rounded-full blur-3xl pointer-events-none" />
             <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-amber-100/30 dark:bg-blue-900/10 rounded-full blur-3xl pointer-events-none" />
-
-            {/* Grid Pattern */}
-            <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808008_1px,transparent_1px),linear-gradient(to_bottom,#80808008_1px,transparent_1px)] bg-[size:32px_32px] pointer-events-none"></div>
 
             <div className="container mx-auto px-4 md:px-6 pt-24 min-h-screen flex flex-col lg:flex-row items-center relative z-10">
 
@@ -29,7 +25,6 @@ export function Hero3D() {
                         transition={{ duration: 0.6 }}
                         className="flex items-center gap-4"
                     >
-                        <CafeVibeToggle />
                         <span className="hidden md:inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/50 dark:bg-white/5 border border-amber-200/50 dark:border-white/10 text-xs font-bold text-amber-700 dark:text-amber-300 uppercase tracking-wider backdrop-blur-sm">
                             <Sparkles size={12} />
                             Amritsar's Digital Partner
@@ -67,10 +62,15 @@ export function Hero3D() {
                         transition={{ duration: 0.6, delay: 0.3 }}
                         className="flex items-center gap-4 pt-4"
                     >
-                        <button className="group relative px-8 py-4 bg-gray-900 dark:bg-white text-white dark:text-black rounded-2xl font-bold text-lg hover:shadow-2xl hover:shadow-orange-500/20 transition-all duration-300 active:scale-95 flex items-center gap-2">
+                        <a
+                            href="https://yummin.vercel.app/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="group relative px-8 py-4 bg-gray-900 dark:bg-white text-white dark:text-black rounded-2xl font-bold text-lg hover:shadow-2xl hover:shadow-orange-500/20 transition-all duration-300 active:scale-95 flex items-center gap-2"
+                        >
                             See Demos
                             <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-                        </button>
+                        </a>
                     </motion.div>
 
                     {/* Scroll Indicator */}

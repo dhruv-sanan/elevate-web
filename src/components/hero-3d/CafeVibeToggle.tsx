@@ -1,12 +1,12 @@
 "use client"
 
-import { useTheme } from "next-themes"
+import { useTheme } from "@/components/theme-provider"
 import { motion, AnimatePresence } from "framer-motion"
 import { Coffee, Moon, Sun } from "lucide-react"
 import { useEffect, useState } from "react"
 
 export function CafeVibeToggle() {
-    const { theme, setTheme } = useTheme()
+    const { theme, toggleTheme } = useTheme()
     const [mounted, setMounted] = useState(false)
 
     useEffect(() => {
@@ -20,7 +20,7 @@ export function CafeVibeToggle() {
     return (
         <motion.button
             className="group relative flex items-center gap-2 px-5 py-2.5 rounded-full bg-white/80 dark:bg-black/40 backdrop-blur-md border border-stone-200 dark:border-white/10 shadow-lg hover:shadow-xl hover:scale-105 active:scale-95 transition-all duration-300 z-50 cursor-pointer overflow-hidden"
-            onClick={() => setTheme(isDark ? "light" : "dark")}
+            onClick={toggleTheme}
             whileHover={{ y: -2 }}
             whileTap={{ scale: 0.95 }}
         >

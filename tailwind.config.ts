@@ -16,6 +16,22 @@ const config: Config = {
       colors: {
         background: 'var(--background)',
         foreground: 'var(--foreground)',
+        'navbar-glass': 'var(--navbar-bg-glass)',
+        'navbar-border': 'var(--navbar-border)',
+        'glass-bg': 'var(--glass-bg)',
+        'glass-border': 'var(--glass-border)',
+        'text-primary': 'var(--color-text-primary)',
+        'text-secondary': 'var(--color-text-secondary)',
+        'text-muted': 'var(--color-text-muted)',
+        accent: 'var(--color-accent)',
+      },
+      boxShadow: {
+        'navbar': 'var(--navbar-shadow)',
+        'glass': '0 8px 32px 0 rgba(0, 0, 0, 0.1)',
+        'glass-inset': '0 0 0 1px rgba(255, 255, 255, 0.1) inset',
+      },
+      backdropBlur: {
+        xs: '2px',
       },
       animation: {
         'fade-in': 'fadeIn 0.8s ease-out forwards',

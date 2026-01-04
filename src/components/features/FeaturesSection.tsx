@@ -223,7 +223,7 @@ export function FeaturesSection() {
 
                         <div className="space-y-3 mb-6">
                             <div className="bg-[#00d9a3]/10 border border-[#00d9a3]/20 rounded-2xl rounded-tl-none p-4">
-                                <p className="text-xs text-[#00d9a3] font-semibold mb-2">Punjabi Rasoi</p>
+                                <p className="text-xs text-[#00d9a3] font-semibold mb-2">Tamra Restaurant</p>
                                 <p className="text-xs text-foreground/80 leading-relaxed">
                                     ✅ Order confirmed!<br />
                                     Order #2847<br />
@@ -281,7 +281,7 @@ export function FeaturesSection() {
                                 <div className="flex items-center gap-2 mb-3">
                                     <div className="w-6 h-6 rounded-full bg-gradient-to-br from-blue-500 to-green-500"></div>
                                     <div>
-                                        <p className="text-xs font-semibold text-foreground">Punjabi Rasoi</p>
+                                        <p className="text-xs font-semibold text-foreground">Tamra Restaurant</p>
                                         <p className="text-[10px] text-muted-foreground">www.punjabirasoi.in</p>
                                     </div>
                                 </div>
@@ -382,18 +382,6 @@ export function FeaturesSection() {
                             </div>
                         </div>
                     </FeatureCard>
-
-                </div>
-
-                {/* CTA SECTION */}
-                <div className="text-center mt-16 md:mt-24">
-                    <p className="text-muted-foreground mb-6">
-                        Plus: Social media sync, review automation, promo codes, and more...
-                    </p>
-                    <button className="inline-flex items-center justify-center gap-2 bg-foreground/5 hover:bg-foreground/10 border border-foreground/10 text-foreground font-semibold px-8 py-4 rounded-xl text-lg transition-all duration-300 hover:scale-105 group cursor-pointer">
-                        See Complete Feature List
-                        <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-                    </button>
                 </div>
             </div>
         </section>

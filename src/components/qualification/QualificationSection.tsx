@@ -113,7 +113,7 @@ export function QualificationSection() {
                                     },
                                     {
                                         title: "You view a website as an expense, not an investment",
-                                        desc: "\"₹30,000 is too much\" but you're okay losing ₹70,000/month to commissions? If you can't see the ROI in owning your customer relationships, this won't work."
+                                        desc: "\"₹35,000 is too much\" but you're okay losing ₹70,000/month to commissions? If you can't see the ROI in owning your customer relationships, this won't work."
                                     }
                                 ].map((item, idx) => (
                                     <div key={idx} className="flex items-start gap-4 p-5 rounded-xl bg-black/20 hover:bg-black/40 hover:translate-x-2 transition-all duration-300">
@@ -224,13 +224,13 @@ export function QualificationSection() {
                                 Still Reading? You're Probably a Fit.
                             </h3>
                             <p className="text-gray-300 text-lg mb-8 font-inter max-w-2xl mx-auto">
-                                Cheap clients left after reading "₹30,000." You're still here because you
+                                Cheap clients left after reading "₹35,000." You're still here because you
                                 understand the difference between cost and value. Let's talk.
                             </p>
 
                             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-6">
                                 <a
-                                    href="https://wa.me/919876543210?text=I'm%20a%20Serious%20Owner"
+                                    href="https://wa.me/917901919447?text=I'm%20a%20Serious%20Owner"
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     className="group relative inline-flex items-center gap-3 bg-gradient-to-br from-[#00d9a3] to-[#10b981] text-black text-lg font-bold py-4 px-8 rounded-xl overflow-hidden hover:translate-y-[-2px] hover:shadow-[0_10px_40px_rgba(0,217,163,0.5)] transition-all duration-300"
@@ -241,7 +241,9 @@ export function QualificationSection() {
                                 </a>
 
                                 <a
-                                    href="#book-call"
+                                    href="https://calendly.com/dhruvsanan2001/free-website-demo"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
                                     className="inline-flex items-center gap-3 bg-white/10 border border-white/20 text-white text-lg font-semibold py-4 px-8 rounded-xl backdrop-blur-md hover:bg-white/15 hover:translate-y-[-2px] transition-all duration-300"
                                 >
                                     <Calendar className="w-5 h-5" />

@@ -32,9 +32,9 @@ export function TestimonialsSection() {
         <section className="relative w-full py-24 md:py-32 px-6 bg-background overflow-hidden border-t border-white/5">
             <div className="max-w-[1400px] mx-auto">
                 <SectionHeader />
-                <StatsBar />
+                {/* <StatsBar />
                 <VideoTestimonials />
-                <WrittenTestimonials />
+                <WrittenTestimonials /> */}
                 <ResultsSection />
                 <TrustBadgesRow />
             </div>
@@ -140,7 +140,7 @@ function VideoTestimonials() {
                     duration="2:34"
                     avatar="/clients/avatar-1.jpg"
                     name="Rajveer Singh"
-                    business="Punjabi Rasoi, Amritsar"
+                    business="Tamra Restaurant, Amritsar"
                     quote="We were paying ₹45,000/month to Zomato. Now? Zero. Dhruv's system paid for itself in 6 weeks."
                     stats={[
                         { icon: ArrowUp, text: "₹5.4L saved/year" },
@@ -152,7 +152,7 @@ function VideoTestimonials() {
                     duration="3:12"
                     avatar="/clients/avatar-2.jpg"
                     name="Simran Kaur"
-                    business="Sweet Tooth Bakery"
+                    business="Bakeman Cake & Pastry Palace"
                     quote="The custom cake orders tripled. WhatsApp automation is a game-changer. Best investment we made."
                     stats={[
                         { icon: TrendingUp, text: "3x more orders" },
@@ -232,7 +232,7 @@ function WrittenTestimonials() {
     const [activeIndex, setActiveIndex] = useState(0)
     const testimonials = [
         {
-            text: "I was skeptical about leaving Zomato, but Dhruv showed me the math: ₹70,000/month in commissions. Now I keep every rupee. The WhatsApp ordering system is so smooth—customers love it. Setup took 6 days. ROI in 3 weeks. This isn't just a website; it's a revenue machine.",
+            text: "I was skeptical about leaving Zomato, but Dhruv showed me the math: ₹70,000/month in commissions. Now I keep every rupee. The WhatsApp ordering system is so smooth—customers love it. Setup took 14 days. ROI in 4 weeks.",
             name: "Amrit Kaur",
             business: "Kesar Da Dhaba, Amritsar",
             time: "3 months ago",
@@ -360,7 +360,7 @@ function ResultsSection() {
 
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-[75rem] mx-auto">
                 <ResultCard
-                    name="Punjabi Rasoi"
+                    name="Tamra Restaurant"
                     details="Restaurant • 50 seats"
                     before={{
                         label: "With Zomato (Before)",
@@ -386,7 +386,7 @@ function ResultsSection() {
                 />
 
                 <ResultCard
-                    name="Sweet Tooth Bakery"
+                    name="Bakeman Cake & Pastry Palace"
                     details="Bakery • Custom Cakes"
                     before={{
                         label: "Manual Orders (Before)",
@@ -536,7 +536,7 @@ function TotalMetric({ label, value, isLoss, isSuccess }: any) {
 function TrustBadgesRow() {
     const badges = [
         { icon: Shield, title: "100% Secure", subtitle: "SSL Encrypted" },
-        { icon: Zap, title: "7-Day Setup", subtitle: "Guaranteed" },
+        { icon: Zap, title: "14-Day Setup", subtitle: "Guaranteed" },
         { icon: Clock, title: "24/7 Support", subtitle: "WhatsApp & Call" },
         { icon: MapPin, title: "Amritsar-Based", subtitle: "Local Support" },
         { icon: Award, title: "No Contracts", subtitle: "Cancel Anytime" },

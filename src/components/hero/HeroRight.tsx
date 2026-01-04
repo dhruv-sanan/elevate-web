@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react"
 import { Calculator, MessageCircle, TrendingUp, IndianRupee, Star } from "lucide-react"
 import { useCountUp } from "@/hooks/useCountUp"
+import { useCalculator } from "@/context/CalculatorContext"
 import { cn } from "@/lib/utils"
 import { motion, AnimatePresence } from "framer-motion"
 
@@ -16,6 +17,7 @@ const orders = [
 
 export function HeroRight() {
     const [currentOrderIndex, setCurrentOrderIndex] = useState(0)
+    const { orders: contextOrders, setOrders, aov, setAov, savings } = useCalculator()
 
     // Cycle orders
     useEffect(() => {
@@ -25,17 +27,21 @@ export function HeroRight() {
         return () => clearInterval(interval)
     }, [])
 
-    // Savings Calculator Numbers
-    const ordersPerMonth = useCountUp(500, 2000, 0.9)
-    const avgOrder = useCountUp(350, 2000, 0.9)
-    const revenue = useCountUp(175000, 2000, 0.9)
-    const commission = useCountUp(70000, 2000, 0.9)
-    const netZomato = useCountUp(105000, 2000, 0.9)
-    const savings = useCountUp(70000, 2000, 0.9)
-
     // Stats Ticker
     const statsOrders = useCountUp(12, 1500, 1.4)
     const statsRevenue = useCountUp(8450, 1500, 1.6)
+
+    // Derived values for display
+    const revenue = contextOrders * aov
+    const commission = revenue * 0.30 // 30% commission? Earlier file said 40% (0.4) but plan said 30%. User prompt says 30%. HeroLeft says 40%. Consistency?
+    // User requested: "based on 30% commition rate". I will use 0.30.
+    // However, existing text says "Commission (40%)". I should update text to 30% or match logic.
+    // User prompt specifically said: "show live calculations based on 30% commition rate".
+    // I will use 0.3, and label it "Commission (30%)".
+
+    const netZomato = revenue - (revenue * 0.30)
+
+    // Note: The context `savings` is calculated as `revenue * 0.30`. So I can just use `savings` for the loss/savings amount.
 
     const getBubble = (offset: number) => {
         const order = orders[(currentOrderIndex + offset) % orders.length]
@@ -71,10 +77,43 @@ export function HeroRight() {
                         <Calculator className="text-gray-400 w-6 h-6" />
                     </div>
 
-                    {/* Inputs */}
+                    {/* Inputs with Sliders */}
                     <div className="grid grid-cols-2 gap-4 mb-6">
-                        <Metric label="Orders/Month" value={ordersPerMonth} />
-                        <Metric label="Avg Order" value={`₹${avgOrder}`} />
+                        <div className="bg-black/5 dark:bg-white/5 rounded-lg p-3 text-center">
+                            <p className="text-xs text-gray-500 dark:text-gray-400 mb-1">Orders/Month</p>
+                            <input
+                                type="number"
+                                value={contextOrders}
+                                onChange={(e) => setOrders(Number(e.target.value))}
+                                className="w-full text-center bg-transparent font-bold text-gray-900 dark:text-white border-none outline-none p-0 text-xl"
+                            />
+                            <input
+                                type="range"
+                                min="0" max="2000"
+                                value={contextOrders}
+                                onChange={(e) => setOrders(Number(e.target.value))}
+                                className="w-full h-1 mt-2 bg-gray-300 dark:bg-gray-700 rounded-lg appearance-none cursor-pointer accent-[#00d9a3]"
+                            />
+                        </div>
+                        <div className="bg-black/5 dark:bg-white/5 rounded-lg p-3 text-center">
+                            <p className="text-xs text-gray-500 dark:text-gray-400 mb-1">Avg Order</p>
+                            <div className="flex items-center justify-center">
+                                <span className="font-bold text-gray-900 dark:text-white text-xl">₹</span>
+                                <input
+                                    type="number"
+                                    value={aov}
+                                    onChange={(e) => setAov(Number(e.target.value))}
+                                    className="w-16 text-center bg-transparent font-bold text-gray-900 dark:text-white border-none outline-none p-0 text-xl"
+                                />
+                            </div>
+                            <input
+                                type="range"
+                                min="100" max="5000" step="50"
+                                value={aov}
+                                onChange={(e) => setAov(Number(e.target.value))}
+                                className="w-full h-1 mt-2 bg-gray-300 dark:bg-gray-700 rounded-lg appearance-none cursor-pointer accent-[#00d9a3]"
+                            />
+                        </div>
                     </div>
 
                     {/* Comparison */}
@@ -86,12 +125,12 @@ export function HeroRight() {
                                 <span>₹{revenue.toLocaleString()}</span>
                             </div>
                             <div className="flex justify-between mb-1 text-red-500 dark:text-red-400">
-                                <span>Commission (40%):</span>
-                                <span>-₹{commission.toLocaleString()}</span>
+                                <span>Commission (30%):</span>
+                                <span>-₹{savings.toLocaleString()}</span>
                             </div>
                             <div className="flex justify-between py-1 border-t border-red-500/20 mt-2 font-bold">
                                 <span>You Get:</span>
-                                <span>₹{netZomato.toLocaleString()}</span>
+                                <span>₹{(revenue - savings).toLocaleString()}</span>
                             </div>
                         </div>
 

@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import {
     Shield,
     Phone,
@@ -58,28 +58,8 @@ interface StepData {
 export function ProcessSection() {
     const [activeStep, setActiveStep] = useState<number>(0);
 
-    // Intersection Observer for timeline steps animation
-    useEffect(() => {
-        const steps = document.querySelectorAll(".timeline-step");
-
-        const observer = new IntersectionObserver(
-            (entries) => {
-                entries.forEach((entry) => {
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add("animate-in");
-                    }
-                });
-            },
-            { threshold: 0.2 }
-        );
-
-        steps.forEach((step) => observer.observe(step));
-
-        return () => observer.disconnect();
-    }, []);
-
     return (
-        <section className="py-24 md:py-32 px-6 max-w-[1200px] mx-auto relative overflow-hidden">
+        <section className="py-16 md:py-32 px-4 md:px-6 max-w-[1200px] mx-auto relative overflow-hidden">
             {/* PART 1: SECTION HEADER */}
             <div className="section-header text-center mb-16 relative z-10">
                 <p className="font-sans text-sm font-semibold tracking-wider uppercase text-[#00d9a3] mb-4">
@@ -93,7 +73,7 @@ export function ProcessSection() {
                     </span>
                 </h2>
                 <p className="font-sans text-lg leading-[1.7] text-gray-400 max-w-3xl mx-auto mb-8">
-                    A proven 7-day process that's taken 127+ Amritsar businesses from
+                    A proven 14-day process that's taken 127+ Amritsar businesses from
                     Zomato-dependent to fully independent. Zero guesswork. Zero delays.
                 </p>
 
@@ -110,7 +90,7 @@ export function ProcessSection() {
             <div className="timeline-container relative max-w-4xl mx-auto px-4">
                 {/* Timeline Track */}
                 <div
-                    className="timeline-track absolute left-9 sm:left-[2.75rem] md:left-9 top-0 bottom-0 w-[3px] bg-gradient-to-b from-[#00d9a3] via-[#00d9a3]/50 to-[#00d9a3]/20"
+                    className="timeline-track absolute left-[32.5px] sm:left-[46.5px] top-0 bottom-0 w-[3px] bg-gradient-to-b from-[#00d9a3] via-[#00d9a3]/50 to-[#00d9a3]/20"
                     style={{ zIndex: 0 }}
                 ></div>
 
@@ -160,7 +140,7 @@ export function ProcessSection() {
 
                     <RealExample
                         iconColor="text-yellow-400"
-                        text='"Simran from Sweet Tooth Bakery didn&apos;t have professional photos. I told her: &apos;Just click 10-15 pics on your iPhone—good lighting, clean background.&apos; Turned out perfect."'
+                        text='"Simran from Bakeman Cake & Pastry Palace didn&apos;t have professional photos. I told her: &apos;Just click 10-15 pics on your iPhone—good lighting, clean background.&apos; Turned out perfect."'
                     />
                 </TimelineStep>
 
@@ -168,12 +148,12 @@ export function ProcessSection() {
                 <TimelineStep
                     isActive={activeStep === 1}
                     onClick={() => setActiveStep(1)}
-                    stepNumber="Day 1-2"
+                    stepNumber="Day 2-4"
                     title="Content Collection"
                     icon={FolderOpen}
                 >
                     <div className="details-header flex flex-wrap gap-4 mb-6">
-                        <DurationBadge icon={Clock} text="1-2 days (your pace)" />
+                        <DurationBadge icon={Clock} text="2-3 days (your pace)" />
                     </div>
                     <p className="font-sans text-base leading-[1.7] text-gray-300 mb-8">
                         You gather the content I need. Don't stress—most clients send
@@ -216,12 +196,12 @@ export function ProcessSection() {
                 <TimelineStep
                     isActive={activeStep === 2}
                     onClick={() => setActiveStep(2)}
-                    stepNumber="Day 3-5"
+                    stepNumber="Day 5-10"
                     title="Design & Development"
                     icon={Code}
                 >
                     <div className="details-header flex flex-wrap gap-4 mb-6">
-                        <DurationBadge icon={Clock} text="2-3 days (my side)" />
+                        <DurationBadge icon={Clock} text="5-6 days (my side)" />
                         <StatusBadge icon={Zap} text="I'm Building" type="working" />
                     </div>
 
@@ -237,17 +217,17 @@ export function ProcessSection() {
                         <div className="flex flex-col gap-6">
                             <BuildStage
                                 icon={Layout}
-                                title="Day 3: Structure & Layout"
+                                title="Day 5-6: Structure & Layout"
                                 text="Building the foundation—homepage, menu page, about page. Setting up navigation and mobile responsiveness."
                             />
                             <BuildStage
                                 icon={Paintbrush}
-                                title="Day 4: Design & Branding"
+                                title="Day 7-8: Design & Branding"
                                 text="Applying your colors, uploading photos, designing the hero section. Making it look premium but keeping it simple to use."
                             />
                             <BuildStage
                                 icon={ShoppingCart}
-                                title="Day 5: Features & Functionality"
+                                title="Day 9-10: Features & Functionality"
                                 text="Adding cart, checkout, WhatsApp integration, payment gateway, admin panel. Testing every button, every flow."
                             />
                         </div>
@@ -276,7 +256,7 @@ export function ProcessSection() {
                 <TimelineStep
                     isActive={activeStep === 3}
                     onClick={() => setActiveStep(3)}
-                    stepNumber="Day 6"
+                    stepNumber="Day 11-12"
                     title="Preview & Feedback"
                     icon={Eye}
                 >
@@ -323,7 +303,7 @@ export function ProcessSection() {
                     </div>
                     <RealExample
                         iconColor="text-yellow-400"
-                        text='"Sweet Tooth Bakery asked for 8 changes. I fixed all of them in 45 minutes. She replied: &apos;Dhruv, this is EXACTLY what I imagined. Go live tonight.&apos;"'
+                        text='"Bakeman Cake & Pastry Palace asked for 8 changes. I fixed all of them in 45 minutes. She replied: &apos;Dhruv, this is EXACTLY what I imagined. Go live tonight.&apos;"'
                     />
                 </TimelineStep>
 
@@ -331,7 +311,7 @@ export function ProcessSection() {
                 <TimelineStep
                     isActive={activeStep === 4}
                     onClick={() => setActiveStep(4)}
-                    stepNumber="Day 6-7"
+                    stepNumber="Day 13"
                     title="Training Session"
                     icon={GraduationCap}
                 >
@@ -388,7 +368,7 @@ export function ProcessSection() {
                 <TimelineStep
                     isActive={activeStep === 5}
                     onClick={() => setActiveStep(5)}
-                    stepNumber="Day 7"
+                    stepNumber="Day 14"
                     title="Go Live! 🚀"
                     icon={Rocket}
                 >
@@ -454,7 +434,7 @@ export function ProcessSection() {
                     <RealExample
                         iconColor="text-yellow-400"
                         success
-                        text='"Punjabi Rasoi got 47 orders in the first 24 hours. Zero tech issues. Rajveer&apos;s message to me: &apos;Dhruv, this is INSANE. I should&apos;ve done this 2 years ago.&apos;"'
+                        text='"Tamra Restaurant got 47 orders in the first 24 hours. Zero tech issues. Rajveer&apos;s message to me: &apos;Dhruv, this is INSANE. I should&apos;ve done this 2 years ago.&apos;"'
                     />
                 </TimelineStep>
 
@@ -462,7 +442,7 @@ export function ProcessSection() {
                 <TimelineStep
                     isActive={activeStep === 6}
                     onClick={() => setActiveStep(6)}
-                    stepNumber="Day 8+"
+                    stepNumber="Day 15+"
                     title="Ongoing Support"
                     icon={LifeBuoy}
                 >
@@ -518,7 +498,7 @@ export function ProcessSection() {
 
                     <RealExample
                         iconColor="text-yellow-400"
-                        text='"Sweet Tooth Bakery started with Tier 2. After 3 months, added the &apos;Pocket Waiter&apos; PWA (₹8,000). Repeat orders jumped 30%. They&apos;re now eyeing Tier 3 for a second location."'
+                        text='"Bakeman Cake & Pastry Palace started with Tier 2. After 3 months, added the &apos;Pocket Waiter&apos; PWA (₹8,000). Repeat orders jumped 30%. They&apos;re now eyeing Tier 3 for a second location."'
                     />
                 </TimelineStep>
             </div>
@@ -528,7 +508,7 @@ export function ProcessSection() {
                 <div className="quick-stat flex flex-col items-center text-center">
                     <Zap className="w-8 h-8 text-[#00d9a3]" />
                     <p className="font-[family-name:var(--font-space-grotesk)] text-[2.5rem] font-bold text-[#00d9a3] leading-none mt-4 mb-2">
-                        7 Days
+                        14 Days
                     </p>
                     <p className="font-sans text-sm text-gray-400">Average Setup</p>
                 </div>
@@ -596,7 +576,7 @@ export function ProcessSection() {
                     </p>
                     <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
                         <Link
-                            href="https://wa.me/919876543210?text=Hi%20Dhruv,%20I%20want%20to%20start%20my%20commission-free%20website"
+                            href="https://wa.me/917901919447?text=Hi%20Dhruv,%20I%20want%20to%20start%20my%20commission-free%20website"
                             className="inline-flex items-center gap-3 bg-gradient-to-br from-[#25D366] to-[#128C7E] text-white font-sans text-lg font-semibold px-10 py-5 rounded-xl transition-all duration-300 hover:-translate-y-0.5 hover:shadow-[0_10px_40px_rgba(37,211,102,0.4)]"
                         >
                             <MessageCircle className="w-5 h-5" />
@@ -611,7 +591,7 @@ export function ProcessSection() {
                         </Link>
                     </div>
                     <p className="font-sans text-sm text-gray-400">
-                        ✓ 7-day guaranteed setup • ✓ No hidden fees • ✓ Cancel anytime
+                        ✓ 14-day guaranteed setup • ✓ No hidden fees • ✓ Cancel anytime
                     </p>
                 </div>
             </div>
@@ -649,16 +629,75 @@ function TimelineStep({
     icon: React.ElementType;
     children: React.ReactNode;
 }) {
+    const stepRef = useRef<HTMLDivElement>(null);
+    const [isVisible, setIsVisible] = useState(false);
+
+    useEffect(() => {
+        const observer = new IntersectionObserver(
+            ([entry]) => {
+                if (entry.isIntersecting) {
+                    setIsVisible(true);
+                    observer.disconnect();
+                }
+            },
+            { threshold: 0.2 }
+        );
+
+        if (stepRef.current) {
+            observer.observe(stepRef.current);
+        }
+
+        return () => observer.disconnect();
+    }, []);
+
+    // continuously pin the active step to the top during transition to avoid it flying off-screen
+    useEffect(() => {
+        if (isActive && stepRef.current) {
+            let animationFrameId: number;
+            const startTime = performance.now();
+            const duration = 600; // Match CSS transition duration + buffer
+
+            const animate = (currentTime: number) => {
+                if (!stepRef.current) return;
+
+                const elapsed = currentTime - startTime;
+                if (elapsed > duration) return;
+
+                const rect = stepRef.current.getBoundingClientRect();
+                const targetTop = 100; // Desired offset from top
+                const currentTop = rect.top;
+                const diff = currentTop - targetTop;
+
+                // If the element deviates from target position, correct it immediately
+                if (Math.abs(diff) > 1) {
+                    window.scrollBy({ top: diff, behavior: "auto" });
+                }
+
+                animationFrameId = requestAnimationFrame(animate);
+            };
+
+            animationFrameId = requestAnimationFrame(animate);
+
+            return () => {
+                if (animationFrameId) cancelAnimationFrame(animationFrameId);
+            };
+        }
+    }, [isActive]);
+
     return (
-        <div className={`timeline-step mb-12 ${isActive ? "active" : ""}`}>
+        <div
+            ref={stepRef}
+            className={`timeline-step mb-8 md:mb-12 ${isActive ? "active" : ""} ${isVisible ? "animate-in" : ""
+                }`}
+        >
             <div
                 className="step-marker flex items-center gap-6 cursor-pointer relative z-10 group"
                 onClick={onClick}
             >
                 <div
-                    className={`marker-dot w-9 h-9 sm:w-16 sm:h-16 border-[3px] rounded-full flex items-center justify-center transition-all duration-300 shrink-0 ${isActive
-                            ? "bg-gradient-to-br from-[#00d9a3] to-[#10b981] border-[#00d9a3] text-black scale-110 shadow-[0_0_30px_rgba(0,217,163,0.4)]"
-                            : "bg-gradient-to-br from-[#00d9a3]/20 to-[#10b981]/10 border-[#00d9a3]/30 text-gray-400 group-hover:scale-110 group-hover:border-[#00d9a3] group-hover:bg-[#00d9a3]/20"
+                    className={`marker-dot w-9 h-9 sm:w-16 sm:h-16 border-[3px] rounded-full flex items-center justify-center transition-all duration-300 shrink-0 bg-[#0a0a0a] ${isActive
+                        ? "bg-gradient-to-br from-[#00d9a3] to-[#10b981] border-[#00d9a3] text-black scale-110 shadow-[0_0_30px_rgba(0,217,163,0.4)]"
+                        : "bg-gradient-to-br from-[#00d9a3]/20 to-[#10b981]/10 border-[#00d9a3]/30 text-gray-400 group-hover:scale-110 group-hover:border-[#00d9a3] group-hover:bg-[#00d9a3]/20"
                         }`}
                 >
                     <Icon className="w-5 h-5 sm:w-5 sm:h-5" />
@@ -678,8 +717,8 @@ function TimelineStep({
                     }`}
                 style={{ marginLeft: "auto" }} // Handled by responsive classes below
             >
-                <div className="mt-6 sm:ml-[5.5rem]">
-                    <div className="details-card bg-gradient-to-br from-white/5 to-white/2 border border-white/10 rounded-[1.25rem] p-6 sm:p-8">
+                <div className="mt-6 ml-12 sm:ml-[5.5rem]">
+                    <div className="details-card bg-gradient-to-br from-white/5 to-white/2 border border-white/10 rounded-[1.25rem] p-5 sm:p-8">
                         {children}
                     </div>
                 </div>
