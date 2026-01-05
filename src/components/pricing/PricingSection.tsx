@@ -87,10 +87,10 @@ const ADDONS = [
         icon: Swords,
         problem: "Losing 30% of every order to delivery apps?",
         solution: "Printable QR Hijack Cards",
-        description: "We design & print high-conversion QR cards to put inside your delivery bags. Convert Swiggy & Zomato users to Direct Orders. Includes 500 Premium Cards + Custom Branded Tapes.",
+        description: "We design & print high-conversion QR cards to put inside your delivery bags. Convert delivery partners users to Direct Orders. Includes 500 Premium Cards + Custom Branded Tapes.",
         setupFee: 5000,
         monthlyFee: 0,
-        results: "Steal your customers from Swiggy & Zomato"
+        results: "Steal your customers from delivery partners"
     },
     {
         id: "addon-5",
@@ -345,7 +345,7 @@ export function PricingSection() {
                 <div className="py-16">
                     <div className="bg-gradient-to-br from-[#00d9a3]/10 to-emerald-500/5 border-2 border-[#00d9a3] rounded-3xl p-8 md:p-10 text-center max-w-4xl mx-auto">
                         <h3 className="font-space-grotesk text-3xl md:text-4xl font-bold text-foreground mb-4">
-                            Still Paying Zomato 40%?
+                            Still Paying Delivery Partners 40%?
                         </h3>
                         <p className="font-inter text-lg text-muted-foreground mb-8 max-w-xl mx-auto leading-relaxed">
                             Let&apos;s calculate exactly how much you&apos;re losing—and show you the system

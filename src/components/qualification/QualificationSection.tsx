@@ -109,7 +109,7 @@ export function QualificationSection() {
                                     },
                                     {
                                         title: "You're happy paying 30-40% commissions forever",
-                                        desc: "If you're comfortable giving Zomato ₹70,000/month while complaining about \"tough times,\" we can't help each other. This is for owners who do the math."
+                                        desc: "If you're comfortable giving Delivery Partners ₹70,000/month while complaining about \"tough times,\" we can't help each other. This is for owners who do the math."
                                     },
                                     {
                                         title: "You view a website as an expense, not an investment",
@@ -173,7 +173,7 @@ export function QualificationSection() {
                                     },
                                     {
                                         title: "You want full control over your customer data",
-                                        desc: "You understand that customer emails, order history, and preferences are YOURS—not Zomato's. You're building an asset, not renting attention."
+                                        desc: "You understand that customer emails, order history, and preferences are YOURS—not Delivery Partner's. You're building an asset, not renting attention."
                                     },
                                     {
                                         title: "You understand that \"premium\" allows higher prices",

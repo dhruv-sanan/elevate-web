@@ -62,7 +62,7 @@ export function IdealClient() {
                             isGood={true}
                         />
                         <ClientPoint
-                            title="You want to stop losing money to Zomato"
+                            title="You want to stop losing money to Delivery Partners"
                             desc="You're tired of 40% commissions eating your profits. You want to own your customers."
                             isGood={true}
                         />

@@ -57,7 +57,7 @@ function SectionHeader() {
             </h2>
             <p className="font-inter text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
                 Local restaurants, cafés, and hotels who took control of their orders—
-                and never looked back at Zomato.
+                and never looked back at Delivery Partners.
             </p>
         </div>
     )
@@ -141,7 +141,7 @@ function VideoTestimonials() {
                     avatar="/clients/avatar-1.jpg"
                     name="Rajveer Singh"
                     business="Tamra Restaurant, Amritsar"
-                    quote="We were paying ₹45,000/month to Zomato. Now? Zero. Dhruv's system paid for itself in 6 weeks."
+                    quote="We were paying ₹45,000/month to Delivery Partners. Now? Zero. Dhruv's system paid for itself in 6 weeks."
                     stats={[
                         { icon: ArrowUp, text: "₹5.4L saved/year" },
                         { icon: Clock, text: "Setup in 5 days" }
@@ -232,7 +232,7 @@ function WrittenTestimonials() {
     const [activeIndex, setActiveIndex] = useState(0)
     const testimonials = [
         {
-            text: "I was skeptical about leaving Zomato, but Dhruv showed me the math: ₹70,000/month in commissions. Now I keep every rupee. The WhatsApp ordering system is so smooth—customers love it. Setup took 14 days. ROI in 4 weeks.",
+            text: "I was skeptical about leaving Delivery Partners, but Dhruv showed me the math: ₹70,000/month in commissions. Now I keep every rupee. The WhatsApp ordering system is so smooth—customers love it. Setup took 14 days. ROI in 4 weeks.",
             name: "Amrit Kaur",
             business: "Kesar Da Dhaba, Amritsar",
             time: "3 months ago",
@@ -363,7 +363,7 @@ function ResultsSection() {
                     name="Tamra Restaurant"
                     details="Restaurant • 50 seats"
                     before={{
-                        label: "With Zomato (Before)",
+                        label: "With Delivery Partners (Before)",
                         orders: "847",
                         revenue: "₹2,95,000",
                         commission: "-₹1,18,000",

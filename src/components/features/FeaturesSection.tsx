@@ -54,7 +54,7 @@ export function FeaturesSection() {
                         transition={{ delay: 0.2 }}
                         className="font-inter text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed"
                     >
-                        No commissions. No middlemen. Just direct revenue—while Zomato watches from the sidelines.
+                        No commissions. No middlemen. Just direct revenue—while delivery partners watches from the sidelines.
                     </motion.p>
                 </div>
 
@@ -74,13 +74,13 @@ export function FeaturesSection() {
                             Zero Commission Ordering
                         </h3>
                         <p className="font-inter text-muted-foreground text-lg leading-relaxed mb-8">
-                            Stop paying Zomato 40% per order. Customers order directly from your menu—WhatsApp confirms instantly. You keep 100% of the revenue.
+                            Stop paying Delivery Partners 40% per order. Customers order directly from your menu—WhatsApp confirms instantly. You keep 100% of the revenue.
                         </p>
 
                         {/* Savings Visual */}
                         <div className="space-y-4 w-full max-w-lg">
                             <div className="space-y-1">
-                                <span className="text-sm font-medium text-red-400">With Zomato:</span>
+                                <span className="text-sm font-medium text-red-400">With Delivery Partners:</span>
                                 <div className="h-12 bg-red-500/10 border border-red-500/20 rounded-lg relative overflow-hidden">
                                     <div className="absolute left-0 top-0 h-full w-[60%] bg-red-500/80"></div>
                                     <span className="absolute right-4 top-1/2 -translate-y-1/2 text-sm font-semibold text-red-500">

@@ -28,7 +28,7 @@ export function SavingsCalculator() {
                                 <Calculator className="w-5 h-5" />
                             </div>
                             <div className="flex items-baseline gap-2">
-                                <span className="text-sm text-gray-400">Zomato takes:</span>
+                                <span className="text-sm text-gray-400">Delivery Partners takes:</span>
                                 <span className="font-space-grotesk font-bold text-white text-lg">₹{(savings * 12).toLocaleString('en-IN')}/yr</span>
                             </div>
                             <ChevronDown className="w-4 h-4 text-gray-500" />
@@ -118,7 +118,7 @@ export function SavingsCalculator() {
                                             <span className="text-xs font-semibold text-gray-400 uppercase tracking-wider">Monthly Loss</span>
                                             <div>
                                                 <p className="font-space-grotesk font-bold text-red-500 text-2xl">-₹{savings.toLocaleString('en-IN')}</p>
-                                                <p className="text-[10px] text-gray-500">to Zomato @ 30%</p>
+                                                <p className="text-[10px] text-gray-500">to Delivery Partners @ 30%</p>
                                             </div>
                                         </div>
                                         <div className="bg-red-500/10 border border-red-500/20 rounded-2xl p-4 flex flex-col justify-between relative overflow-hidden">

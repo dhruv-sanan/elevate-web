@@ -50,12 +50,12 @@ export function HeroLeft() {
                 className="font-space-grotesk text-4xl md:text-5xl lg:text-6xl font-bold leading-[1.1] tracking-tight text-foreground"
             >
                 <span className="block dark:hidden">
-                    Stop Paying <span className="bg-gradient-to-r from-red-500 to-orange-500 bg-clip-text text-transparent">40% Commission</span> to Zomato.
+                    Stop Paying <span className="bg-gradient-to-r from-red-500 to-orange-500 bg-clip-text text-transparent">40% Commission</span> to Delivery Partners.
                     <br />
                     Keep <span className="bg-gradient-to-r from-[#00d9a3] to-emerald-400 bg-clip-text text-transparent">100% Revenue.</span>
                 </span>
                 <span className="hidden dark:block">
-                    Stop Paying <span className="bg-gradient-to-r from-red-500 to-orange-500 bg-clip-text text-transparent">40% Commission</span> to Zomato.
+                    Stop Paying <span className="bg-gradient-to-r from-red-500 to-orange-500 bg-clip-text text-transparent">40% Commission</span> to Delivery Partners.
                     <br />
                     Keep <span className="bg-gradient-to-r from-[#00d9a3] to-emerald-400 bg-clip-text text-transparent">100% Revenue.</span>
                 </span>
