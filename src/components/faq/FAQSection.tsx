@@ -720,8 +720,10 @@ export function FAQSection() {
                         </p>
                         <div className="flex flex-col sm:flex-row justify-center gap-4 mb-6">
                             <a
-                                href="#"
-                                className="inline-flex items-center justify-center gap-3 bg-gradient-to-r from-[#25D366] to-[#128C7E] dark:text-white text-gray-900 font-inter text-lg font-semibold px-8 py-4 rounded-xl hover:translate-y-[-2px] hover:shadow-[0_10px_40px_rgba(37,211,102,0.4)] transition-all duration-300"
+                                href="https://wa.me/917901919447?text=I%20have%20a%20question"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="group relative inline-flex items-center gap-3 bg-gradient-to-br from-[#00d9a3] to-[#10b981] text-black text-lg font-bold py-4 px-8 rounded-xl overflow-hidden hover:translate-y-[-2px] hover:shadow-[0_10px_40px_rgba(0,217,163,0.5)] transition-all duration-300"
                             >
                                 <MessageCircle className="w-5 h-5" />
                                 WhatsApp: "I have a question"

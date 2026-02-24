@@ -83,7 +83,7 @@ const ADDONS = [
     },
     {
         id: "addon-4",
-        name: "The \"Zomato-to-Direct\" Hijack",
+        name: "The \"Deliery-App-to-Direct\" Hijack",
         icon: Swords,
         problem: "Losing 30% of every order to delivery apps?",
         solution: "Printable QR Hijack Cards",
@@ -202,7 +202,7 @@ export function PricingSection() {
                         currentPrice="60,000"
                         savings="40"
                         features={[
-                            "🚀 EVERYTHING IN ORDER MANAGER PLUS:",
+                            "✨ EVERYTHING IN ORDER MANAGER PLUS:",
                             "Automated Payment Collection",
                             "UPI + Card payment gateway",
                             "WhatsApp Order Notifications",

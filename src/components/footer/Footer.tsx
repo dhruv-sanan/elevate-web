@@ -13,10 +13,10 @@ export function Footer() {
     };
 
     return (
-        <footer className="bg-black/5 dark:bg-[#0F172A] border-t border-black/10 dark:border-white/10 py-16 px-6 relative overflow-hidden">
+        <footer className="bg-black/5 dark:bg-[#0F172A] border-t border-black/10 dark:border-white/10 py-12 px-6 relative overflow-hidden">
             {/* Background elements if needed */}
 
-            <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16 relative z-10">
+            <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-6 relative z-10">
 
                 {/* 1. BRAND */}
                 <div className="space-y-6">
@@ -35,23 +35,23 @@ export function Footer() {
                     </div>
                 </div>
 
-                {/* 2. SERVICES (Quick Links) */}
+                {/* 2. QUICK LINKS */}
                 <div className="border-b border-black/10 dark:border-white/10 md:border-none pb-4 md:pb-0">
                     <button 
-                        onClick={() => toggleSection('services')}
+                        onClick={() => toggleSection('quicklinks')}
                         className="w-full flex items-center justify-between md:cursor-default"
                     >
-                        <h4 className="font-space-grotesk font-bold text-foreground md:mb-6">Services</h4>
-                        <ChevronDown className={cn("w-5 h-5 transition-transform md:hidden text-muted-foreground", openSection === 'services' ? "rotate-180" : "")} />
+                        <h4 className="font-space-grotesk font-bold text-foreground md:mb-6">Quick Links</h4>
+                        <ChevronDown className={cn("w-5 h-5 transition-transform md:hidden text-muted-foreground", openSection === 'quicklinks' ? "rotate-180" : "")} />
                     </button>
                     <ul className={cn(
                         "space-y-4 overflow-hidden transition-all duration-300 md:max-h-none md:mt-0 md:opacity-100",
-                        openSection === 'services' ? "max-h-64 mt-4 opacity-100" : "max-h-0 opacity-0 md:max-h-none md:opacity-100"
+                        openSection === 'quicklinks' ? "max-h-64 mt-4 opacity-100" : "max-h-0 opacity-0 md:max-h-none md:opacity-100"
                     )}>
-                        <FooterLink href="/#restaurants">For Restaurants</FooterLink>
-                        <FooterLink href="/#hotels">For Hotels</FooterLink>
-                        <FooterLink href="/#bakeries">For Bakeries</FooterLink>
-                        <FooterLink href="/pricing#addons">AI Chatbots</FooterLink>
+                        <FooterLink href="/">Home</FooterLink>
+                        <FooterLink href="/portfolio">Portfolio</FooterLink>
+                        <FooterLink href="/timeline">How It Works</FooterLink>
+                        <FooterLink href="/pricing">Pricing</FooterLink>
                     </ul>
                 </div>
 
@@ -87,8 +87,8 @@ export function Footer() {
                         </li>
                         <li className="flex items-start gap-3 text-sm text-muted-foreground">
                             <Mail className="w-5 h-5 text-[#00d9a3] shrink-0" />
-                            <a href="mailto:dhruvsanan01@gmail.com" className="hover:text-foreground transition-colors">
-                                dhruvsanan01@gmail.com
+                            <a href="mailto:growth.elevateweb@gmail.com" className="hover:text-foreground transition-colors">
+                            growth.elevateweb@gmail.com
                             </a>
                         </li>
                         <li className="flex items-start gap-3 text-sm text-muted-foreground">
@@ -104,7 +104,7 @@ export function Footer() {
             </div>
 
             {/* BOTTOM BAR */}
-            <div className="max-w-7xl mx-auto pt-8 border-t border-black/10 dark:border-white/10 flex flex-col md:flex-row justify-between items-center gap-4 relative z-10">
+            <div className="max-w-7xl mx-auto pt-4 border-t border-black/10 dark:border-white/10 flex flex-col md:flex-row justify-between items-center gap-4 relative z-10">
                 <p className="font-inter text-sm text-muted-foreground">
                     © {new Date().getFullYear()} ElevateWeb. Built with ❤️ in India.
                 </p>
