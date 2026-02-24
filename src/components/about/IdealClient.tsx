@@ -58,7 +58,7 @@ export function IdealClient() {
                     <ul className="space-y-8">
                         <ClientPoint
                             title="You're a serious owner ready to scale"
-                            desc="You've been running for 2+ years. You have regulars. You're ready to go from 'good local spot' to 'Amritsar institution.'"
+                            desc="You've been running for 2+ years. You have regulars. You're ready to go from 'good local spot' to a recognized brand across India."
                             isGood={true}
                         />
                         <ClientPoint

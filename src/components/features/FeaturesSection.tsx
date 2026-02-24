@@ -21,7 +21,7 @@ import { cn } from "@/lib/utils"
 
 export function FeaturesSection() {
     return (
-        <section className="relative w-full py-24 md:py-32 px-6 bg-background overflow-hidden">
+        <section className="relative w-full py-24 md:py-32 px-4 md:px-6 bg-background overflow-hidden border-t border-white/5">
             {/* Background continuation from hero if needed, but styling handled by grid cards mostly */}
 
             <div className="max-w-[1400px] mx-auto">
@@ -59,7 +59,7 @@ export function FeaturesSection() {
                 </div>
 
                 {/* BENTO GRID */}
-                <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 auto-rows-auto">
+                <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-3 md:gap-6 auto-rows-auto">
 
                     {/* CARD 1: COMMISSION-FREE ORDERING (LARGE) */}
                     <FeatureCard
@@ -154,12 +154,12 @@ export function FeaturesSection() {
                             Smart Upselling
                         </h3>
                         <p className="font-inter text-muted-foreground text-sm leading-loose md:leading-relaxed mb-4">
-                            &quot;Add Gulab Jamun for ₹40?&quot; Automatic suggestions increase order value by 20%.
+                            &quot;Add Jalebi for ₹40?&quot; Automatic suggestions increase order value by 20%.
                         </p>
                         <div className="mt-auto bg-foreground/5 border border-foreground/10 rounded-lg p-3 text-xs">
-                            <p className="text-muted-foreground mb-2">🍛 Butter Chicken added</p>
+                            <p className="text-muted-foreground mb-2">🍛 Undhiyu added</p>
                             <div className="bg-[#00d9a3]/10 border border-[#00d9a3]/30 rounded p-2">
-                                <p className="text-[#00d9a3] font-semibold">💡 Add Garlic Naan? +₹40</p>
+                                <p className="text-[#00d9a3] font-semibold">💡 Add Rotla? +₹30</p>
                             </div>
                         </div>
                     </FeatureCard>
@@ -207,27 +207,25 @@ export function FeaturesSection() {
 
                     {/* CARD 5: WHATSAPP AUTO-CONFIRM (TALL) */}
                     <FeatureCard
-                        className="col-span-2 md:col-span-1 row-span-1 lg:row-span-2"
+                        className="col-span-1 md:col-span-1 row-span-1 lg:row-span-2 order-none lg:order-1"
                         number="05"
                         delay={0.5}
                     >
                         <div className="bg-[#00d9a3]/10 w-12 h-12 rounded-xl flex items-center justify-center mb-4">
                             <MessageCircle className="w-6 h-6 text-[#00d9a3]" />
                         </div>
-                        <h3 className="font-space-grotesk text-xl font-bold mb-3 text-foreground">
-                            WhatsApp Auto-Confirm
-                        </h3>
+
                         <p className="font-inter text-muted-foreground text-sm leading-loose md:leading-relaxed mb-6">
                             Order placed → WhatsApp message sent → Customer relaxes. Zero manual work.
                         </p>
 
                         <div className="space-y-3 mb-6">
                             <div className="bg-[#00d9a3]/10 border border-[#00d9a3]/20 rounded-2xl rounded-tl-none p-4">
-                                <p className="text-xs text-[#00d9a3] font-semibold mb-2">Tamra Restaurant</p>
+                                <p className="text-xs text-[#00d9a3] font-semibold mb-2">Rann Kitchen</p>
                                 <p className="text-xs text-foreground/80 leading-relaxed">
                                     ✅ Order confirmed!<br />
                                     Order #2847<br />
-                                    2x Butter Chicken<br />
+                                    2x Gujarati Thali<br />
                                     Total: ₹680<br /><br />
                                     Delivery in 30 mins 🚀
                                 </p>
@@ -251,62 +249,18 @@ export function FeaturesSection() {
                         </div>
                     </FeatureCard>
 
-                    {/* CARD 6: SEO & GOOGLE RANKING (WIDE) */}
-                    <FeatureCard
-                        className="col-span-2 md:col-span-2 lg:col-span-2 row-span-1"
-                        number="06"
-                        delay={0.6}
-                    >
-                        <div className="flex flex-col md:flex-row gap-6 h-full">
-                            <div className="flex-1">
-                                <div className="bg-[#00d9a3]/10 w-12 h-12 rounded-xl flex items-center justify-center mb-4">
-                                    <Search className="w-6 h-6 text-[#00d9a3]" />
-                                </div>
-                                <h3 className="font-space-grotesk text-2xl font-bold mb-3 text-foreground">
-                                    Google SEO Domination
-                                </h3>
-                                <p className="font-inter text-muted-foreground text-base leading-relaxed mb-4">
-                                    Built to rank #1 for &quot;Best Restaurant in Amritsar&quot;. More Google visibility = more customers.
-                                </p>
-                                <div className="flex flex-wrap gap-2">
-                                    {["restaurants in Amritsar", "best bakery near me", "hotels near Golden Temple"].map(tag => (
-                                        <span key={tag} className="px-3 py-1 rounded-full bg-foreground/5 border border-foreground/10 text-xs text-muted-foreground italic">
-                                            &quot;{tag}&quot;
-                                        </span>
-                                    ))}
-                                </div>
-                            </div>
-
-                            <div className="hidden lg:block w-72 bg-foreground/5 border border-foreground/10 rounded-xl p-4 self-center">
-                                <div className="flex items-center gap-2 mb-3">
-                                    <div className="w-6 h-6 rounded-full bg-gradient-to-br from-blue-500 to-green-500"></div>
-                                    <div>
-                                        <p className="text-xs font-semibold text-foreground">Tamra Restaurant</p>
-                                        <p className="text-[10px] text-muted-foreground">www.punjabirasoi.in</p>
-                                    </div>
-                                </div>
-                                <p className="text-xs text-muted-foreground leading-relaxed mb-2">
-                                    Authentic Punjabi cuisine in Amritsar.
-                                </p>
-                                <div className="flex items-center gap-1">
-                                    {[1, 2, 3, 4, 5].map(i => <Star key={i} className="w-3 h-3 fill-yellow-400 text-yellow-400" />)}
-                                    <span className="text-[10px] text-muted-foreground ml-1">4.9 (847)</span>
-                                </div>
-                            </div>
-                        </div>
-                    </FeatureCard>
-
                     {/* CARD 7: 3D HERO & ANIMATIONS (TALL) */}
                     <FeatureCard
-                        className="col-span-2 md:col-span-1 row-span-1 lg:row-span-2 bg-gradient-to-br from-purple-500/10 to-pink-500/10 border-purple-500/30 hover:border-purple-500/50"
-                        number="07"
+                        className="col-span-1 md:col-span-1 row-span-1 lg:row-span-2 bg-gradient-to-br from-purple-500/10 to-pink-500/10 border-purple-500/30 hover:border-purple-500/50 order-none lg:order-3"
+                        number="06"
                         delay={0.7}
                     >
                         <div className="bg-purple-500/20 w-12 h-12 rounded-xl flex items-center justify-center mb-4">
                             <Sparkles className="w-6 h-6 text-purple-400" />
                         </div>
                         <h3 className="font-space-grotesk text-xl font-bold mb-3 text-foreground">
-                            3D &quot;Edible Luxury&quot;
+                            <span className="block md:hidden">Boost Order Value by 20%</span>
+                            <span className="hidden md:block">3D &quot;Edible Luxury&quot;</span>
                         </h3>
                         <p className="font-inter text-muted-foreground text-sm leading-loose md:leading-relaxed mb-6">
                             Interactive 3D dishes that spin, glow, and make NRIs say &quot;Wow&quot;.
@@ -332,52 +286,47 @@ export function FeaturesSection() {
                         </div>
                     </FeatureCard>
 
-                    {/* CARD 8: AI CHATBOT (WIDE) */}
+                    {/* CARD 6: SEO & GOOGLE RANKING (WIDE) */}
                     <FeatureCard
-                        className="col-span-2 md:col-span-2 lg:col-span-2 row-span-1 bg-gradient-to-r from-blue-500/10 to-cyan-500/10 border-blue-500/30 hover:border-blue-500/50"
-                        number="08"
-                        delay={0.8}
+                        className="col-span-2 md:col-span-2 lg:col-span-2 row-span-1 order-none lg:order-2"
+                        number="07"
+                        delay={0.6}
                     >
                         <div className="flex flex-col md:flex-row gap-6 h-full">
                             <div className="flex-1">
-                                <div className="bg-blue-500/20 w-12 h-12 rounded-xl flex items-center justify-center mb-4">
-                                    <Bot className="w-6 h-6 text-blue-400" />
+                                <div className="bg-[#00d9a3]/10 w-12 h-12 rounded-xl flex items-center justify-center mb-4">
+                                    <Search className="w-6 h-6 text-[#00d9a3]" />
                                 </div>
                                 <h3 className="font-space-grotesk text-2xl font-bold mb-3 text-foreground">
-                                    AI Concierge + Multi-Lang
+                                    <span className="block md:hidden">Get Found by 5,000+ Customers</span>
+                                    <span className="hidden md:block">Google SEO Domination</span>
                                 </h3>
                                 <p className="font-inter text-muted-foreground text-base leading-relaxed mb-4">
-                                    24/7 AI chatbot answers &quot;What should I eat?&quot; in English & Punjabi. Never miss an inquiry.
+                                    Built to rank #1 for &quot;Best Restaurant in Ahmedabad&quot;. More Google visibility = more customers.
                                 </p>
-                                <div className="grid grid-cols-2 gap-3">
-                                    <div className="bg-background/20 rounded p-2 border border-blue-500/20">
-                                        <p className="text-xs font-semibold text-blue-400">AI Recommendations</p>
-                                        <p className="text-[10px] text-muted-foreground">&quot;Suggest veg options&quot;</p>
-                                    </div>
-                                    <div className="bg-background/20 rounded p-2 border border-blue-500/20">
-                                        <p className="text-xs font-semibold text-blue-400">Multi-Language</p>
-                                        <p className="text-[10px] text-muted-foreground">English / ਪੰਜਾਬੀ</p>
-                                    </div>
+                                <div className="flex flex-wrap gap-2">
+                                    {["restaurants in Ahmedabad", "best bakery near me", "best hotels near me"].map(tag => (
+                                        <span key={tag} className="px-3 py-1 rounded-full bg-foreground/5 border border-foreground/10 text-xs text-muted-foreground italic">
+                                            &quot;{tag}&quot;
+                                        </span>
+                                    ))}
                                 </div>
                             </div>
 
-                            <div className="hidden md:flex flex-col w-56 bg-background/40 border border-white/10 rounded-xl p-3 h-full max-h-48 relative">
-                                <div className="flex items-center gap-2 border-b border-white/10 pb-2 mb-2">
-                                    <div className="w-6 h-6 rounded-full bg-blue-500 flex items-center justify-center">
-                                        <Bot className="w-3 h-3 text-white" />
-                                    </div>
-                                    <span className="text-xs font-bold">AI Concierge</span>
-                                </div>
-                                <div className="space-y-2 text-[10px] flex-1">
-                                    <div className="bg-blue-500/20 p-2 rounded-lg rounded-tl-none self-start">
-                                        👋 Welcome! Hungry?
-                                    </div>
-                                    <div className="bg-white/10 p-2 rounded-lg rounded-tr-none self-end ml-auto w-fit">
-                                        Vegetarian options?
+                            <div className="hidden lg:block w-72 bg-foreground/5 border border-foreground/10 rounded-xl p-4 self-center">
+                                <div className="flex items-center gap-2 mb-3">
+                                    <div className="w-6 h-6 rounded-full bg-gradient-to-br from-blue-500 to-green-500"></div>
+                                    <div>
+                                        <p className="text-xs font-semibold text-foreground">Rann Kitchen</p>
+                                        <p className="text-[10px] text-muted-foreground">www.rannkitchen.in</p>
                                     </div>
                                 </div>
-                                <div className="mt-2 text-xs text-muted-foreground bg-white/5 rounded-full px-2 py-1 flex items-center gap-1">
-                                    Type...
+                                <p className="text-xs text-muted-foreground leading-relaxed mb-2">
+                                    Authentic Gujarati cuisine in Ahmedabad.
+                                </p>
+                                <div className="flex items-center gap-1">
+                                    {[1, 2, 3, 4, 5].map(i => <Star key={i} className="w-3 h-3 fill-yellow-400 text-yellow-400" />)}
+                                    <span className="text-[10px] text-muted-foreground ml-1">4.9 (847)</span>
                                 </div>
                             </div>
                         </div>

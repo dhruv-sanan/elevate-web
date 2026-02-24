@@ -3,12 +3,12 @@
 import { cn } from "@/lib/utils"
 
 const clients = [
-    "Tamra Restaurant",
-    "Golden Fork Café",
-    "Bakeman Cake & Pastry Palace",
-    "Heritage Hotel",
-    "Amritsari Kulcha Hub",
-    "Café Nomad"
+    "Rann Kitchen",
+    "Aahar Thali House",
+    "Mithai Mandir",
+    "Garvi Guest House",
+    "Spice Route",
+    "Chaas & Co."
 ]
 
 import { motion } from "framer-motion"

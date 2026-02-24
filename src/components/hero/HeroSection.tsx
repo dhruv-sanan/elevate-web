@@ -16,9 +16,9 @@ export function HeroSection() {
 
                 {/* Content Wrapper for Vertical Centering */}
                 <div className="flex-grow flex items-center justify-center z-10">
-                    <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-8 w-full">
+                    <div className="flex flex-col lg:flex-row items-center gap-6 lg:gap-8 w-full">
                         {/* Left Content */}
-                        <div className="w-full lg:w-[55%] pt-10 lg:pt-0">
+                        <div className="w-full lg:w-[55%] pt-4 lg:pt-0">
                             <HeroLeft />
                         </div>
 

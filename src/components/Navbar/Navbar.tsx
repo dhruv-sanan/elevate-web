@@ -42,7 +42,7 @@ export default function Navbar() {
     return (
         <>
             <motion.nav
-                className={`fixed top-0 left-0 right-0 z-50 transition-all duration-400 ${isScrolled
+                className={`fixed top-0 left-0 right-0 z-[100] transition-all duration-400 ${isScrolled
                     ? 'h-18 bg-navbar-glass backdrop-blur-xl border-b border-navbar-border shadow-navbar'
                     : 'h-22 bg-transparent'
                     }`}
@@ -147,7 +147,7 @@ export default function Navbar() {
             <AnimatePresence>
                 {isMobileMenuOpen && (
                     <motion.div
-                        className="fixed inset-0 z-40 lg:hidden"
+                        className="fixed inset-0 z-[90] lg:hidden"
                         initial={{ x: '100%' }}
                         animate={{ x: 0 }}
                         exit={{ x: '100%' }}

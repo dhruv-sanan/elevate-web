@@ -136,7 +136,7 @@ export function FAQSection() {
                     <div className="flex items-start gap-3 bg-[#00d9a3]/10 border border-[#00d9a3]/30 border-l-[3px] border-l-[#00d9a3] rounded-lg p-4 mt-6">
                         <Zap className="w-5 h-5 text-yellow-400 shrink-0 mt-0.5" />
                         <p className="text-sm text-gray-700 dark:text-gray-300">
-                            <strong className="dark:text-white text-gray-900">Fastest client:</strong> Café Nomad went live in 10 days because
+                            <strong className="dark:text-white text-gray-900">Fastest client:</strong> Chaas &amp; Co. went live in 10 days because
                             they had all their content ready upfront.
                         </p>
                     </div>
@@ -193,7 +193,7 @@ export function FAQSection() {
                     <div className="flex items-start gap-3 bg-[#00d9a3]/15 border border-[#00d9a3]/40 border-l-[3px] border-l-[#00d9a3] rounded-lg p-4 mt-6">
                         <ThumbsUp className="w-5 h-5 text-[#00d9a3] shrink-0 mt-0.5" />
                         <p className="text-sm text-gray-700 dark:text-gray-300">
-                            <strong className="dark:text-white text-gray-900">Real example:</strong> 67-year-old uncle at Kesar Da Dhaba updates
+                            <strong className="dark:text-white text-gray-900">Real example:</strong> 62-year-old uncle at Dada&apos;s Dhaba updates
                             his daily specials every morning from his phone. Zero technical knowledge.
                         </p>
                     </div>
@@ -233,7 +233,7 @@ export function FAQSection() {
                     <div className="flex items-start gap-3 bg-[#00d9a3]/10 border border-[#00d9a3]/30 border-l-[3px] border-l-[#00d9a3] rounded-lg p-4 mt-6">
                         <TrendingUp className="w-5 h-5 text-[#00d9a3] shrink-0 mt-0.5" />
                         <p className="text-sm text-gray-700 dark:text-gray-300">
-                            <strong className="dark:text-white text-gray-900">Real data:</strong> Tamra Restaurant kept Delivery Apps for delivery but
+                            <strong className="dark:text-white text-gray-900">Real data:</strong> Rann Kitchen kept Delivery Apps for delivery but
                             pushed dine-in orders through their site. Result: Saved ₹45,000/month.
                         </p>
                     </div>
@@ -390,7 +390,7 @@ export function FAQSection() {
         {
             id: 7,
             category: "features",
-            question: "Can you help with Google rankings? I want to show up when people search \"best restaurant Amritsar.\"",
+            question: "Can you help with Google rankings? I want to show up when people search \"best restaurant near me.\"",
             answer: (
                 <>
                     <p className="mb-6 font-inter text-base text-gray-700 dark:text-gray-300 leading-relaxed">
@@ -403,7 +403,7 @@ export function FAQSection() {
                             <ul className="space-y-2">
                                 {[
                                     "Google My Business optimization",
-                                    "Local keywords (\"restaurants near Golden Temple\")",
+                                    "Local keywords (\"restaurants near Sabarmati\")",
                                     "Fast loading speed (Google loves this)",
                                     "Mobile-friendly design",
                                     "Schema markup (helps Google understand your menu)"
@@ -437,7 +437,7 @@ export function FAQSection() {
                     <div className="flex items-start gap-3 bg-[#00d9a3]/10 border border-[#00d9a3]/30 border-l-[3px] border-l-[#00d9a3] rounded-lg p-4 mt-6">
                         <TrendingUp className="w-5 h-5 text-[#00d9a3] shrink-0 mt-0.5" />
                         <p className="text-sm text-gray-700 dark:text-gray-300">
-                            <strong className="dark:text-white text-gray-900">Real result:</strong> Kesar Da Dhaba ranked #3 for "best dhaba Amritsar"
+                            <strong className="dark:text-white text-gray-900">Real result:</strong> Dada&apos;s Dhaba ranked #3 for &quot;best thali Ahmedabad&quot;
                             in 6 weeks. Organic traffic increased 180%.
                         </p>
                     </div>
@@ -534,7 +534,7 @@ export function FAQSection() {
                             <div className="text-sm text-gray-700 dark:text-gray-300">Junior developer (outsourced)</div>
                             <div className="bg-[#00d9a3]/10 border border-[#00d9a3]/30 p-2 rounded flex items-center gap-2 dark:text-white text-gray-900 font-medium text-sm">
                                 <CheckCircle className="w-4 h-4 text-[#00d9a3]" />
-                                We build it ourselves (10+ years experience)
+                                We build it ourselves (specialized expertise)
                             </div>
                         </div>
 
@@ -557,20 +557,20 @@ export function FAQSection() {
                         </div>
 
                         <div className="grid grid-cols-1 sm:grid-cols-3 gap-2 bg-gray-100 dark:bg-white/5 border border-white/10 p-3 rounded-lg items-center">
-                            <div className="font-semibold dark:text-white text-gray-900">Local Understanding</div>
+                            <div className="font-semibold dark:text-white text-gray-900">Industry Focus</div>
                             <div className="text-sm text-gray-700 dark:text-gray-300">Generic templates</div>
                             <div className="bg-[#00d9a3]/10 border border-[#00d9a3]/30 p-2 rounded flex items-center gap-2 dark:text-white text-gray-900 font-medium text-sm">
                                 <CheckCircle className="w-4 h-4 text-[#00d9a3]" />
-                                We know the Amritsar food scene personally
+                                We specialize in India&apos;s restaurant &amp; hospitality industry
                             </div>
                         </div>
                     </div>
 
                     <div className="flex items-start gap-3 bg-[#00d9a3]/10 border border-[#00d9a3]/30 border-l-[3px] border-l-[#00d9a3] rounded-lg p-4 mt-6">
-                        <MapPin className="w-5 h-5 text-[#00d9a3] shrink-0 mt-0.5" />
+                        <Shield className="w-5 h-5 text-[#00d9a3] shrink-0 mt-0.5" />
                         <p className="text-sm text-gray-700 dark:text-gray-300">
-                            <strong className="dark:text-white text-gray-900">Bottom line:</strong> We're Amritsar-based, always reachable, and we eat
-                            at your restaurants. Big agencies? They&apos;re in Bangalore building cookie-cutter sites.
+                            <strong className="dark:text-white text-gray-900">Bottom line:</strong> We&apos;re always reachable on WhatsApp, we understand
+                            how restaurants actually run, and every site we build is custom-designed for your brand—not a copy-paste template.
                         </p>
                     </div>
                 </>
@@ -621,12 +621,12 @@ export function FAQSection() {
                         </span>
                     </h2>
                     <p className="font-inter text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-                        Real questions from Amritsar restaurant owners—answered honestly.
+                        Real questions from restaurant owners—answered honestly.
                     </p>
                 </div>
 
                 {/* Category Filter Tabs */}
-                <div className="flex flex-wrap justify-center gap-3 mb-12">
+                <div className="flex overflow-x-auto md:flex-wrap justify-start md:justify-center gap-3 mb-12 pb-2 -mx-6 px-6 md:mx-0 md:px-0 [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
                     {[
                         { id: "pricing", label: "Pricing & Payment", icon: DollarSign },
                         { id: "setup", label: "Setup & Timeline", icon: Wrench },
@@ -640,7 +640,7 @@ export function FAQSection() {
                                 setOpenIndex(null)
                             }}
                             className={cn(
-                                "flex items-center justify-center gap-2 px-5 py-3 min-h-[44px] rounded-full font-inter text-sm font-medium border transition-all duration-300",
+                                "flex items-center justify-center gap-2 px-5 py-3 min-h-[44px] rounded-full font-inter text-sm font-medium border transition-all duration-300 shrink-0 whitespace-nowrap",
                                 activeCategory === tab.id
                                     ? "bg-gradient-to-br from-[#00d9a3]/20 to-[#10b981]/10 border-[#00d9a3] text-[#00d9a3]"
                                     : "bg-white/5 border-white/10 text-gray-400 hover:bg-white/10 hover:border-white/20 hover:dark:text-white hover:text-gray-900 dark:text-white text-gray-900 "

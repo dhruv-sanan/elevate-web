@@ -26,7 +26,7 @@ export function AboutHero() {
                         className="font-space-grotesk text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight"
                     >
                         We're Dhruv <br className="hidden lg:block" />& Ghanishth. <br />
-                        We Help Amritsar's Restaurants <br className="hidden lg:block" />
+                        We Help Indian Restaurants <br className="hidden lg:block" />
                         <span className="text-[#00d9a3]">Stop Paying Delivery Apps.</span>
                     </motion.h1>
 
@@ -36,14 +36,14 @@ export function AboutHero() {
                         transition={{ duration: 0.6, delay: 0.2 }}
                         className="font-inter text-lg text-muted-foreground leading-relaxed max-w-2xl mx-auto lg:mx-0"
                     >
-                        Two developers, one mission: Give Punjab's hospitality businesses the tools to own their customers and keep 100% of their revenue. No commissions. No middlemen. Just direct orders, bookings, and growth.
+                        Two developers, one mission: Give India's hospitality businesses the tools to own their customers and keep 100% of their revenue. No commissions. No middlemen. Just direct orders, bookings, and growth.
                     </motion.p>
 
                     {/* STATS */}
                     <div className="flex flex-col sm:flex-row items-center lg:items-start justify-center lg:justify-start gap-8 sm:gap-12 pt-4">
-                        <StatItem end={127} suffix="+" label="Businesses Served" />
-                        <StatItem end={7} suffix=" Days" label="Average Setup" />
-                        <StatItem end={2.5} suffix="Cr+" label="Saved in Commissions" decimals={1} prefix="₹" />
+                        <StatItem end={12} suffix="+" label="Businesses Served" />
+                        <StatItem end={14} suffix=" Days" label="Average Setup" />
+                        <StatItem end={80} suffix="L+" label="Saved in Commissions" decimals={0} prefix="₹" />
                     </div>
                 </div>
 
@@ -121,8 +121,8 @@ export function AboutHero() {
                         transition={{ delay: 0.6, type: "spring" }}
                         className="absolute -bottom-6 -left-6 lg:-left-10 bg-white dark:bg-zinc-900 p-4 rounded-xl shadow-xl border border-black/5"
                     >
-                        <p className="font-bold text-lg">Amritsar 📍</p>
-                        <p className="text-sm text-muted-foreground">Born & Raised</p>
+                        <p className="font-bold text-lg">Gurgaon 📍</p>
+                        <p className="text-sm text-muted-foreground">Where We Operate</p>
                     </motion.div>
                 </motion.div>
             </div>

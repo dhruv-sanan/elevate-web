@@ -155,11 +155,11 @@ function LocationCard() {
                 </div>
                 <div>
                     <h3 className="font-bold text-foreground">Visit Our Studio</h3>
-                    <p className="text-xs text-muted-foreground">Based in Amritsar, Punjab</p>
+                    <p className="text-xs text-muted-foreground">Based in Gurgaon, Haryana</p>
                 </div>
             </div>
             <p className="text-sm text-muted-foreground mb-4">
-                Serving all of Punjab & North India remotely.
+                Serving all of India remotely.
             </p>
             <button
                 onClick={() => document.getElementById('map-section')?.scrollIntoView({ behavior: 'smooth' })}

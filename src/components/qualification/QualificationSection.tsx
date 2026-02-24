@@ -18,9 +18,9 @@ export function QualificationSection() {
     const [activeTab, setActiveTab] = useState<'fit' | 'not-fit'>('fit');
 
     return (
-        <section className="relative w-full py-24 md:py-32 px-6 overflow-hidden bg-background">
+        <section className="relative w-full py-16 md:py-32 px-6 overflow-hidden bg-background">
             {/* Background Gradients & Overlay */}
-            <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/80 to-black/60 border-y border-white/5" />
+            <div className="absolute inset-0 bg-gradient-to-b from-[#001a0f] via-[#002215]/90 to-[#001a0f] border-y border-white/5" />
 
             {/* Shimmer Effect Overlay */}
             <div className="absolute inset-0 w-full h-full pointer-events-none overflow-hidden">
@@ -53,7 +53,7 @@ export function QualificationSection() {
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{ duration: 0.6 }}
-                    className="text-center mb-16"
+                    className="text-center mb-10 md:mb-16"
                 >
                     <p className="text-[#00d9a3] font-semibold tracking-[0.05em] uppercase mb-4 text-sm font-inter">
                         // STRAIGHT TALK
@@ -73,13 +73,13 @@ export function QualificationSection() {
 
                 {/* Mobile Segmented Toggle */}
                 <div className="flex md:hidden bg-white/5 border border-white/10 p-1.5 rounded-xl mb-8 max-w-[16rem] mx-auto">
-                    <button 
+                    <button
                         onClick={() => setActiveTab('not-fit')}
                         className={`flex-1 py-3 text-sm font-semibold rounded-lg transition-all ${activeTab === 'not-fit' ? 'bg-red-500/20 text-red-400 border border-red-500/30' : 'text-gray-400 border border-transparent'}`}
                     >
                         Not a Fit
                     </button>
-                    <button 
+                    <button
                         onClick={() => setActiveTab('fit')}
                         className={`flex-1 py-3 text-sm font-semibold rounded-lg transition-all ${activeTab === 'fit' ? 'bg-[#00d9a3]/20 text-[#00d9a3] border border-[#00d9a3]/30' : 'text-gray-400 border border-transparent'}`}
                     >
@@ -101,7 +101,7 @@ export function QualificationSection() {
                         {/* Hover Gradient Overlay */}
                         <div className="absolute -top-1/2 -right-1/2 w-[200%] h-[200%] bg-[radial-gradient(circle,rgba(239,68,68,0.1)_0%,transparent_70%)] opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
 
-                        <div className="relative z-10 flex flex-col gap-6 md:gap-8 h-full">
+                        <div className="relative z-10 flex flex-col gap-4 md:gap-8 h-full">
                             <div className="flex items-center gap-3 md:gap-4">
                                 <div className="w-12 h-12 md:w-16 md:h-16 rounded-xl md:rounded-2xl flex items-center justify-center shrink-0 bg-red-500/20 border-2 border-red-500/40 text-red-400">
                                     <X className="w-6 h-6 md:w-8 md:h-8" />
@@ -135,7 +135,7 @@ export function QualificationSection() {
                                         desc: "\"₹35,000 is too much\" but you're okay losing ₹70,000/month to commissions? If you can't see the ROI in owning your customer relationships, this won't work."
                                     }
                                 ].map((item, idx) => (
-                                    <div key={idx} className="flex items-start gap-4 p-5 rounded-xl bg-black/20 hover:bg-black/40 hover:translate-x-2 transition-all duration-300">
+                                    <div key={idx} className="flex items-start gap-4 p-3 md:p-5 rounded-xl bg-black/20 hover:bg-black/40 hover:translate-x-2 transition-all duration-300">
                                         <div className="w-10 h-10 md:w-12 md:h-12 rounded-lg flex items-center justify-center shrink-0 bg-red-500/15 border border-red-500/30 text-red-400">
                                             <XCircle className="w-5 h-5 md:w-6 md:h-6" />
                                         </div>
@@ -169,7 +169,7 @@ export function QualificationSection() {
                         {/* Hover Gradient Overlay */}
                         <div className="absolute -top-1/2 -left-1/2 w-[200%] h-[200%] bg-[radial-gradient(circle,rgba(0,217,163,0.15)_0%,transparent_70%)] opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
 
-                        <div className="relative z-10 flex flex-col gap-6 md:gap-8 h-full">
+                        <div className="relative z-10 flex flex-col gap-4 md:gap-8 h-full">
                             <div className="flex items-center gap-3 md:gap-4">
                                 <div className="w-12 h-12 md:w-16 md:h-16 rounded-xl md:rounded-2xl flex items-center justify-center shrink-0 bg-[#00d9a3]/20 border-2 border-[#00d9a3]/40 text-[#00d9a3]">
                                     <CheckCircle className="w-6 h-6 md:w-8 md:h-8" />
@@ -188,7 +188,7 @@ export function QualificationSection() {
                                 {[
                                     {
                                         title: "You're a serious owner ready to scale your brand",
-                                        desc: "You've been running for 2+ years. You have regulars. You know your numbers. You're ready to go from \"good local spot\" to \"Amritsar institution.\""
+                                        desc: "You've been running for 2+ years. You have regulars. You know your numbers. You're ready to go from \"good local spot\" to a recognized brand across India."
                                     },
                                     {
                                         title: "You want full control over your customer data",
@@ -203,7 +203,7 @@ export function QualificationSection() {
                                         desc: "You're not looking for \"build and disappear.\" You want someone who understands your business, suggests improvements, and grows with you."
                                     }
                                 ].map((item, idx) => (
-                                    <div key={idx} className="flex items-start gap-4 p-5 rounded-xl bg-black/20 hover:bg-black/40 hover:translate-x-2 transition-all duration-300">
+                                    <div key={idx} className="flex items-start gap-4 p-3 md:p-5 rounded-xl bg-black/20 hover:bg-black/40 hover:translate-x-2 transition-all duration-300">
                                         <div className="w-10 h-10 md:w-12 md:h-12 rounded-lg flex items-center justify-center shrink-0 bg-[#00d9a3]/15 border border-[#00d9a3]/30 text-[#00d9a3]">
                                             <Check className="w-5 h-5 md:w-6 md:h-6" />
                                         </div>

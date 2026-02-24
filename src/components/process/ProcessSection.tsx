@@ -73,7 +73,7 @@ export function ProcessSection() {
                     </span>
                 </h2>
                 <p className="font-sans text-lg leading-[1.7] text-gray-400 max-w-3xl mx-auto mb-8">
-                    A proven 14-day process that's taken 12+ Amritsar businesses from
+                    A proven 14-day process that's taken 12+ Indian businesses from
                     Delivery Apps-dependent to fully independent. Zero guesswork. Zero delays.
                 </p>
 
@@ -107,7 +107,7 @@ export function ProcessSection() {
                     </div>
 
                     <p className="font-sans text-base leading-[1.7] text-gray-300 mb-8">
-                        We hop on a call (or meet in person if you're in Amritsar). We ask
+                        We hop on a call (or meet in person). We ask
                         about your business, menu, current pain points, and what you want
                         your website to do.
                     </p>
@@ -140,7 +140,7 @@ export function ProcessSection() {
 
                     <RealExample
                         iconColor="text-yellow-400"
-                        text='"Simran from Bakeman Cake & Pastry Palace didn&apos;t have professional photos. We advised her: &apos;Just click 10-15 pics on your iPhone—good lighting, clean background.&apos; Turned out perfect."'
+                        text='"Priya from Mithai Mandir didn&apos;t have professional photos. We advised her: &apos;Just click 10-15 pics on your iPhone—good lighting, clean background.&apos; Turned out perfect."'
                     />
                 </TimelineStep>
 
@@ -188,7 +188,7 @@ export function ProcessSection() {
                     </div>
                     <RealExample
                         iconColor="text-yellow-400"
-                        text='"Rajveer sent us his entire menu as a WhatsApp voice note while driving. We transcribed it, formatted it, and sent back a preview. He approved in 10 minutes."'
+                        text='"Mehul sent us his entire menu as a WhatsApp voice note while driving. We transcribed it, formatted it, and sent back a preview. He approved in 10 minutes."'
                     />
                 </TimelineStep>
 
@@ -248,7 +248,7 @@ export function ProcessSection() {
                     </div>
                     <RealExample
                         iconColor="text-yellow-400"
-                        text='"Built Café Nomad&apos;s entire site in 2.5 days because they had everything ready. Sometimes it takes longer if we&apos;re waiting on payment gateway approval (bank side, not us)."'
+                        text='"Built Chaas &amp; Co.&apos;s entire site in 2.5 days because they had everything ready. Sometimes it takes longer if we&apos;re waiting on payment gateway approval (bank side, not us)."'
                     />
                 </TimelineStep>
 
@@ -303,7 +303,7 @@ export function ProcessSection() {
                     </div>
                     <RealExample
                         iconColor="text-yellow-400"
-                        text='"Bakeman Cake & Pastry Palace asked for 8 changes. We fixed all of them in 45 minutes. She replied: &apos;Dhruv, this is EXACTLY what I imagined. Go live tonight.&apos;"'
+                        text='"Mithai Mandir asked for 8 changes. We fixed all of them in 45 minutes. Priya replied: &apos;Dhruv, this is EXACTLY what I imagined. Go live tonight.&apos;"'
                     />
                 </TimelineStep>
 
@@ -360,7 +360,7 @@ export function ProcessSection() {
                     </div>
                     <RealExample
                         iconColor="text-yellow-400"
-                        text='"Trained a 67-year-old uncle at Kesar Da Dhaba. He now updates his daily specials every morning from his phone. Zero help needed."'
+                        text='"Trained a 62-year-old uncle at Dada&apos;s Dhaba. He now updates his daily specials every morning from his phone. Zero help needed."'
                     />
                 </TimelineStep>
 
@@ -434,7 +434,7 @@ export function ProcessSection() {
                     <RealExample
                         iconColor="text-yellow-400"
                         success
-                        text='"Tamra Restaurant got 47 orders in the first 24 hours. Zero tech issues. Rajveer&apos;s message to me: &apos;Dhruv, this is INSANE. I should&apos;ve done this 2 years ago.&apos;"'
+                        text='"Rann Kitchen got 47 orders in the first 24 hours. Zero tech issues. Mehul&apos;s message to me: &apos;Dhruv, this is INSANE. I should&apos;ve done this 2 years ago.&apos;"'
                     />
                 </TimelineStep>
 
@@ -498,7 +498,7 @@ export function ProcessSection() {
 
                     <RealExample
                         iconColor="text-yellow-400"
-                        text='"Bakeman Cake & Pastry Palace started with Tier 2. After 3 months, added the &apos;Pocket Waiter&apos; PWA (₹8,000). Repeat orders jumped 30%. They&apos;re now eyeing Tier 3 for a second location."'
+                        text='"Mithai Mandir started with Tier 2. After 3 months, added the &apos;Pocket Waiter&apos; PWA (₹8,000). Repeat orders jumped 30%. They&apos;re now eyeing Tier 3 for a second location."'
                     />
                 </TimelineStep>
             </div>

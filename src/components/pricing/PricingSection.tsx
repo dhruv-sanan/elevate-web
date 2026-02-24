@@ -124,7 +124,7 @@ export function PricingSection() {
     const selectedAddonsList = ADDONS.filter(a => selectedAddonIds.has(a.id))
 
     return (
-        <section className="relative w-full pb-12 md:pb-16 bg-background overflow-hidden">
+        <section id="pricing-section" className="relative w-full pb-12 md:pb-16 bg-background overflow-hidden">
             <SavingsCalculator />
             <div className="max-w-[1400px] mx-auto px-6 pt-24 md:pt-32">
 
@@ -264,7 +264,7 @@ export function PricingSection() {
                                 { included: true, text: "\"Lock & Key\" (Firewall)", tooltip: "High-level security (Firewall) so no one can hack your site." },
                                 { included: true, text: "Digital Zameen (Hosting)", tooltip: "High-speed server optimized for up to 5,000 visitors/month." },
                                 { included: true, text: "Daily Safekeeping & SSL", tooltip: "Daily Backups + Secure \"Green Lock\" so your site is always safe." },
-                                { included: true, text: "Menu Updates (4x/Month)", tooltip: "Just WhatsApp me a photo of your new menu or hand-written prices (e.g., Amritsari Kulcha price change), and I’ll update the site in 2 hours." },
+                                { included: true, text: "Menu Updates (4x/Month)", tooltip: "Just WhatsApp me a photo of your new menu or hand-written prices (e.g., thali price change), and I’ll update the site in 2 hours." },
                                 { included: true, text: "Google Ranking", tooltip: "I ensure that when tourists search \"Best food near me,\" your name shows up higher." },
                                 { included: true, text: "WhatsApp Support", tooltip: "No tickets or emails. Just message me on WhatsApp, and it's done." },
                                 { included: false, text: "Festival Banners" }
@@ -282,9 +282,9 @@ export function PricingSection() {
                                 { included: true, text: "Daily Safekeeping & SSL", tooltip: "Daily Backups + Secure \"Green Lock\" so your site is always safe." },
                                 { included: true, text: "Digital Zameen (Hosting)", tooltip: "High-speed server optimized for up to 5,000 visitors/month." },
                                 { included: true, text: "Unlimited Menu Updates", tooltip: "Change your room rates or banquet packages as many times as you want." },
-                                { included: true, text: "Amritsar Google Ranking", tooltip: "I ensure that when tourists search \"Best food near me,\" your name shows up higher." },
+                                { included: true, text: "Higher Google Ranking", tooltip: "I ensure that when tourists search \"Best food near me,\" your name shows up higher." },
                                 { included: true, text: "Priority VIP Service", tooltip: "Your requests go to the top of my list." },
-                                { included: true, text: "Festival Banners", tooltip: "I design and put up custom banners for Lohri, Baisakhi, Diwali, and Gurpurab automatically." },
+                                { included: true, text: "Festival Banners", tooltip: "I design and put up custom banners for Navratri, Uttarayan, Diwali, and Janmashtami automatically." },
                                 { included: true, text: "Monthly Growth Report", tooltip: "I’ll tell you exactly how many people called you or clicked \"Get Directions\" from your site." }
                             ]}
                             isSelected={selectedMaintenanceId === 2}

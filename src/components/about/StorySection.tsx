@@ -22,7 +22,7 @@ export function StorySection() {
                         viewport={{ once: true }}
                         transition={{ delay: 0.1 }}
                     >
-                        We've watched too many incredible Amritsar restaurants struggle. Places serving authentic Punjabi food, making customers happy—but <strong className="text-foreground">losing 30% of every order to Delivery Apps.</strong>
+                        We've watched too many incredible Indian restaurants struggle. Places serving authentic food, making customers happy—but <strong className="text-foreground">losing 30% of every order to Delivery Apps.</strong>
                     </motion.p>
 
                     <motion.div
@@ -50,7 +50,7 @@ export function StorySection() {
                         viewport={{ once: true }}
                         transition={{ delay: 0.4 }}
                     >
-                        So we built ElevateWeb. Not as a generic web agency, but as Punjab's hospitality-focused tech partner. We speak your language (literally—Punjabi, Hindi, English). We understand your business. And we're obsessed with one goal: <strong className="text-[#00d9a3] font-semibold">helping you keep every rupee you earn.</strong>
+                        So we built ElevateWeb. Not as a generic web agency, but as India's hospitality-focused tech partner. We speak your language (Hindi, English, Gujarati). We understand your business. And we're obsessed with one goal: <strong className="text-[#00d9a3] font-semibold">helping you keep every rupee you earn.</strong>
                     </motion.p>
                 </div>
             </div>

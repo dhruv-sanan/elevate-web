@@ -7,7 +7,7 @@ import Link from "next/link"
 export function PortfolioCTA() {
   const trustBadges = [
     "Zero Upfront Cost Option",
-    "Live in 7 Days",
+    "Live in 14 Days",
     "Free 30-min Consultation"
   ]
 

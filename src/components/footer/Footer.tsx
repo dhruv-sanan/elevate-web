@@ -24,7 +24,7 @@ export function Footer() {
                         ElevateWeb
                     </Link>
                     <p className="font-inter text-muted-foreground text-sm leading-relaxed">
-                        Amritsar's #1 Web Studio for Restaurants & Hotels.
+                        India's #1 Web Studio for Restaurants & Hotels.
                         Helping you stop paying commissions and own your customer relationships.
                     </p>
                     <div className="flex gap-4">
@@ -93,7 +93,7 @@ export function Footer() {
                         </li>
                         <li className="flex items-start gap-3 text-sm text-muted-foreground">
                             <MapPin className="w-5 h-5 text-[#00d9a3] shrink-0" />
-                            <span>Amritsar, Punjab</span>
+                            <span>Gurgaon, Haryana</span>
                         </li>
                         <li className="flex items-start gap-3 text-sm text-muted-foreground">
                             <Clock className="w-5 h-5 text-[#00d9a3] shrink-0" />
@@ -106,7 +106,7 @@ export function Footer() {
             {/* BOTTOM BAR */}
             <div className="max-w-7xl mx-auto pt-8 border-t border-black/10 dark:border-white/10 flex flex-col md:flex-row justify-between items-center gap-4 relative z-10">
                 <p className="font-inter text-sm text-muted-foreground">
-                    © {new Date().getFullYear()} ElevateWeb. Built with ❤️ in Amritsar.
+                    © {new Date().getFullYear()} ElevateWeb. Built with ❤️ in India.
                 </p>
                 <div className="flex gap-6">
                     <Link href="#" className="font-inter text-sm text-muted-foreground hover:text-foreground transition-colors">

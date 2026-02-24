@@ -46,7 +46,7 @@ function SectionHeader() {
     return (
         <div className="text-center mb-12">
             <p className="font-inter text-sm font-semibold tracking-wider uppercase text-[#00d9a3] mb-4">
-                // REAL RESULTS FROM AMRITSAR
+                // REAL RESULTS FROM GUJARAT
             </p>
             <h2 className="font-space-grotesk text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-foreground mb-6">
                 They Stopped Paying Commissions.
@@ -56,7 +56,7 @@ function SectionHeader() {
                 </span>
             </h2>
             <p className="font-inter text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-                Local restaurants, cafés, and hotels who took control of their orders—
+                Local restaurants, cafés, and hotels across Gujarat who took control of their orders—
                 and never looked back at Delivery Apps.
             </p>
         </div>
@@ -70,7 +70,7 @@ function StatsBar() {
 
             <StatItem
                 icon={TrendingUp}
-                number="₹84L+"
+                number="₹80L+"
                 label="Saved in Commissions"
                 sublabel="Across all clients (2024)"
             />
@@ -78,7 +78,7 @@ function StatsBar() {
 
             <StatItem
                 icon={Users}
-                number="127+"
+                number="12+"
                 label="Active Clients"
                 sublabel="Restaurants & Hotels"
             />
@@ -94,7 +94,7 @@ function StatsBar() {
 
             <StatItem
                 icon={Zap}
-                number="7 Days"
+                number="14 Days"
                 label="Avg Setup Time"
                 sublabel="From chat to live site"
             />
@@ -130,7 +130,7 @@ function VideoTestimonials() {
                     Video Testimonials
                 </h3>
                 <p className="font-inter text-base text-muted-foreground">
-                    Hear directly from Amritsar restaurant owners who made the switch
+                    Hear directly from Gujarat restaurant owners who made the switch
                 </p>
             </div>
 
@@ -139,20 +139,20 @@ function VideoTestimonials() {
                     thumbnail="/testimonials/thumbnail-1.jpg"
                     duration="2:34"
                     avatar="/clients/avatar-1.jpg"
-                    name="Rajveer Singh"
-                    business="Tamra Restaurant, Amritsar"
+                    name="Mehul Patel"
+                    business="Rann Kitchen, Ahmedabad"
                     quote="We were paying ₹45,000/month to Delivery Apps. Now? Zero. Dhruv's system paid for itself in 6 weeks."
                     stats={[
                         { icon: ArrowUp, text: "₹5.4L saved/year" },
-                        { icon: Clock, text: "Setup in 5 days" }
+                        { icon: Clock, text: "Setup in 12 days" }
                     ]}
                 />
                 <VideoCard
                     thumbnail="/testimonials/thumbnail-2.jpg"
                     duration="3:12"
                     avatar="/clients/avatar-2.jpg"
-                    name="Simran Kaur"
-                    business="Bakeman Cake & Pastry Palace"
+                    name="Priya Shah"
+                    business="Mithai Mandir, Surat"
                     quote="The custom cake orders tripled. WhatsApp automation is a game-changer. Best investment we made."
                     stats={[
                         { icon: TrendingUp, text: "3x more orders" },
@@ -163,8 +163,8 @@ function VideoTestimonials() {
                     thumbnail="/testimonials/thumbnail-3.jpg"
                     duration="4:05"
                     avatar="/clients/avatar-3.jpg"
-                    name="Harpreet Singh"
-                    business="Heritage Hotel, Amritsar"
+                    name="Jayesh Desai"
+                    business="Garvi Guest House, Ahmedabad"
                     quote="OTAs were taking 25%. Now we have direct bookings. The AI concierge answers NRI queries at 3 AM."
                     stats={[
                         { icon: Percent, text: "60% direct bookings" },
@@ -233,24 +233,24 @@ function WrittenTestimonials() {
     const testimonials = [
         {
             text: "I was skeptical about leaving Delivery Apps, but Dhruv showed me the math: ₹70,000/month in commissions. Now I keep every rupee. The WhatsApp ordering system is so smooth—customers love it. Setup took 14 days. ROI in 4 weeks.",
-            name: "Amrit Kaur",
-            business: "Kesar Da Dhaba, Amritsar",
+            name: "Nisha Modi",
+            business: "Aahar Thali House, Ahmedabad",
             time: "3 months ago",
             stats: { icon: TrendingUp, text: "₹2.1L saved" },
             avatar: "/clients/avatar-4.jpg"
         },
         {
             text: "The QR table ordering changed everything. No more waiters running around with pens. Customers scan, order, pay—done. Kitchen gets orders instantly. Tips increased by 30% because service is faster. Dhruv even trained my staff for free. Total professional.",
-            name: "Gurpreet Singh",
-            business: "Café Nomad, Amritsar",
+            name: "Rakesh Joshi",
+            business: "Chaas & Co., Rajkot",
             time: "1 month ago",
             stats: { icon: Users, text: "30% faster service" },
             avatar: "/clients/avatar-5.jpg"
         },
         {
-            text: "We're a small bakery. The custom cake inquiry form is genius—customers describe exactly what they want, upload photos, pick flavors. We get WhatsApp notifications instantly. No more 'Sorry, I forgot your order' moments. Bookings increased 3x during Diwali.",
-            name: "Neha Sharma",
-            business: "Cake Studio, Amritsar",
+            text: "We're a small bakery. The custom mithai inquiry form is genius—customers describe exactly what they want, upload photos, pick flavors. We get WhatsApp notifications instantly. No more 'Sorry, I forgot your order' moments. Bookings increased 3x during Navratri.",
+            name: "Komal Mehta",
+            business: "Spice Route, Vadodara",
             time: "2 weeks ago",
             stats: { icon: Cake, text: "3x bookings" },
             avatar: "/clients/avatar-6.jpg"
@@ -360,14 +360,14 @@ function ResultsSection() {
 
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-[75rem] mx-auto">
                 <ResultCard
-                    name="Tamra Restaurant"
-                    details="Restaurant • 50 seats"
+                    name="Rann Kitchen"
+                    details="Restaurant • 50 seats • Ahmedabad"
                     before={{
                         label: "With Delivery Apps (Before)",
                         orders: "847",
                         revenue: "₹2,95,000",
-                        commission: "-₹1,18,000",
-                        net: "₹1,77,000"
+                        commission: "-₹88,500",
+                        net: "₹2,06,500"
                     }}
                     after={{
                         label: "With ElevateWeb (After)",
@@ -380,14 +380,14 @@ function ResultsSection() {
                     }}
                     footer={{
                         icon: Sparkles,
-                        text: "SAVED ₹1,81,000 MORE/MONTH",
+                        text: "SAVED ₹1,51,500 MORE/MONTH",
                         timeframe: "Results after 3 months"
                     }}
                 />
 
                 <ResultCard
-                    name="Bakeman Cake & Pastry Palace"
-                    details="Bakery • Custom Cakes"
+                    name="Mithai Mandir"
+                    details="Bakery • Custom Sweets & Cakes • Surat"
                     before={{
                         label: "Manual Orders (Before)",
                         orders: "124",
@@ -563,14 +563,14 @@ function TrustBadgesRow() {
         { icon: Shield, title: "100% Secure", subtitle: "SSL Encrypted" },
         { icon: Zap, title: "14-Day Setup", subtitle: "Guaranteed" },
         { icon: Clock, title: "24/7 Support", subtitle: "WhatsApp & Call" },
-        { icon: MapPin, title: "Amritsar-Based", subtitle: "Local Support" },
+        { icon: MapPin, title: "India-Wide", subtitle: "Remote Support" },
         { icon: Award, title: "No Contracts", subtitle: "Cancel Anytime" },
     ]
 
     return (
         <div className="mt-24 pt-12 border-t border-black/5 dark:border-white/10">
             <p className="text-center font-inter text-sm font-semibold text-muted-foreground uppercase tracking-widest mb-12">
-                Trusted by Amritsar&apos;s Best
+                Trusted by India&apos;s Best
             </p>
 
             <div className="relative flex flex-nowrap overflow-x-auto gap-8 items-center px-4 md:grid md:grid-cols-2 lg:grid-cols-[auto_1px_auto_1px_auto_1px_auto_1px_auto] md:justify-items-center snap-x snap-mandatory">

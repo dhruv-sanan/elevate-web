@@ -11,7 +11,7 @@ export function MissionValues() {
                 <ValueCard
                     icon={Target}
                     title="Our Mission"
-                    description="Eliminate commission dependency for Punjab's hospitality industry. Every restaurant, café, and hotel should own their customer relationships—not rent them from aggregators."
+                    description="Eliminate commission dependency for India's hospitality industry. Every restaurant, café, and hotel should own their customer relationships—not rent them from aggregators."
                     delay={0}
                 />
 

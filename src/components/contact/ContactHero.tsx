@@ -39,7 +39,7 @@ export function ContactHero() {
                 transition={{ duration: 0.4, delay: 0.3 }}
                 className="flex items-center gap-2 font-inter text-sm text-muted-foreground/80 bg-black/5 dark:bg-white/5 py-2 px-4 rounded-full border border-black/5 dark:border-white/10"
             >
-                <span>📍 Based in Amritsar</span>
+                <span>📍 Based in Gurgaon, Haryana</span>
                 <span className="w-1 h-1 rounded-full bg-current opacity-50" />
                 <span>🕐 Available Mon-Sat, 9 AM - 8 PM IST</span>
             </motion.div>
