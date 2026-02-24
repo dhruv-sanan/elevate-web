@@ -27,7 +27,7 @@ export function AboutHero() {
                     >
                         We're Dhruv <br className="hidden lg:block" />& Ghanishth. <br />
                         We Help Amritsar's Restaurants <br className="hidden lg:block" />
-                        <span className="text-[#00d9a3]">Stop Paying Delivery Partners.</span>
+                        <span className="text-[#00d9a3]">Stop Paying Delivery Apps.</span>
                     </motion.h1>
 
                     <motion.p

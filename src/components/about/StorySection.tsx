@@ -22,7 +22,7 @@ export function StorySection() {
                         viewport={{ once: true }}
                         transition={{ delay: 0.1 }}
                     >
-                        We've watched too many incredible Amritsar restaurants struggle. Places serving authentic Punjabi food, making customers happy—but <strong className="text-foreground">losing 40% of every order to Delivery Partners.</strong>
+                        We've watched too many incredible Amritsar restaurants struggle. Places serving authentic Punjabi food, making customers happy—but <strong className="text-foreground">losing 30% of every order to Delivery Apps.</strong>
                     </motion.p>
 
                     <motion.div

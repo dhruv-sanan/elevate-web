@@ -88,7 +88,7 @@ export function FAQSection() {
                     <div className="flex items-start gap-3 bg-[#00d9a3]/10 border border-[#00d9a3]/30 border-l-[3px] border-l-[#00d9a3] rounded-lg p-4 mt-6">
                         <Calculator className="w-5 h-5 text-[#00d9a3] shrink-0 mt-0.5" />
                         <p className="text-sm text-gray-700 dark:text-gray-300">
-                            <strong className="dark:text-white text-gray-900">ROI Example:</strong> If you&apos;re paying delivery partners ₹70,000/month in commissions,
+                            <strong className="dark:text-white text-gray-900">ROI Example:</strong> If you&apos;re paying Delivery Apps ₹70,000/month in commissions,
                             our Tier 2 system (₹40,000 one-time) pays for itself in <strong className="dark:text-white text-gray-900">2 weeks</strong>.
                         </p>
                     </div>
@@ -203,20 +203,20 @@ export function FAQSection() {
         {
             id: 3,
             category: "overview",
-            question: "What if customers still want to use delivery partners?",
+            question: "What if customers still want to use Delivery Apps?",
             answer: (
                 <>
                     <p className="mb-6 font-inter text-base text-gray-700 dark:text-gray-300 leading-relaxed">
-                        <strong className="dark:text-white text-gray-900">Keep Delivery Partners if you want—but push direct orders first.</strong>
+                        <strong className="dark:text-white text-gray-900">Keep Delivery Apps if you want—but push direct orders first.</strong>
                         Here&apos;s the smart strategy:
                     </p>
 
                     <div className="flex flex-col gap-4 mb-6">
                         {[
-                            { id: 1, title: "QR Codes on Every Table", desc: '"Scan to Order—No Waiting, No Service Charge." Customers order directly from your site. You save 40% per order.' },
-                            { id: 2, title: "Incentivize Direct Orders", desc: "Offer a 10% discount for direct orders. You're still saving 30% (since Delivery Partners charges 40%). Customers feel rewarded." },
+                            { id: 1, title: "QR Codes on Every Table", desc: '"Scan to Order—No Waiting, No Service Charge." Customers order directly from your site. You save 30% per order.' },
+                            { id: 2, title: "Incentivize Direct Orders", desc: "Offer a 10% discount for direct orders. You're still saving 20% (since Delivery Apps charges 30%). Customers feel rewarded." },
                             { id: 3, title: "WhatsApp Blast Your Regulars", desc: 'Use the WhatsApp Business Suite add-on to send "Order direct and get free dessert" promotions. Converts 60%+ of regulars.' },
-                            { id: 4, title: "Phase Out Delivery Partners Gradually", desc: "Month 1: 70% Delivery Partners, 30% direct. Month 3: 50/50. Month 6: 80% direct. You're in control of the transition speed." },
+                            { id: 4, title: "Phase Out Delivery Apps Gradually", desc: "Month 1: 70% Delivery Apps, 30% direct. Month 3: 50/50. Month 6: 80% direct. You're in control of the transition speed." },
                         ].map((item, i) => (
                             <div key={i} className="flex items-start gap-4">
                                 <div className="w-8 h-8 rounded-full bg-gradient-to-br from-[#00d9a3] to-[#10b981] text-black font-space-grotesk text-sm font-bold flex items-center justify-center shrink-0">
@@ -233,7 +233,7 @@ export function FAQSection() {
                     <div className="flex items-start gap-3 bg-[#00d9a3]/10 border border-[#00d9a3]/30 border-l-[3px] border-l-[#00d9a3] rounded-lg p-4 mt-6">
                         <TrendingUp className="w-5 h-5 text-[#00d9a3] shrink-0 mt-0.5" />
                         <p className="text-sm text-gray-700 dark:text-gray-300">
-                            <strong className="dark:text-white text-gray-900">Real data:</strong> Tamra Restaurant kept delivery partners for delivery but
+                            <strong className="dark:text-white text-gray-900">Real data:</strong> Tamra Restaurant kept Delivery Apps for delivery but
                             pushed dine-in orders through their site. Result: Saved ₹45,000/month.
                         </p>
                     </div>
@@ -640,7 +640,7 @@ export function FAQSection() {
                                 setOpenIndex(null)
                             }}
                             className={cn(
-                                "flex items-center gap-2 px-5 py-3 rounded-full font-inter text-sm font-medium border transition-all duration-300",
+                                "flex items-center justify-center gap-2 px-5 py-3 min-h-[44px] rounded-full font-inter text-sm font-medium border transition-all duration-300",
                                 activeCategory === tab.id
                                     ? "bg-gradient-to-br from-[#00d9a3]/20 to-[#10b981]/10 border-[#00d9a3] text-[#00d9a3]"
                                     : "bg-white/5 border-white/10 text-gray-400 hover:bg-white/10 hover:border-white/20 hover:dark:text-white hover:text-gray-900 dark:text-white text-gray-900 "
@@ -686,7 +686,7 @@ export function FAQSection() {
                                     </span>
                                     <div
                                         className={cn(
-                                            "w-10 h-10 rounded-lg flex items-center justify-center shrink-0 transition-all duration-300",
+                                            "min-w-[44px] min-h-[44px] rounded-lg flex items-center justify-center shrink-0 transition-all duration-300",
                                             openIndex === index ? "bg-[#00d9a3]/20 text-[#00d9a3]" : "bg-white/10 text-gray-400"
                                         )}
                                     >

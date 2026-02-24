@@ -38,7 +38,7 @@ export function HeroLeft() {
             {/* 01. EYEBROW TEXT */}
             <motion.div
                 variants={itemVariants}
-                className="flex items-center gap-2 text-sm md:text-base text-[#00d9a3] font-medium tracking-wide uppercase"
+                className="flex items-center gap-2 text-base md:text-lg text-[#00d9a3] font-medium tracking-wide uppercase"
             >
                 <Sparkles className="w-4 h-4" />
                 <span>For Restaurants • Cafés • Hotels in Amritsar</span>
@@ -50,12 +50,12 @@ export function HeroLeft() {
                 className="font-space-grotesk text-4xl md:text-5xl lg:text-6xl font-bold leading-[1.1] tracking-tight text-foreground"
             >
                 <span className="block dark:hidden">
-                    Stop Paying <span className="bg-gradient-to-r from-red-500 to-orange-500 bg-clip-text text-transparent">40% Commission</span> to Delivery Partners.
+                    Stop Paying <span className="bg-gradient-to-r from-red-500 to-orange-500 bg-clip-text text-transparent">30% Commission</span> to Delivery Apps.
                     <br />
                     Keep <span className="bg-gradient-to-r from-[#00d9a3] to-emerald-400 bg-clip-text text-transparent">100% Revenue.</span>
                 </span>
                 <span className="hidden dark:block">
-                    Stop Paying <span className="bg-gradient-to-r from-red-500 to-orange-500 bg-clip-text text-transparent">40% Commission</span> to Delivery Partners.
+                    Stop Paying <span className="bg-gradient-to-r from-red-500 to-orange-500 bg-clip-text text-transparent">30% Commission</span> to Delivery Apps.
                     <br />
                     Keep <span className="bg-gradient-to-r from-[#00d9a3] to-emerald-400 bg-clip-text text-transparent">100% Revenue.</span>
                 </span>
@@ -66,15 +66,13 @@ export function HeroLeft() {
                 variants={itemVariants}
                 className="font-inter text-lg md:text-xl text-gray-500 dark:text-gray-400 leading-relaxed max-w-2xl"
             >
-                We build premium websites with direct ordering, WhatsApp automation,
-                and AI chatbots—helping restaurants, cafés, and hotels in Amritsar
-                own their customer relationships and keep 100% of their revenue.
+                We build direct ordering systems for restaurants that bring repeat customers, reduce commission, and increase profit — without technical headache.
             </motion.p>
 
             {/* 04. CTA BUTTONS */}
             <motion.div
                 variants={itemVariants}
-                className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto mt-2"
+                className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto mt-4 md:mt-2"
             >
                 <a
                     href="https://yummin.vercel.app/menu"
@@ -90,7 +88,7 @@ export function HeroLeft() {
                     href="https://calendly.com/dhruvsanan2001/free-website-demo"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center justify-center gap-2 bg-white/10 hover:bg-white/20 border border-black/10 dark:border-white/20 text-gray-900 dark:text-white font-semibold px-8 py-4 rounded-xl text-lg transition-all duration-300 hover:scale-105 cursor-pointer"
+                    className="hidden md:flex items-center justify-center gap-2 bg-white/10 hover:bg-white/20 border border-black/10 dark:border-white/20 text-gray-900 dark:text-white font-semibold px-8 py-4 rounded-xl text-lg transition-all duration-300 hover:scale-105 cursor-pointer"
                 >
                     <Calendar className="w-5 h-5" />
                     Book a Free Call

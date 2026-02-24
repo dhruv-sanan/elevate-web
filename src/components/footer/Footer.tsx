@@ -1,9 +1,17 @@
 "use client";
 
+import { useState } from "react";
 import Link from "next/link";
-import { Facebook, Instagram, Twitter, Linkedin, MapPin, Phone, Mail, Clock } from "lucide-react";
+import { Facebook, Instagram, Twitter, Linkedin, MapPin, Phone, Mail, Clock, ChevronDown } from "lucide-react";
+import { cn } from "@/lib/utils";
 
 export function Footer() {
+    const [openSection, setOpenSection] = useState<string | null>(null);
+
+    const toggleSection = (section: string) => {
+        setOpenSection(openSection === section ? null : section);
+    };
+
     return (
         <footer className="bg-black/5 dark:bg-[#0F172A] border-t border-black/10 dark:border-white/10 py-16 px-6 relative overflow-hidden">
             {/* Background elements if needed */}
@@ -28,9 +36,18 @@ export function Footer() {
                 </div>
 
                 {/* 2. SERVICES (Quick Links) */}
-                <div>
-                    <h4 className="font-space-grotesk font-bold text-foreground mb-6">Services</h4>
-                    <ul className="space-y-4">
+                <div className="border-b border-black/10 dark:border-white/10 md:border-none pb-4 md:pb-0">
+                    <button 
+                        onClick={() => toggleSection('services')}
+                        className="w-full flex items-center justify-between md:cursor-default"
+                    >
+                        <h4 className="font-space-grotesk font-bold text-foreground md:mb-6">Services</h4>
+                        <ChevronDown className={cn("w-5 h-5 transition-transform md:hidden text-muted-foreground", openSection === 'services' ? "rotate-180" : "")} />
+                    </button>
+                    <ul className={cn(
+                        "space-y-4 overflow-hidden transition-all duration-300 md:max-h-none md:mt-0 md:opacity-100",
+                        openSection === 'services' ? "max-h-64 mt-4 opacity-100" : "max-h-0 opacity-0 md:max-h-none md:opacity-100"
+                    )}>
                         <FooterLink href="/#restaurants">For Restaurants</FooterLink>
                         <FooterLink href="/#hotels">For Hotels</FooterLink>
                         <FooterLink href="/#bakeries">For Bakeries</FooterLink>
@@ -39,9 +56,18 @@ export function Footer() {
                 </div>
 
                 {/* 3. COMPANY */}
-                <div>
-                    <h4 className="font-space-grotesk font-bold text-foreground mb-6">Company</h4>
-                    <ul className="space-y-4">
+                <div className="border-b border-black/10 dark:border-white/10 md:border-none pb-4 md:pb-0">
+                    <button 
+                        onClick={() => toggleSection('company')}
+                        className="w-full flex items-center justify-between md:cursor-default"
+                    >
+                        <h4 className="font-space-grotesk font-bold text-foreground md:mb-6">Company</h4>
+                        <ChevronDown className={cn("w-5 h-5 transition-transform md:hidden text-muted-foreground", openSection === 'company' ? "rotate-180" : "")} />
+                    </button>
+                    <ul className={cn(
+                        "space-y-4 overflow-hidden transition-all duration-300 md:max-h-none md:mt-0 md:opacity-100",
+                        openSection === 'company' ? "max-h-64 mt-4 opacity-100" : "max-h-0 opacity-0 md:max-h-none md:opacity-100"
+                    )}>
                         <FooterLink href="/about">About Us</FooterLink>
                         <FooterLink href="/timeline">How It Works</FooterLink>
                         <FooterLink href="/pricing">Pricing</FooterLink>
@@ -50,7 +76,7 @@ export function Footer() {
                 </div>
 
                 {/* 4. CONTACT */}
-                <div>
+                <div className="pt-2 md:pt-0">
                     <h4 className="font-space-grotesk font-bold text-foreground mb-6">Get in Touch</h4>
                     <ul className="space-y-4">
                         <li className="flex items-start gap-3 text-sm text-muted-foreground">

@@ -20,7 +20,7 @@ export function SavingsCalculator() {
             >
                 <div className={cn(
                     "backdrop-blur-xl bg-black/80 border border-white/10 shadow-2xl transition-all duration-300 overflow-hidden",
-                    isMinimized ? "rounded-full px-6 py-3 cursor-pointer hover:bg-black/90" : "rounded-3xl p-6 w-full md:w-[900px]"
+                    isMinimized ? "rounded-full px-6 py-3 cursor-pointer hover:bg-black/90" : "rounded-3xl p-4 md:p-6 w-full md:w-[900px]"
                 )}>
                     {isMinimized ? (
                         <div onClick={() => setIsMinimized(false)} className="flex items-center gap-4">
@@ -28,15 +28,15 @@ export function SavingsCalculator() {
                                 <Calculator className="w-5 h-5" />
                             </div>
                             <div className="flex items-baseline gap-2">
-                                <span className="text-sm text-gray-400">Delivery Partners takes:</span>
+                                <span className="text-sm text-gray-400">Delivery Apps takes:</span>
                                 <span className="font-space-grotesk font-bold text-white text-lg">₹{(savings * 12).toLocaleString('en-IN')}/yr</span>
                             </div>
                             <ChevronDown className="w-4 h-4 text-gray-500" />
                         </div>
                     ) : (
-                        <div className="flex flex-col gap-6">
+                        <div className="flex flex-col gap-4 md:gap-6">
                             {/* Header Row */}
-                            <div className="flex items-center justify-between border-b border-white/5 pb-4">
+                            <div className="flex items-center justify-between border-b border-white/5 pb-3 md:pb-4">
                                 <div className="flex items-center gap-3">
                                     <div className="bg-[#00d9a3]/10 p-2.5 rounded-xl text-[#00d9a3]">
                                         <Calculator className="w-6 h-6" />
@@ -57,8 +57,8 @@ export function SavingsCalculator() {
                             {/* Calculator Body */}
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-12">
                                 {/* Inputs */}
-                                <div className="space-y-6">
-                                    <div className="space-y-3">
+                                <div className="space-y-4 md:space-y-6">
+                                    <div className="space-y-2 md:space-y-3">
                                         <div className="flex justify-between items-center bg-white/5 px-4 py-2 rounded-lg border border-white/5">
                                             <span className="text-sm text-gray-400">Monthly Orders</span>
                                             <input
@@ -82,7 +82,7 @@ export function SavingsCalculator() {
                                         </div>
                                     </div>
 
-                                    <div className="space-y-3">
+                                    <div className="space-y-2 md:space-y-3">
                                         <div className="flex justify-between items-center bg-white/5 px-4 py-2 rounded-lg border border-white/5">
                                             <span className="text-sm text-gray-400">Avg Order Value</span>
                                             <div className="flex items-center">
@@ -113,15 +113,15 @@ export function SavingsCalculator() {
 
                                 {/* Results */}
                                 <div className="space-y-4">
-                                    <div className="grid grid-cols-2 gap-4 h-full">
-                                        <div className="bg-white/5 border border-white/10 rounded-2xl p-4 flex flex-col justify-between">
+                                    <div className="grid grid-cols-2 gap-3 md:gap-4 h-full">
+                                        <div className="bg-white/5 border border-white/10 rounded-2xl p-3 md:p-4 flex flex-col justify-between">
                                             <span className="text-xs font-semibold text-gray-400 uppercase tracking-wider">Monthly Loss</span>
                                             <div>
                                                 <p className="font-space-grotesk font-bold text-red-500 text-2xl">-₹{savings.toLocaleString('en-IN')}</p>
-                                                <p className="text-[10px] text-gray-500">to Delivery Partners @ 30%</p>
+                                                <p className="text-[10px] text-gray-500">to Delivery Apps @ 30%</p>
                                             </div>
                                         </div>
-                                        <div className="bg-red-500/10 border border-red-500/20 rounded-2xl p-4 flex flex-col justify-between relative overflow-hidden">
+                                        <div className="bg-red-500/10 border border-red-500/20 rounded-2xl p-3 md:p-4 flex flex-col justify-between relative overflow-hidden">
                                             <div className="absolute top-0 right-0 w-20 h-20 bg-red-500/20 blur-2xl rounded-full translate-x-10 -translate-y-10"></div>
                                             <span className="text-xs font-semibold text-red-400 uppercase tracking-wider">Yearly Loss</span>
                                             <div>

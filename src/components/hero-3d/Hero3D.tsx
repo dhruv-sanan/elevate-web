@@ -27,7 +27,7 @@ export function Hero3D() {
                     >
                         <span className="hidden md:inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/50 dark:bg-white/5 border border-amber-200/50 dark:border-white/10 text-xs font-bold text-amber-700 dark:text-amber-300 uppercase tracking-wider backdrop-blur-sm">
                             <Sparkles size={12} />
-                            Amritsar's Digital Partner
+                            Hospitality Digital Partner in India
                         </span>
                     </motion.div>
 

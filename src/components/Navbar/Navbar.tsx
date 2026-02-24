@@ -4,7 +4,6 @@ import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { CafeVibeToggle } from "@/components/hero-3d/CafeVibeToggle"
 import { useTheme } from '@/components/theme-provider';
 import { Menu, X, ChevronDown } from 'lucide-react';
 
@@ -14,7 +13,6 @@ import { Menu, X, ChevronDown } from 'lucide-react';
 export default function Navbar() {
     const [isScrolled, setIsScrolled] = useState(false);
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-    const [isServicesOpen, setIsServicesOpen] = useState(false);
     const pathname = usePathname();
     const { theme, toggleTheme } = useTheme();
 
@@ -33,39 +31,13 @@ export default function Navbar() {
     }, [pathname]);
 
     const navLinks = [
-        { name: 'Demos', href: 'https://yummin.vercel.app/menu', target: '_blank' },
+        { name: 'Portfolio', href: '/portfolio' },
         { name: 'Timeline', href: '/timeline' },
         { name: 'Pricing', href: '/pricing' },
         { name: 'About', href: '/about' },
         { name: 'Contact', href: '/contact' },
     ];
 
-    const serviceLinks = [
-        {
-            name: 'For Restaurants',
-            href: '/services#restaurants',
-            icon: '🍽️',
-            desc: 'Online ordering, QR menus'
-        },
-        {
-            name: 'For Hotels',
-            href: '/services#hotels',
-            icon: '🏨',
-            desc: 'Direct bookings, room tours'
-        },
-        {
-            name: 'For Bakeries',
-            href: '/services#bakeries',
-            icon: '🧁',
-            desc: 'Custom cake forms, pre-orders'
-        },
-        {
-            name: 'AI Chatbots',
-            href: '/services#ai',
-            icon: '🤖',
-            desc: 'Smart customer support'
-        },
-    ];
 
     return (
         <>
@@ -95,67 +67,11 @@ export default function Navbar() {
 
                     {/* Desktop Menu */}
                     <div className="hidden lg:flex items-center gap-8">
-                        {/* Services Dropdown */}
-                        {/* <div
-                            className="relative"
-                            onMouseEnter={() => setIsServicesOpen(true)}
-                            onMouseLeave={() => setIsServicesOpen(false)}
-                        >
-                            <button
-                                className={`flex items-center gap-1 font-medium transition-colors ${isScrolled ? 'text-text-primary' : 'text-white'
-                                    } hover:text-accent`}
-                            >
-                                Services
-                                <ChevronDown
-                                    className={`w-4 h-4 transition-transform ${isServicesOpen ? 'rotate-180' : ''
-                                        }`}
-                                />
-                            </button>
-
-                            <AnimatePresence>
-                                {isServicesOpen && (
-                                    <motion.div
-                                        className="absolute top-full left-0 mt-2 w-80"
-                                        variants={{
-                                            hidden: { opacity: 0, y: -10, scale: 0.95 },
-                                            visible: { opacity: 1, y: 0, scale: 1 },
-                                        }}
-                                        initial="hidden"
-                                        animate="visible"
-                                        exit="hidden"
-                                        transition={{ duration: 0.3, ease: [0.4, 0, 0.2, 1] }}
-                                    >
-                                        <div className="glass-card p-4 space-y-2">
-                                            {serviceLinks.map((service) => (
-                                                <Link
-                                                    key={service.href}
-                                                    href={service.href}
-                                                    className="flex items-start gap-3 p-3 rounded-xl hover:bg-accent/10 
-                                     transition-all hover:translate-x-1"
-                                                >
-                                                    <span className="text-2xl">{service.icon}</span>
-                                                    <div>
-                                                        <p className="font-semibold text-sm text-text-primary">
-                                                            {service.name}
-                                                        </p>
-                                                        <p className="text-xs text-text-muted">
-                                                            {service.desc}
-                                                        </p>
-                                                    </div>
-                                                </Link>
-                                            ))}
-                                        </div>
-                                    </motion.div>
-                                )}
-                            </AnimatePresence>
-                        </div> */}
-
                         {/* Regular Nav Links */}
                         {navLinks.map((link) => (
                             <Link
                                 key={link.href}
                                 href={link.href}
-                                target={link.target}
                                 className={`relative font-medium transition-colors ${isScrolled ? 'text-text-primary' : 'text-white'
                                     } hover:text-accent ${pathname === link.href ? 'text-accent' : ''
                                     }`}
@@ -188,9 +104,9 @@ export default function Navbar() {
                         </motion.a>
 
                         {/* Cafe Vibe Toggle  TODO*/}
-                        <div className="hidden lg:block">
+                        {/* <div className="hidden lg:block">
                             <CafeVibeToggle />
-                        </div>
+                        </div> */}
 
                         {/* Mobile Menu Button */}
                         <motion.button
@@ -240,49 +156,6 @@ export default function Navbar() {
                         <div className="absolute inset-0 bg-navbar-glass backdrop-blur-3xl">
                             <div className="flex flex-col h-full px-6 pt-24 pb-8">
                                 <nav className="flex-1 space-y-2">
-                                    {/* Services (expandable) */}
-                                    <div>
-                                        <button
-                                            onClick={() => setIsServicesOpen(!isServicesOpen)}
-                                            className="w-full flex items-center justify-between py-4 text-2xl font-bold
-                                 text-text-primary border-b border-glass-border"
-                                        >
-                                            Services
-                                            <ChevronDown
-                                                className={`w-6 h-6 transition-transform ${isServicesOpen ? 'rotate-180' : ''
-                                                    }`}
-                                            />
-                                        </button>
-                                        <AnimatePresence>
-                                            {isServicesOpen && (
-                                                <motion.div
-                                                    initial={{ height: 0, opacity: 0 }}
-                                                    animate={{ height: 'auto', opacity: 1 }}
-                                                    exit={{ height: 0, opacity: 0 }}
-                                                    className="overflow-hidden pl-4"
-                                                >
-                                                    {serviceLinks.map((service, i) => (
-                                                        <motion.div
-                                                            key={service.href}
-                                                            initial={{ x: -20, opacity: 0 }}
-                                                            animate={{ x: 0, opacity: 1 }}
-                                                            transition={{ delay: i * 0.05 }}
-                                                        >
-                                                            <Link
-                                                                href={service.href}
-                                                                className="flex items-center gap-3 py-3 text-lg text-text-secondary
-                                           hover:text-accent hover:translate-x-2 transition-all"
-                                                            >
-                                                                <span>{service.icon}</span>
-                                                                <span>{service.name}</span>
-                                                            </Link>
-                                                        </motion.div>
-                                                    ))}
-                                                </motion.div>
-                                            )}
-                                        </AnimatePresence>
-                                    </div>
-
                                     {/* Other Links */}
                                     {navLinks.map((link, i) => (
                                         <motion.div
@@ -304,9 +177,9 @@ export default function Navbar() {
                                 </nav>
 
                                 {/* Cafe Vibe Toggle - Mobile */}
-                                <div className="flex justify-center py-4">
+                                {/* <div className="flex justify-center py-4">
                                     <CafeVibeToggle />
-                                </div>
+                                </div> */}
 
                                 {/* WhatsApp CTA - Mobile */}
                                 <motion.a

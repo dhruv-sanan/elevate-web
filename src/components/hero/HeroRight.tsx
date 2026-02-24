@@ -33,9 +33,9 @@ export function HeroRight() {
 
     // Derived values for display
     const revenue = contextOrders * aov
-    const commission = revenue * 0.30 // 30% commission? Earlier file said 40% (0.4) but plan said 30%. User prompt says 30%. HeroLeft says 40%. Consistency?
+    const commission = revenue * 0.30 // 30% commission? Earlier file said 30% (0.4) but plan said 30%. User prompt says 30%. HeroLeft says 30%. Consistency?
     // User requested: "based on 30% commition rate". I will use 0.30.
-    // However, existing text says "Commission (40%)". I should update text to 30% or match logic.
+    // However, existing text says "Commission (30%)". I should update text to 30% or match logic.
     // User prompt specifically said: "show live calculations based on 30% commition rate".
     // I will use 0.3, and label it "Commission (30%)".
 
@@ -160,9 +160,6 @@ export function HeroRight() {
                 </motion.div>
 
                 {/* SECONDARY: LIVE ORDER BUBBLES - Anchored to this wrapper */}
-                <Bubble position="top-left" delay={1.2}>
-                    {getBubble(0)}
-                </Bubble>
                 <Bubble position="middle-left" delay={1.5}>
                     {getBubble(1)}
                 </Bubble>
@@ -198,7 +195,7 @@ function Metric({ label, value }: { label: string, value: string | number }) {
 
 function Bubble({ children, position, delay }: { children: React.ReactNode, position: string, delay: number }) {
     const posClasses = {
-        "top-left": "-top-18 -left-35 hidden md:block",
+        "top-left": "-top-20 -right-40 hidden md:block",
         "middle-left": "top-1/2 -left-48 -translate-y-1/2 hidden lg:block", // Fully clear on desktop
         "bottom-right": "-bottom-5 -right-24 hidden md:block"
     }

@@ -30,7 +30,7 @@ export function ContactHero() {
                 transition={{ duration: 0.5, delay: 0.2 }}
                 className="font-inter text-lg md:text-xl text-muted-foreground max-w-2xl leading-relaxed mb-8"
             >
-                Ready to stop paying 40% commission? Book a free 15-minute call or drop us a message on WhatsApp. We respond in under 5 minutes.
+                Ready to stop paying 30% commission? Book a free 15-minute call or drop us a message on WhatsApp. We respond in under 5 minutes.
             </motion.p>
 
             <motion.div

@@ -57,7 +57,7 @@ function SectionHeader() {
             </h2>
             <p className="font-inter text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
                 Local restaurants, cafés, and hotels who took control of their orders—
-                and never looked back at Delivery Partners.
+                and never looked back at Delivery Apps.
             </p>
         </div>
     )
@@ -141,7 +141,7 @@ function VideoTestimonials() {
                     avatar="/clients/avatar-1.jpg"
                     name="Rajveer Singh"
                     business="Tamra Restaurant, Amritsar"
-                    quote="We were paying ₹45,000/month to Delivery Partners. Now? Zero. Dhruv's system paid for itself in 6 weeks."
+                    quote="We were paying ₹45,000/month to Delivery Apps. Now? Zero. Dhruv's system paid for itself in 6 weeks."
                     stats={[
                         { icon: ArrowUp, text: "₹5.4L saved/year" },
                         { icon: Clock, text: "Setup in 5 days" }
@@ -232,7 +232,7 @@ function WrittenTestimonials() {
     const [activeIndex, setActiveIndex] = useState(0)
     const testimonials = [
         {
-            text: "I was skeptical about leaving Delivery Partners, but Dhruv showed me the math: ₹70,000/month in commissions. Now I keep every rupee. The WhatsApp ordering system is so smooth—customers love it. Setup took 14 days. ROI in 4 weeks.",
+            text: "I was skeptical about leaving Delivery Apps, but Dhruv showed me the math: ₹70,000/month in commissions. Now I keep every rupee. The WhatsApp ordering system is so smooth—customers love it. Setup took 14 days. ROI in 4 weeks.",
             name: "Amrit Kaur",
             business: "Kesar Da Dhaba, Amritsar",
             time: "3 months ago",
@@ -244,7 +244,7 @@ function WrittenTestimonials() {
             name: "Gurpreet Singh",
             business: "Café Nomad, Amritsar",
             time: "1 month ago",
-            stats: { icon: Users, text: "40% faster service" },
+            stats: { icon: Users, text: "30% faster service" },
             avatar: "/clients/avatar-5.jpg"
         },
         {
@@ -363,7 +363,7 @@ function ResultsSection() {
                     name="Tamra Restaurant"
                     details="Restaurant • 50 seats"
                     before={{
-                        label: "With Delivery Partners (Before)",
+                        label: "With Delivery Apps (Before)",
                         orders: "847",
                         revenue: "₹2,95,000",
                         commission: "-₹1,18,000",
@@ -421,11 +421,14 @@ function ResultsSection() {
 }
 
 function ResultCard({ name, details, before, after, footer, variant = "standard" }: any) {
+    const [activeSlide, setActiveSlide] = useState(0);
+
     return (
         <motion.div
-            initial={{ opacity: 0, y: 30 }}
+            initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
+            viewport={{ once: true, margin: "-50px" }}
+            transition={{ duration: 0.6, ease: "easeOut" }}
             whileHover={{ y: -4 }}
             className="group bg-gradient-to-br from-black/[0.02] to-transparent dark:from-white/5 dark:to-white/[0.02] border border-black/5 dark:border-white/10 rounded-3xl p-8 hover:border-[#00d9a3]/30 transition-all duration-300"
         >
@@ -436,48 +439,70 @@ function ResultCard({ name, details, before, after, footer, variant = "standard"
                 </div>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-[1fr_auto_1fr] gap-6 items-center">
-                {/* Before */}
-                <div className="space-y-4">
-                    <p className="font-inter text-xs font-bold uppercase tracking-wider text-muted-foreground">{before.label}</p>
-                    <Metric label="Monthly Orders" value={before.orders} />
-                    {variant === "standard" ? (
-                        <>
-                            <Metric label="Revenue" value={before.revenue} />
-                            <Metric label="Commission (40%)" value={before.commission} isLoss />
-                            <TotalMetric label="YOU KEPT" value={before.net} isLoss />
-                        </>
-                    ) : (
-                        <>
-                            <Metric label={before.metric2Label} value={before.metric2Value} />
-                            <Metric label="Revenue" value={before.revenue} />
-                            <Metric label={before.lossLabel} value={before.lossValue} isLoss />
-                        </>
-                    )}
+            <div className="relative">
+                <div className="md:hidden text-[10px] uppercase tracking-wider text-muted-foreground font-semibold text-center mb-4 flex items-center justify-center gap-2">
+                    <ChevronLeft className="w-3 h-3" />
+                    Swipe to compare
+                    <ChevronRight className="w-3 h-3" />
+                </div>
+                
+                <div 
+                    className="flex overflow-x-auto snap-x snap-mandatory md:grid md:grid-cols-[1fr_auto_1fr] gap-6 items-center pb-4 md:pb-0 scrollbar-hide"
+                    onScroll={(e) => {
+                        const target = e.currentTarget;
+                        const scrollLeft = target.scrollLeft;
+                        const width = target.clientWidth;
+                        setActiveSlide(scrollLeft > width / 2 ? 1 : 0);
+                    }}
+                >
+                    {/* Before */}
+                    <div className="space-y-4 min-w-full snap-center md:min-w-0">
+                        <p className="font-inter text-xs font-bold uppercase tracking-wider text-muted-foreground">{before.label}</p>
+                        <Metric label="Monthly Orders" value={before.orders} />
+                        {variant === "standard" ? (
+                            <>
+                                <Metric label="Revenue" value={before.revenue} />
+                                <Metric label="Commission (30%)" value={before.commission} isLoss />
+                                <TotalMetric label="YOU KEPT" value={before.net} isLoss />
+                            </>
+                        ) : (
+                            <>
+                                <Metric label={before.metric2Label} value={before.metric2Value} />
+                                <Metric label="Revenue" value={before.revenue} />
+                                <Metric label={before.lossLabel} value={before.lossValue} isLoss />
+                            </>
+                        )}
+                    </div>
+
+                    {/* Arrow */}
+                    <div className="hidden md:flex justify-center">
+                        <ArrowRight className="w-8 h-8 text-[#00d9a3]" />
+                    </div>
+
+                    {/* After */}
+                    <div className="space-y-4 min-w-full snap-center md:min-w-0">
+                        <p className="font-inter text-xs font-bold uppercase tracking-wider text-[#00d9a3]">{after.label}</p>
+                        <Metric label="Monthly Orders" value={after.orders} growth={after.ordersGrowth} />
+                        {variant === "standard" ? (
+                            <>
+                                <Metric label="Revenue" value={after.revenue} growth={after.revenueGrowth} />
+                                <Metric label="Commission" value={after.commission} isSuccess />
+                                <TotalMetric label="YOU KEEP" value={after.net} isSuccess />
+                            </>
+                        ) : (
+                            <>
+                                <Metric label={after.metric2Label} value={after.metric2Value} growth={after.metric2Growth} />
+                                <Metric label="Revenue" value={after.revenue} />
+                                <Metric label={after.successLabel} value={after.successValue} isSuccess />
+                            </>
+                        )}
+                    </div>
                 </div>
 
-                {/* Arrow */}
-                <div className="flex justify-center md:rotate-0 rotate-90">
-                    <ArrowRight className="w-8 h-8 text-[#00d9a3]" />
-                </div>
-
-                {/* After */}
-                <div className="space-y-4">
-                    <p className="font-inter text-xs font-bold uppercase tracking-wider text-[#00d9a3]">{after.label}</p>
-                    <Metric label="Monthly Orders" value={after.orders} growth={after.ordersGrowth} />
-                    {variant === "standard" ? (
-                        <>
-                            <Metric label="Revenue" value={after.revenue} growth={after.revenueGrowth} />
-                            <Metric label="Commission" value={after.commission} isSuccess />
-                            <TotalMetric label="YOU KEEP" value={after.net} isSuccess />
-                        </>
-                    ) : (
-                        <>
-                            <Metric label={after.metric2Label} value={after.metric2Value} growth={after.metric2Growth} />
-                            <Metric label="Revenue" value={after.revenue} />
-                            <Metric label={after.successLabel} value={after.successValue} isSuccess />
-                        </>
-                    )}
+                {/* Dot Indicators (Mobile Only) */}
+                <div className="flex md:hidden justify-center gap-2 mt-4">
+                    <div className={cn("w-2 h-2 rounded-full transition-all duration-300", activeSlide === 0 ? "w-6 bg-[#00d9a3]" : "bg-black/20 dark:bg-white/20")} />
+                    <div className={cn("w-2 h-2 rounded-full transition-all duration-300", activeSlide === 1 ? "w-6 bg-[#00d9a3]" : "bg-black/20 dark:bg-white/20")} />
                 </div>
             </div>
 

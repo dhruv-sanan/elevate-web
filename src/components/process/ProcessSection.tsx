@@ -74,7 +74,7 @@ export function ProcessSection() {
                 </h2>
                 <p className="font-sans text-lg leading-[1.7] text-gray-400 max-w-3xl mx-auto mb-8">
                     A proven 14-day process that's taken 12+ Amritsar businesses from
-                    Delivery Partners-dependent to fully independent. Zero guesswork. Zero delays.
+                    Delivery Apps-dependent to fully independent. Zero guesswork. Zero delays.
                 </p>
 
                 {/* Reassurance Badge */}
@@ -117,7 +117,7 @@ export function ProcessSection() {
                             What We'll Discuss:
                         </h4>
                         <ul className="flex flex-col gap-3">
-                            <ChecklistItem text="Your business goals (more orders? stop Delivery Partners fees? better bookings?)" />
+                            <ChecklistItem text="Your business goals (more orders? stop Delivery Apps fees? better bookings?)" />
                             <ChecklistItem text="Current ordering process and where it's breaking" />
                             <ChecklistItem text="Menu structure, pricing, and special categories" />
                             <ChecklistItem text="Branding (colors, logo, vibe you want)" />
@@ -416,7 +416,7 @@ export function ProcessSection() {
                             <ul className="list-disc pl-4 space-y-2">
                                 <li className="font-sans text-sm text-gray-300">
                                     Post on Instagram/Facebook: "We're now taking direct
-                                    orders—no Delivery Partners fees!"
+                                    orders—no Delivery Apps fees!"
                                 </li>
                                 <li className="font-sans text-sm text-gray-300">
                                     Put QR codes on tables, menus, delivery bags

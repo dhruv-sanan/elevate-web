@@ -1,5 +1,6 @@
 "use client"
 
+import { useState } from "react"
 import {
     X,
     CheckCircle,
@@ -14,6 +15,8 @@ import {
 import { motion } from "framer-motion"
 
 export function QualificationSection() {
+    const [activeTab, setActiveTab] = useState<'fit' | 'not-fit'>('fit');
+
     return (
         <section className="relative w-full py-24 md:py-32 px-6 overflow-hidden bg-background">
             {/* Background Gradients & Overlay */}
@@ -68,6 +71,22 @@ export function QualificationSection() {
                     </p>
                 </motion.div>
 
+                {/* Mobile Segmented Toggle */}
+                <div className="flex md:hidden bg-white/5 border border-white/10 p-1.5 rounded-xl mb-8 max-w-[16rem] mx-auto">
+                    <button 
+                        onClick={() => setActiveTab('not-fit')}
+                        className={`flex-1 py-3 text-sm font-semibold rounded-lg transition-all ${activeTab === 'not-fit' ? 'bg-red-500/20 text-red-400 border border-red-500/30' : 'text-gray-400 border border-transparent'}`}
+                    >
+                        Not a Fit
+                    </button>
+                    <button 
+                        onClick={() => setActiveTab('fit')}
+                        className={`flex-1 py-3 text-sm font-semibold rounded-lg transition-all ${activeTab === 'fit' ? 'bg-[#00d9a3]/20 text-[#00d9a3] border border-[#00d9a3]/30' : 'text-gray-400 border border-transparent'}`}
+                    >
+                        Perfect Fit
+                    </button>
+                </div>
+
                 {/* Comparison Container */}
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-16 max-w-[75rem] mx-auto">
 
@@ -77,27 +96,27 @@ export function QualificationSection() {
                         whileInView={{ opacity: 1, x: 0 }}
                         viewport={{ once: true }}
                         transition={{ duration: 0.8, delay: 0.2 }}
-                        className="group relative p-8 md:p-12 rounded-3xl border-2 border-red-500/30 bg-gradient-to-br from-red-500/10 to-red-900/5 transition-all duration-500 hover:-translate-y-2 hover:border-red-500/50 hover:shadow-[0_20px_60px_rgba(239,68,68,0.2)]"
+                        className={`group relative p-6 md:p-12 rounded-3xl border-2 border-red-500/30 bg-gradient-to-br from-red-500/10 to-red-900/5 transition-all duration-500 hover:-translate-y-2 hover:border-red-500/50 hover:shadow-[0_20px_60px_rgba(239,68,68,0.2)] ${activeTab === 'not-fit' ? 'block' : 'hidden md:block'}`}
                     >
                         {/* Hover Gradient Overlay */}
                         <div className="absolute -top-1/2 -right-1/2 w-[200%] h-[200%] bg-[radial-gradient(circle,rgba(239,68,68,0.1)_0%,transparent_70%)] opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
 
-                        <div className="relative z-10 flex flex-col gap-8 h-full">
-                            <div className="flex items-center gap-4">
-                                <div className="w-16 h-16 rounded-2xl flex items-center justify-center shrink-0 bg-red-500/20 border-2 border-red-500/40 text-red-400">
-                                    <X className="w-8 h-8" />
+                        <div className="relative z-10 flex flex-col gap-6 md:gap-8 h-full">
+                            <div className="flex items-center gap-3 md:gap-4">
+                                <div className="w-12 h-12 md:w-16 md:h-16 rounded-xl md:rounded-2xl flex items-center justify-center shrink-0 bg-red-500/20 border-2 border-red-500/40 text-red-400">
+                                    <X className="w-6 h-6 md:w-8 md:h-8" />
                                 </div>
-                                <h3 className="text-2xl md:text-3xl font-bold text-white font-space-grotesk">
+                                <h3 className="text-xl md:text-3xl font-bold text-white font-space-grotesk">
                                     We're NOT the Right Fit If...
                                 </h3>
                             </div>
 
-                            <p className="text-gray-300 text-base leading-relaxed font-inter">
+                            <p className="text-gray-300 text-sm md:text-base leading-relaxed font-inter">
                                 These are red flags. If this sounds like you, we'll both be frustrated.
                                 Save us both the headache.
                             </p>
 
-                            <div className="flex flex-col gap-6 flex-1">
+                            <div className="flex flex-col gap-4 md:gap-6 flex-1">
                                 {[
                                     {
                                         title: "You're looking for a cheap ₹5,000 template",
@@ -108,8 +127,8 @@ export function QualificationSection() {
                                         desc: "Social media is rented land. You own your website. If your entire business lives on Meta's algorithm, you're one policy change away from zero revenue."
                                     },
                                     {
-                                        title: "You're happy paying 30-40% commissions forever",
-                                        desc: "If you're comfortable giving Delivery Partners ₹70,000/month while complaining about \"tough times,\" we can't help each other. This is for owners who do the math."
+                                        title: "You're happy paying 30-30% commissions forever",
+                                        desc: "If you're comfortable giving Delivery Apps ₹70,000/month while complaining about \"tough times,\" we can't help each other. This is for owners who do the math."
                                     },
                                     {
                                         title: "You view a website as an expense, not an investment",
@@ -117,14 +136,14 @@ export function QualificationSection() {
                                     }
                                 ].map((item, idx) => (
                                     <div key={idx} className="flex items-start gap-4 p-5 rounded-xl bg-black/20 hover:bg-black/40 hover:translate-x-2 transition-all duration-300">
-                                        <div className="w-10 h-10 rounded-lg flex items-center justify-center shrink-0 bg-red-500/15 border border-red-500/30 text-red-400">
-                                            <XCircle className="w-5 h-5" />
+                                        <div className="w-10 h-10 md:w-12 md:h-12 rounded-lg flex items-center justify-center shrink-0 bg-red-500/15 border border-red-500/30 text-red-400">
+                                            <XCircle className="w-5 h-5 md:w-6 md:h-6" />
                                         </div>
                                         <div>
-                                            <h4 className="text-lg font-semibold text-white mb-2 font-space-grotesk leading-snug">
+                                            <h4 className="text-base md:text-lg font-semibold text-white mb-1 md:mb-2 font-space-grotesk leading-snug">
                                                 {item.title}
                                             </h4>
-                                            <p className="text-gray-400 text-sm leading-relaxed font-inter">
+                                            <p className="text-gray-400 text-xs md:text-sm leading-relaxed font-inter line-clamp-3 md:line-clamp-none">
                                                 {item.desc}
                                             </p>
                                         </div>
@@ -145,27 +164,27 @@ export function QualificationSection() {
                         whileInView={{ opacity: 1, x: 0 }}
                         viewport={{ once: true }}
                         transition={{ duration: 0.8, delay: 0.4 }}
-                        className="group relative p-8 md:p-12 rounded-3xl border-2 border-[#00d9a3]/40 bg-gradient-to-br from-[#00d9a3]/15 to-[#10b981]/10 transition-all duration-500 hover:-translate-y-2 hover:border-[#00d9a3]/60 hover:shadow-[0_20px_60px_rgba(0,217,163,0.3)]"
+                        className={`group relative p-6 md:p-12 rounded-3xl border-2 border-[#00d9a3]/40 bg-gradient-to-br from-[#00d9a3]/15 to-[#10b981]/10 transition-all duration-500 hover:-translate-y-2 hover:border-[#00d9a3]/60 hover:shadow-[0_20px_60px_rgba(0,217,163,0.3)] ${activeTab === 'fit' ? 'block' : 'hidden md:block'}`}
                     >
                         {/* Hover Gradient Overlay */}
                         <div className="absolute -top-1/2 -left-1/2 w-[200%] h-[200%] bg-[radial-gradient(circle,rgba(0,217,163,0.15)_0%,transparent_70%)] opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
 
-                        <div className="relative z-10 flex flex-col gap-8 h-full">
-                            <div className="flex items-center gap-4">
-                                <div className="w-16 h-16 rounded-2xl flex items-center justify-center shrink-0 bg-[#00d9a3]/20 border-2 border-[#00d9a3]/40 text-[#00d9a3]">
-                                    <CheckCircle className="w-8 h-8" />
+                        <div className="relative z-10 flex flex-col gap-6 md:gap-8 h-full">
+                            <div className="flex items-center gap-3 md:gap-4">
+                                <div className="w-12 h-12 md:w-16 md:h-16 rounded-xl md:rounded-2xl flex items-center justify-center shrink-0 bg-[#00d9a3]/20 border-2 border-[#00d9a3]/40 text-[#00d9a3]">
+                                    <CheckCircle className="w-6 h-6 md:w-8 md:h-8" />
                                 </div>
-                                <h3 className="text-2xl md:text-3xl font-bold text-white font-space-grotesk">
+                                <h3 className="text-xl md:text-3xl font-bold text-white font-space-grotesk">
                                     We're Built for You If...
                                 </h3>
                             </div>
 
-                            <p className="text-gray-300 text-base leading-relaxed font-inter">
+                            <p className="text-gray-300 text-sm md:text-base leading-relaxed font-inter">
                                 This is who we love working with. Serious owners who understand business,
                                 not just "vibes."
                             </p>
 
-                            <div className="flex flex-col gap-6 flex-1">
+                            <div className="flex flex-col gap-4 md:gap-6 flex-1">
                                 {[
                                     {
                                         title: "You're a serious owner ready to scale your brand",
@@ -185,14 +204,14 @@ export function QualificationSection() {
                                     }
                                 ].map((item, idx) => (
                                     <div key={idx} className="flex items-start gap-4 p-5 rounded-xl bg-black/20 hover:bg-black/40 hover:translate-x-2 transition-all duration-300">
-                                        <div className="w-10 h-10 rounded-lg flex items-center justify-center shrink-0 bg-[#00d9a3]/15 border border-[#00d9a3]/30 text-[#00d9a3]">
-                                            <Check className="w-5 h-5" />
+                                        <div className="w-10 h-10 md:w-12 md:h-12 rounded-lg flex items-center justify-center shrink-0 bg-[#00d9a3]/15 border border-[#00d9a3]/30 text-[#00d9a3]">
+                                            <Check className="w-5 h-5 md:w-6 md:h-6" />
                                         </div>
                                         <div>
-                                            <h4 className="text-lg font-semibold text-white mb-2 font-space-grotesk leading-snug">
+                                            <h4 className="text-base md:text-lg font-semibold text-white mb-1 md:mb-2 font-space-grotesk leading-snug">
                                                 {item.title}
                                             </h4>
-                                            <p className="text-gray-400 text-sm leading-relaxed font-inter">
+                                            <p className="text-gray-400 text-xs md:text-sm leading-relaxed font-inter line-clamp-3 md:line-clamp-none">
                                                 {item.desc}
                                             </p>
                                         </div>

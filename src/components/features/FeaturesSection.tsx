@@ -54,37 +54,37 @@ export function FeaturesSection() {
                         transition={{ delay: 0.2 }}
                         className="font-inter text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed"
                     >
-                        No commissions. No middlemen. Just direct revenue—while delivery partners watches from the sidelines.
+                        No commissions. No middlemen. Just direct revenue—while Delivery Apps watches from the sidelines.
                     </motion.p>
                 </div>
 
                 {/* BENTO GRID */}
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 auto-rows-auto">
+                <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 auto-rows-auto">
 
                     {/* CARD 1: COMMISSION-FREE ORDERING (LARGE) */}
                     <FeatureCard
-                        className="col-span-1 md:col-span-2 lg:col-span-2 row-span-2"
+                        className="col-span-2 md:col-span-2 lg:col-span-2 row-span-2"
                         number="01"
                         delay={0.1}
                     >
                         <div className="bg-[#00d9a3]/10 w-20 h-20 rounded-2xl flex items-center justify-center mb-6">
                             <ShoppingCart className="w-10 h-10 text-[#00d9a3]" />
                         </div>
-                        <h3 className="font-space-grotesk text-3xl md:text-4xl font-bold mb-4 text-foreground">
+                        <h3 className="font-space-grotesk text-2xl md:text-4xl font-bold mb-4 text-foreground">
                             Zero Commission Ordering
                         </h3>
                         <p className="font-inter text-muted-foreground text-lg leading-relaxed mb-8">
-                            Stop paying Delivery Partners 40% per order. Customers order directly from your menu—WhatsApp confirms instantly. You keep 100% of the revenue.
+                            Stop paying Delivery Apps 30% per order. Customers order directly from your menu—WhatsApp confirms instantly. You keep 100% of the revenue.
                         </p>
 
                         {/* Savings Visual */}
                         <div className="space-y-4 w-full max-w-lg">
                             <div className="space-y-1">
-                                <span className="text-sm font-medium text-red-400">With Delivery Partners:</span>
+                                <span className="text-sm font-medium text-red-400">With Delivery Apps:</span>
                                 <div className="h-12 bg-red-500/10 border border-red-500/20 rounded-lg relative overflow-hidden">
                                     <div className="absolute left-0 top-0 h-full w-[60%] bg-red-500/80"></div>
                                     <span className="absolute right-4 top-1/2 -translate-y-1/2 text-sm font-semibold text-red-500">
-                                        -40% gone
+                                        -30% gone
                                     </span>
                                 </div>
                             </div>
@@ -106,7 +106,7 @@ export function FeaturesSection() {
                         </div>
 
                         <div className="flex flex-wrap gap-2 mt-8">
-                            {["Add-to-Cart", "Checkout", "UPI/Card", "WhatsApp Auto-Confirm"].map((tag) => (
+                            {["Add-to-Cart", "Checkout", "UPI/Card"].map((tag) => (
                                 <span key={tag} className="px-3 py-1 rounded-full bg-foreground/5 border border-foreground/10 text-xs text-muted-foreground">
                                     {tag}
                                 </span>
@@ -126,7 +126,7 @@ export function FeaturesSection() {
                         <h3 className="font-space-grotesk text-xl font-bold mb-3 text-foreground">
                             QR Table Ordering
                         </h3>
-                        <p className="font-inter text-muted-foreground text-sm leading-relaxed mb-6">
+                        <p className="font-inter text-muted-foreground text-sm leading-loose md:leading-relaxed mb-6">
                             Customers can scan, order and pay—no waiter needed. Faster service.
                         </p>
                         <div className="flex justify-center mt-auto">
@@ -153,7 +153,7 @@ export function FeaturesSection() {
                         <h3 className="font-space-grotesk text-xl font-bold mb-3 text-foreground">
                             Smart Upselling
                         </h3>
-                        <p className="font-inter text-muted-foreground text-sm leading-relaxed mb-4">
+                        <p className="font-inter text-muted-foreground text-sm leading-loose md:leading-relaxed mb-4">
                             &quot;Add Gulab Jamun for ₹40?&quot; Automatic suggestions increase order value by 20%.
                         </p>
                         <div className="mt-auto bg-foreground/5 border border-foreground/10 rounded-lg p-3 text-xs">
@@ -166,7 +166,7 @@ export function FeaturesSection() {
 
                     {/* CARD 4: ADMIN DASHBOARD (WIDE) */}
                     <FeatureCard
-                        className="col-span-1 md:col-span-2 lg:col-span-2 row-span-1"
+                        className="col-span-2 md:col-span-2 lg:col-span-2 row-span-1"
                         number="04"
                         delay={0.4}
                     >
@@ -207,7 +207,7 @@ export function FeaturesSection() {
 
                     {/* CARD 5: WHATSAPP AUTO-CONFIRM (TALL) */}
                     <FeatureCard
-                        className="col-span-1 md:col-span-1 row-span-1 lg:row-span-2"
+                        className="col-span-2 md:col-span-1 row-span-1 lg:row-span-2"
                         number="05"
                         delay={0.5}
                     >
@@ -217,7 +217,7 @@ export function FeaturesSection() {
                         <h3 className="font-space-grotesk text-xl font-bold mb-3 text-foreground">
                             WhatsApp Auto-Confirm
                         </h3>
-                        <p className="font-inter text-muted-foreground text-sm leading-relaxed mb-6">
+                        <p className="font-inter text-muted-foreground text-sm leading-loose md:leading-relaxed mb-6">
                             Order placed → WhatsApp message sent → Customer relaxes. Zero manual work.
                         </p>
 
@@ -253,7 +253,7 @@ export function FeaturesSection() {
 
                     {/* CARD 6: SEO & GOOGLE RANKING (WIDE) */}
                     <FeatureCard
-                        className="col-span-1 md:col-span-2 lg:col-span-2 row-span-1"
+                        className="col-span-2 md:col-span-2 lg:col-span-2 row-span-1"
                         number="06"
                         delay={0.6}
                     >
@@ -298,7 +298,7 @@ export function FeaturesSection() {
 
                     {/* CARD 7: 3D HERO & ANIMATIONS (TALL) */}
                     <FeatureCard
-                        className="col-span-1 md:col-span-1 row-span-1 lg:row-span-2 bg-gradient-to-br from-purple-500/10 to-pink-500/10 border-purple-500/30 hover:border-purple-500/50"
+                        className="col-span-2 md:col-span-1 row-span-1 lg:row-span-2 bg-gradient-to-br from-purple-500/10 to-pink-500/10 border-purple-500/30 hover:border-purple-500/50"
                         number="07"
                         delay={0.7}
                     >
@@ -308,7 +308,7 @@ export function FeaturesSection() {
                         <h3 className="font-space-grotesk text-xl font-bold mb-3 text-foreground">
                             3D &quot;Edible Luxury&quot;
                         </h3>
-                        <p className="font-inter text-muted-foreground text-sm leading-relaxed mb-6">
+                        <p className="font-inter text-muted-foreground text-sm leading-loose md:leading-relaxed mb-6">
                             Interactive 3D dishes that spin, glow, and make NRIs say &quot;Wow&quot;.
                         </p>
 
@@ -334,7 +334,7 @@ export function FeaturesSection() {
 
                     {/* CARD 8: AI CHATBOT (WIDE) */}
                     <FeatureCard
-                        className="col-span-1 md:col-span-2 lg:col-span-2 row-span-1 bg-gradient-to-r from-blue-500/10 to-cyan-500/10 border-blue-500/30 hover:border-blue-500/50"
+                        className="col-span-2 md:col-span-2 lg:col-span-2 row-span-1 bg-gradient-to-r from-blue-500/10 to-cyan-500/10 border-blue-500/30 hover:border-blue-500/50"
                         number="08"
                         delay={0.8}
                     >
@@ -382,6 +382,7 @@ export function FeaturesSection() {
                             </div>
                         </div>
                     </FeatureCard>
+
                 </div>
             </div>
         </section>
@@ -396,7 +397,7 @@ function FeatureCard({ children, className, number, delay }: { children: React.R
             viewport={{ once: true, margin: "-50px" }}
             transition={{ duration: 0.6, delay, ease: "easeOut" }}
             className={cn(
-                "relative group overflow-hidden rounded-3xl p-6 md:p-8 transition-all duration-300",
+                "relative group overflow-hidden rounded-3xl p-4 sm:p-6 md:p-8 transition-all duration-300",
                 "bg-white/5 dark:bg-white/5 backdrop-blur-2xl border border-white/10 dark:border-white/10",
                 "hover:-translate-y-1 hover:border-[#00d9a3]/50 hover:shadow-[0_0_40px_rgba(0,217,163,0.1)]",
                 className

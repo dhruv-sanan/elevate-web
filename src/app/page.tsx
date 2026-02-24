@@ -7,17 +7,18 @@ import { TestimonialsSection } from "@/components/testimonials/TestimonialsSecti
 import { FAQSection } from "@/components/faq/FAQSection";
 import { QualificationSection } from "@/components/qualification/QualificationSection";
 import { Footer } from "@/components/footer/Footer";
+import { StickyMobileCTA } from "@/components/ui/StickyMobileCTA";
 
 export default function Home() {
   return (
     <main>
-      <Hero3D />
       <HeroSection />
       <FeaturesSection />
       <QualificationSection />
       <TestimonialsSection />
       <FAQSection />
       <Footer />
+      <StickyMobileCTA />
     </main>
   );
 }
