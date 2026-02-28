@@ -96,7 +96,7 @@ function StatsBar() {
                 icon={Zap}
                 number="14 Days"
                 label="Avg Setup Time"
-                sublabel="From chat to live site"
+                sublabel="From chat to live web app"
             />
         </div>
     )

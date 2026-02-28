@@ -165,7 +165,7 @@ export function HeroLeft() {
                 variants={itemVariants}
                 className="font-inter text-lg md:text-xl text-gray-500 dark:text-gray-400 leading-relaxed max-w-2xl"
             >
-                We build direct ordering systems for restaurants that bring repeat customers, reduce commission, and increase profit — without technical headache.
+                Not a brochure website. We build full ordering web apps for restaurants that bring repeat customers, reduce commission, and increase profit — without technical headache.
             </motion.p>
 
             {/* 04. CTA BUTTONS */}

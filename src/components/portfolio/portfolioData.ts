@@ -15,8 +15,9 @@ export interface PortfolioItem {
     quote: string;
     owner: string;
   };
-  demoUrl: string;
-  color: string; // Tailwing color class for accents
+  imageUrl: string;
+  color: string; // Tailwind color class for accents
+  demoUrl?: string;
 }
 
 export const portfolioData: PortfolioItem[] = [
@@ -32,10 +33,10 @@ export const portfolioData: PortfolioItem[] = [
       rating: 4.9,
     },
     testimonial: {
-      quote: "Moving away from aggregators was the best decision. Our regular customers now order directly through our website, saving us thousands in commissions every month.",
+      quote: "Moving away from aggregators was the best decision. Our regular customers now order directly through our web app, saving us thousands in commissions every month.",
       owner: "Rahul Patel",
     },
-    demoUrl: "https://yummin.vercel.app/menu",
+    imageUrl: "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&q=80&w=800",
     color: "from-orange-500 to-red-500",
   },
   {
@@ -53,7 +54,7 @@ export const portfolioData: PortfolioItem[] = [
       quote: "The QR table ordering has completely transformed our dine-in experience. Less waiting time for customers and faster table turnovers for us.",
       owner: "Neha Shah",
     },
-    demoUrl: "https://yummin.vercel.app/menu",
+    imageUrl: "https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&q=80&w=800",
     color: "from-amber-500 to-yellow-500",
   },
   {
@@ -71,7 +72,7 @@ export const portfolioData: PortfolioItem[] = [
       quote: "During Diwali, the custom pre-order system handled over 500 orders without a single hiccup. The WhatsApp confirmations build immense trust with our clients.",
       owner: "Karan Desai",
     },
-    demoUrl: "https://yummin.vercel.app/menu",
+    imageUrl: "https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&q=80&w=800",
     color: "from-pink-500 to-rose-500",
   },
   {
@@ -89,7 +90,7 @@ export const portfolioData: PortfolioItem[] = [
       quote: "Our guests love the convenience of ordering room service directly from their phones. It's premium, fast, and exactly what our heritage property needed.",
       owner: "Vikramsinh Jadeja",
     },
-    demoUrl: "https://yummin.vercel.app/menu",
+    imageUrl: "/ram-heritage.png",
     color: "from-blue-500 to-indigo-500",
   },
   {
@@ -107,7 +108,7 @@ export const portfolioData: PortfolioItem[] = [
       quote: "The automated Google reviews feature pushed our rating from 4.1 to 4.8 in just two months. We're seeing more footfall than ever before.",
       owner: "Sanjay Dave",
     },
-    demoUrl: "https://yummin.vercel.app/menu",
+    imageUrl: "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&q=80&w=800",
     color: "from-green-500 to-emerald-500",
   },
   {
@@ -125,7 +126,7 @@ export const portfolioData: PortfolioItem[] = [
       quote: "Managing custom cake enquiries used to be a mess. Now, the dedicated enquiry form with WhatsApp integration makes closing sales effortless.",
       owner: "Priya Mehta",
     },
-    demoUrl: "https://yummin.vercel.app/menu",
+    imageUrl: "https://images.unsplash.com/photo-1517433670267-08bbd4be890f?auto=format&fit=crop&q=80&w=800",
     color: "from-purple-500 to-fuchsia-500",
   },
   {
@@ -140,10 +141,10 @@ export const portfolioData: PortfolioItem[] = [
       rating: 4.8,
     },
     testimonial: {
-      quote: "The 3D website vibe perfectly matches our physical aesthetic. It looks incredibly premium on mobile, which is where 90% of our customers find us.",
+      quote: "The 3D web app vibe perfectly matches our physical aesthetic. It looks incredibly premium on mobile, which is where 90% of our customers find us.",
       owner: "Aditya Mistry",
     },
-    demoUrl: "https://yummin.vercel.app/menu",
+    imageUrl: "https://images.unsplash.com/photo-1497935586351-b67a49e012bf?auto=format&fit=crop&q=80&w=800",
     color: "from-teal-500 to-cyan-500",
   },
   {
@@ -161,7 +162,7 @@ export const portfolioData: PortfolioItem[] = [
       quote: "Zero commission means we can pass on the discounts directly to our loyal customers. Our direct online orders have tripled since launch.",
       owner: "Jignesh Thakkar",
     },
-    demoUrl: "https://yummin.vercel.app/menu",
+    imageUrl: "https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&fit=crop&q=80&w=800",
     color: "from-cyan-500 to-blue-500",
   }
 ];

@@ -35,10 +35,10 @@ export function TechStack() {
                     // BUILT WITH CUTTING-EDGE TECH
                 </motion.p>
                 <h2 className="font-space-grotesk text-3xl md:text-5xl font-bold mb-6">
-                    The Tools That Power Your Website
+                    The Tools That Power Your Web App
                 </h2>
                 <p className="text-slate-400 max-w-2xl mx-auto mb-16 text-lg">
-                    We don't use WordPress templates. Every site is custom-built with modern technologies for speed, security, and scalability.
+                    We don't use WordPress templates. Every web app is custom-built with modern technologies for speed, security, and scalability.
                 </p>
 
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12">

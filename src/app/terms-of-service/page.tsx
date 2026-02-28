@@ -5,7 +5,7 @@ import { Footer } from "@/components/footer/Footer";
 export const metadata: Metadata = {
     title: "Terms of Service | ElevateWeb",
     description:
-        "Terms and conditions for ElevateWeb's web development services for restaurants, cafés, hotels, bakeries, and local businesses.",
+        "Terms and conditions for ElevateWeb's web app development services for restaurants, cafés, hotels, bakeries, and local businesses.",
 };
 
 export default function TermsOfServicePage() {
@@ -21,8 +21,8 @@ export default function TermsOfServicePage() {
                     </h1>
                     <p className="font-inter text-lg text-muted-foreground leading-relaxed mb-16">
                         These Terms of Service (&quot;Terms&quot;) govern your use of the
-                        ElevateWeb website and the web-development services we provide. By
-                        engaging our services or using our website, you agree to these
+                        ElevateWeb web app and the web-app development services we provide. By
+                        engaging our services or using our web app, you agree to these
                         Terms.
                     </p>
 
@@ -31,14 +31,14 @@ export default function TermsOfServicePage() {
                         <TermsSection number="1" title="Services We Provide">
                             <p>ElevateWeb offers the following services:</p>
                             <ul className="list-disc pl-6 space-y-1 mt-3 text-muted-foreground">
-                                <li>Custom website design and development for restaurants, cafés, bakeries, hotels, homestays, cloud kitchens, and local service businesses</li>
+                                <li>Custom web app design and development for restaurants, cafés, bakeries, hotels, homestays, cloud kitchens, and local service businesses</li>
                                 <li>WhatsApp Business API integration for order confirmations, booking alerts, and customer communication</li>
                                 <li>AI-powered chatbot setup for menu recommendations, concierge features, and customer support</li>
                                 <li>QR-based table ordering and digital menu systems</li>
                                 <li>Direct booking engines for hotels and homestays</li>
                                 <li>Search-engine optimisation (SEO), Google Maps integration, and local-search visibility</li>
                                 <li>Review automation and Google Business Profile optimisation</li>
-                                <li>Ongoing website maintenance and support (where agreed)</li>
+                                <li>Ongoing web app maintenance and support (where agreed)</li>
                             </ul>
                             <p className="mt-3">
                                 The specific scope of work for each project is defined in a
@@ -51,7 +51,7 @@ export default function TermsOfServicePage() {
                             <p>To ensure timely and successful delivery, you agree to:</p>
                             <ul className="list-disc pl-6 space-y-2 mt-3 text-muted-foreground">
                                 <li>Provide accurate and complete business information (name, address, contact details, licensing where applicable)</li>
-                                <li>Supply website content — menus, room details, pricing, photos, branding assets — in a timely manner</li>
+                                <li>Supply web app content — menus, room details, pricing, photos, branding assets — in a timely manner</li>
                                 <li>Share domain registrar and hosting credentials required for project setup and deployment</li>
                                 <li>Respond to review requests, feedback rounds, and approvals within a reasonable timeframe</li>
                                 <li>Ensure that all content you provide does not infringe on any third-party intellectual property rights</li>
@@ -106,7 +106,7 @@ export default function TermsOfServicePage() {
 
                             <p className="font-semibold mt-6 mb-2">Our work</p>
                             <p className="text-muted-foreground">
-                                Upon full payment, you receive a licence to use the website
+                                Upon full payment, you receive a licence to use the web app
                                 we build for you. ElevateWeb retains ownership of underlying
                                 code frameworks, templates, reusable components, and
                                 proprietary tools developed independently of your project.
@@ -122,11 +122,11 @@ export default function TermsOfServicePage() {
                         </TermsSection>
 
                         {/* 6 */}
-                        <TermsSection number="6" title="Website Hosting & Maintenance">
+                        <TermsSection number="6" title="Web App Hosting & Maintenance">
                             <ul className="list-disc pl-6 space-y-2 text-muted-foreground">
-                                <li>If hosting is included in your plan, we will maintain your website on a reliable hosting provider with reasonable uptime expectations (typically 99.9%)</li>
+                                <li>If hosting is included in your plan, we will maintain your web app on a reliable hosting provider with reasonable uptime expectations (typically 99.9%)</li>
                                 <li>Maintenance plans, where applicable, cover security updates, minor content changes, and performance monitoring</li>
-                                <li>If you discontinue payment for hosting or maintenance, we will provide reasonable notice before taking the website offline and will hand over all your content and data upon request</li>
+                                <li>If you discontinue payment for hosting or maintenance, we will provide reasonable notice before taking the web app offline and will hand over all your content and data upon request</li>
                                 <li>We are not liable for downtime caused by hosting-provider outages, DNS propagation, or force-majeure events</li>
                             </ul>
                         </TermsSection>
@@ -134,7 +134,7 @@ export default function TermsOfServicePage() {
                         {/* 7 */}
                         <TermsSection number="7" title="Third-Party Integrations">
                             <p>
-                                Our websites may integrate with third-party services
+                                Our web apps may integrate with third-party services
                                 including WhatsApp Business API, Google Maps, Google
                                 Analytics, AI/LLM providers, and payment gateways.
                             </p>
@@ -148,7 +148,7 @@ export default function TermsOfServicePage() {
                         {/* 8 */}
                         <TermsSection number="8" title="Limitation of Liability">
                             <ul className="list-disc pl-6 space-y-2 text-muted-foreground">
-                                <li>ElevateWeb builds websites designed to increase your online visibility, orders, and bookings — however, we do not guarantee specific business outcomes such as revenue targets, order volumes, or Google ranking positions</li>
+                                <li>ElevateWeb builds web apps designed to increase your online visibility, orders, and bookings — however, we do not guarantee specific business outcomes such as revenue targets, order volumes, or Google ranking positions</li>
                                 <li>SEO services are provided on a best-effort basis; search-engine algorithms are outside our control</li>
                                 <li>Our total liability for any claim arising from our services shall not exceed the total fees paid by you for the specific project in question</li>
                                 <li>We are not liable for indirect, incidental, or consequential damages including lost profits, lost data, or business interruption</li>

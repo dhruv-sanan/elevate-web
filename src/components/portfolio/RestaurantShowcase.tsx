@@ -26,7 +26,7 @@ export function RestaurantShowcase() {
       <div className="container mx-auto px-4 md:px-6 pt-12">
         <motion.div 
           layout
-          className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-8"
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-8"
         >
           <AnimatePresence mode="popLayout">
             {filteredData.map((item, index) => (

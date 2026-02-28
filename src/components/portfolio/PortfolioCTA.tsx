@@ -59,7 +59,7 @@ export function PortfolioCTA() {
               transition={{ duration: 0.5, delay: 0.4 }}
             >
               <a 
-                href="https://wa.me/917901919447?text=Hi!%20I%20saw%20your%20portfolio.%20I%20want%20to%20build%20a%20website%20for%20my%20restaurant."
+                href="https://wa.me/917901919447?text=Hi!%20I%20saw%20your%20portfolio.%20I%20want%20to%20build%20a%20web%20app%20for%20my%20restaurant."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group relative w-full sm:w-auto px-8 py-4 bg-emerald-500 hover:bg-emerald-400 text-white rounded-2xl font-bold text-lg shadow-lg shadow-emerald-500/30 transition-all duration-300 active:scale-95 flex items-center justify-center gap-3 overflow-hidden"

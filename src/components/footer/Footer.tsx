@@ -24,7 +24,7 @@ export function Footer() {
                         ElevateWeb
                     </Link>
                     <p className="font-inter text-muted-foreground text-sm leading-relaxed">
-                        India's #1 Web Studio for Restaurants & Hotels.
+                        India's #1 Web App Studio for Restaurants & Hotels.
                         Helping you stop paying commissions and own your customer relationships.
                     </p>
                     <div className="flex gap-4">

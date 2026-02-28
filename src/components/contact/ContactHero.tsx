@@ -30,7 +30,7 @@ export function ContactHero() {
                 transition={{ duration: 0.5, delay: 0.2 }}
                 className="font-inter text-lg md:text-xl text-muted-foreground max-w-2xl leading-relaxed mb-8"
             >
-                Ready to stop paying 30% commission? Book a free 15-minute call or drop us a message on WhatsApp. We respond in under 5 minutes.
+                Whether you&apos;re replacing Zomato, launching direct ordering, or upgrading from a basic website to a full web app — let&apos;s talk. Book a free 15-minute call or drop us a message on WhatsApp.
             </motion.p>
 
             <motion.div
@@ -39,7 +39,7 @@ export function ContactHero() {
                 transition={{ duration: 0.4, delay: 0.3 }}
                 className="flex items-center gap-2 font-inter text-sm text-muted-foreground/80 bg-black/5 dark:bg-white/5 py-2 px-4 rounded-full border border-black/5 dark:border-white/10"
             >
-                <span>📍 Based in Gurgaon, Haryana</span>
+                <span>📍 Based in Amritsar, Punjab & Gurgaon, Haryana</span>
                 <span className="w-1 h-1 rounded-full bg-current opacity-50" />
                 <span>🕐 Available Mon-Sat, 9 AM - 8 PM IST</span>
             </motion.div>

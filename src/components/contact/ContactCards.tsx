@@ -59,7 +59,7 @@ function WhatsAppCard() {
 
             <div className="space-y-3">
                 <a
-                    href="https://wa.me/917901919447?text=Hi%20Dhruv!%20I'm%20interested%20in%20a%20commission-free%20website%20for%20my%20business."
+                    href="https://wa.me/917901919447?text=Hi%20Dhruv!%20I'm%20interested%20in%20a%20commission-free%20web%20app%20for%20my%20business."
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center justify-between p-3 rounded-xl bg-black/5 dark:bg-white/5 hover:bg-[#00d9a3]/20 border border-transparent hover:border-[#00d9a3]/50 transition-all group/btn"
@@ -72,7 +72,7 @@ function WhatsAppCard() {
                 </a>
 
                 <a
-                    href="https://wa.me/917973634588?text=Hi%20Ghanishth!%20I'd%20like%20to%20discuss%20a%20website%20project."
+                    href="https://wa.me/917973634588?text=Hi%20Ghanishth!%20I'd%20like%20to%20discuss%20a%20web%20app%20project."
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center justify-between p-3 rounded-xl bg-black/5 dark:bg-white/5 hover:bg-[#00d9a3]/20 border border-transparent hover:border-[#00d9a3]/50 transition-all group/btn"
@@ -155,7 +155,7 @@ function LocationCard() {
                 </div>
                 <div>
                     <h3 className="font-bold text-foreground">Visit Our Studio</h3>
-                    <p className="text-xs text-muted-foreground">Based in Gurgaon, Haryana</p>
+                    <p className="text-xs text-muted-foreground">Based in Amritsar, Punjab & Gurgaon, Haryana</p>
                 </div>
             </div>
             <p className="text-sm text-muted-foreground mb-4">

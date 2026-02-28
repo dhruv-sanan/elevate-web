@@ -41,7 +41,7 @@ export function StorySection() {
                         viewport={{ once: true }}
                         transition={{ delay: 0.3 }}
                     >
-                        When we saw a family-run dhaba paying ₹60,000/month in commissions, something clicked. They needed a website that takes orders, sends WhatsApp confirmations, and puts them in control.
+                        When we saw a family-run dhaba paying ₹60,000/month in commissions, something clicked. They needed a web app that takes orders, sends WhatsApp confirmations, and puts them in control.
                     </motion.p>
 
                     <motion.p
@@ -50,7 +50,7 @@ export function StorySection() {
                         viewport={{ once: true }}
                         transition={{ delay: 0.4 }}
                     >
-                        So we built ElevateWeb. Not as a generic web agency, but as India's hospitality-focused tech partner. We speak your language (Hindi, English, Gujarati). We understand your business. And we're obsessed with one goal: <strong className="text-[#00d9a3] font-semibold">helping you keep every rupee you earn.</strong>
+                        So we built ElevateWeb. We don&apos;t build brochure websites—we build web apps. Ordering systems that replace Swiggy and put you in control. As India&apos;s hospitality-focused tech partner, we speak your language (Hindi, English, Gujarati). We understand your business. And we&apos;re obsessed with one goal: <strong className="text-[#00d9a3] font-semibold">helping you keep every rupee you earn.</strong>
                     </motion.p>
                 </div>
             </div>

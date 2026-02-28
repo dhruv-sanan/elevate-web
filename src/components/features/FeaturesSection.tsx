@@ -58,6 +58,50 @@ export function FeaturesSection() {
                     </motion.p>
                 </div>
 
+                {/* WEB APP VS WEBSITE COMPARISON */}
+                <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ delay: 0.3 }}
+                    className="max-w-4xl mx-auto mb-16 md:mb-24"
+                >
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div className="bg-foreground/5 border border-foreground/10 rounded-2xl p-6">
+                            <div className="flex items-center gap-3 mb-4">
+                                <div className="w-10 h-10 rounded-xl bg-gray-500/10 border border-gray-500/20 flex items-center justify-center">
+                                    <Type className="w-5 h-5 text-gray-400" />
+                                </div>
+                                <h4 className="font-space-grotesk text-lg font-bold text-muted-foreground">Basic Website</h4>
+                            </div>
+                            <ul className="space-y-2">
+                                {["Static menu display", "No ordering or payments", "Customer must call to order", "You need a developer to update"].map((item) => (
+                                    <li key={item} className="flex items-center gap-2 text-sm text-muted-foreground/70">
+                                        <span className="w-1.5 h-1.5 rounded-full bg-gray-500/50 shrink-0" />
+                                        {item}
+                                    </li>
+                                ))}
+                            </ul>
+                        </div>
+                        <div className="bg-gradient-to-br from-[#00d9a3]/10 to-emerald-500/5 border border-[#00d9a3]/30 rounded-2xl p-6">
+                            <div className="flex items-center gap-3 mb-4">
+                                <div className="w-10 h-10 rounded-xl bg-[#00d9a3]/10 border border-[#00d9a3]/20 flex items-center justify-center">
+                                    <Sparkles className="w-5 h-5 text-[#00d9a3]" />
+                                </div>
+                                <h4 className="font-space-grotesk text-lg font-bold text-foreground">Web App <span className="text-[#00d9a3] text-sm font-medium">(What We Build)</span></h4>
+                            </div>
+                            <ul className="space-y-2">
+                                {["Cart, checkout & online payments", "WhatsApp auto-confirmations", "Admin dashboard you control", "Promo codes, analytics & more"].map((item) => (
+                                    <li key={item} className="flex items-center gap-2 text-sm text-foreground">
+                                        <Check className="w-4 h-4 text-[#00d9a3] shrink-0" />
+                                        {item}
+                                    </li>
+                                ))}
+                            </ul>
+                        </div>
+                    </div>
+                </motion.div>
+
                 {/* BENTO GRID */}
                 <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-3 md:gap-6 auto-rows-auto">
 

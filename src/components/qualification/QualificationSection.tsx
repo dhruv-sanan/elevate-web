@@ -120,18 +120,18 @@ export function QualificationSection() {
                                 {[
                                     {
                                         title: "You're looking for a cheap ₹5,000 template",
-                                        desc: "Fiverr exists for a reason. We build custom systems that generate ROI, not disposable websites that look like everyone else's."
+                                        desc: "Fiverr exists for a reason. We build custom systems that generate ROI, not disposable web apps that look like everyone else's."
                                     },
                                     {
                                         title: "You think Instagram is the only marketing you need",
-                                        desc: "Social media is rented land. You own your website. If your entire business lives on Meta's algorithm, you're one policy change away from zero revenue."
+                                        desc: "Social media is rented land. You own your web app. If your entire business lives on Meta's algorithm, you're one policy change away from zero revenue."
                                     },
                                     {
                                         title: "You're happy paying 30-30% commissions forever",
                                         desc: "If you're comfortable giving Delivery Apps ₹70,000/month while complaining about \"tough times,\" we can't help each other. This is for owners who do the math."
                                     },
                                     {
-                                        title: "You view a website as an expense, not an investment",
+                                        title: "You view a web app as an expense, not an investment",
                                         desc: "\"₹35,000 is too much\" but you're okay losing ₹70,000/month to commissions? If you can't see the ROI in owning your customer relationships, this won't work."
                                     }
                                 ].map((item, idx) => (
@@ -196,7 +196,7 @@ export function QualificationSection() {
                                     },
                                     {
                                         title: "You understand that \"premium\" allows higher prices",
-                                        desc: "You know a professional website makes customers pay 20% more without blinking. Presentation = perceived value. Amateur sites attract cheap customers."
+                                        desc: "You know a professional web app makes customers pay 20% more without blinking. Presentation = perceived value. Amateur websites attract cheap customers."
                                     },
                                     {
                                         title: "You want a Digital Partner, not just a freelancer",

@@ -1,5 +1,4 @@
-"use client";
-
+import type { Metadata } from "next";
 import { ContactHero } from "@/components/contact/ContactHero";
 import { ContactForm } from "@/components/contact/ContactForm";
 import { ContactCards } from "@/components/contact/ContactCards";
@@ -7,6 +6,16 @@ import { GoogleMap } from "@/components/contact/GoogleMap";
 import { CalendlyWidget } from "@/components/contact/CalendlyWidget";
 import { FAQQuickLinks } from "@/components/contact/FAQQuickLinks";
 import { Footer } from "@/components/footer/Footer";
+
+export const metadata: Metadata = {
+    title: "Contact | ElevateWeb",
+    description: "Get in touch with ElevateWeb. WhatsApp us for the fastest response. Free consultation for restaurants, cafes, and hotels.",
+    openGraph: {
+        title: "Contact | ElevateWeb",
+        description: "WhatsApp us for a free consultation. Usually respond in under 5 minutes.",
+        images: [{ url: "/og-image.png", width: 1200, height: 630 }],
+    },
+};
 
 export default function ContactPage() {
     return (

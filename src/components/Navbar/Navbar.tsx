@@ -93,7 +93,7 @@ export default function Navbar() {
 
                         {/* WhatsApp Button - Desktop */}
                         <motion.a
-                            href="https://wa.me/917901919447?text=Hi!%20I'm%20interested%20in%20a%20commission-free%20website."
+                            href="https://wa.me/917901919447?text=Hi!%20I'm%20interested%20in%20a%20commission-free%20web%20app."
                             target="_blank"
                             rel="noopener noreferrer"
                             className="hidden lg:flex glass-button-primary items-center gap-2 px-4 h-11 mr-4"

@@ -16,8 +16,30 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "ElevateWeb - Restaurant Website Builder",
-  description: "Stop Paying Commission. Keep 100% Revenue.",
+  title: "ElevateWeb - Restaurant Web App Studio",
+  description: "Stop Paying Commission. Keep 100% Revenue. We build custom ordering web apps for restaurants, cafes, and hotels in India.",
+  openGraph: {
+    title: "ElevateWeb - Restaurant Web App Studio",
+    description: "Stop Paying Commission. Keep 100% Revenue. Custom ordering web apps for restaurants, cafes & hotels.",
+    url: "https://elevatewebdev.in",
+    siteName: "ElevateWeb",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "ElevateWeb - Restaurant Web App Studio",
+      },
+    ],
+    locale: "en_IN",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "ElevateWeb - Restaurant Web App Studio",
+    description: "Stop Paying Commission. Keep 100% Revenue.",
+    images: ["/og-image.png"],
+  },
 };
 
 export default function RootLayout({

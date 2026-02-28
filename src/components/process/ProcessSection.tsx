@@ -63,7 +63,7 @@ export function ProcessSection() {
             {/* PART 1: SECTION HEADER */}
             <div className="section-header text-center mb-16 relative z-10">
                 <p className="font-sans text-sm font-semibold tracking-wider uppercase text-[#00d9a3] mb-4">
-          // FROM FIRST CALL TO LIVE SITE
+          // FROM FIRST CALL TO LIVE WEB APP
                 </p>
                 <h2 className="font-[family-name:var(--font-space-grotesk)] text-[clamp(2rem,5vw,3.5rem)] font-bold leading-[1.2] text-white mb-6">
                     How We Go From "Hello" to
@@ -109,7 +109,7 @@ export function ProcessSection() {
                     <p className="font-sans text-base leading-[1.7] text-gray-300 mb-8">
                         We hop on a call (or meet in person). We ask
                         about your business, menu, current pain points, and what you want
-                        your website to do.
+                        your web app to do.
                     </p>
 
                     <div className="mb-8">
@@ -248,7 +248,7 @@ export function ProcessSection() {
                     </div>
                     <RealExample
                         iconColor="text-yellow-400"
-                        text='"Built Chaas &amp; Co.&apos;s entire site in 2.5 days because they had everything ready. Sometimes it takes longer if we&apos;re waiting on payment gateway approval (bank side, not us)."'
+                        text='"Built Chaas &amp; Co.&apos;s entire web app in 2.5 days because they had everything ready. Sometimes it takes longer if we&apos;re waiting on payment gateway approval (bank side, not us)."'
                     />
                 </TimelineStep>
 
@@ -272,7 +272,7 @@ export function ProcessSection() {
                         <FlowItem
                             number={1}
                             title="We Send Preview Link"
-                            text='"Here&apos;s your site—pretend you&apos;re a customer and order Butter Chicken. Tell us what feels off."'
+                            text='"Here&apos;s your web app—pretend you&apos;re a customer and order Butter Chicken. Tell us what feels off."'
                         />
                         <ArrowDown className="w-6 h-6 text-gray-600 mx-auto" />
                         <FlowItem
@@ -320,7 +320,7 @@ export function ProcessSection() {
                     </div>
                     <p className="font-sans text-base leading-[1.7] text-gray-300 mb-8">
                         Quick screen-share call (or in-person if you prefer). We show you how
-                        to manage your site—so simple, your staff can do it.
+                        to manage your web app—so simple, your staff can do it.
                     </p>
 
                     <div className="flex flex-col gap-4 mb-8">
@@ -376,7 +376,7 @@ export function ProcessSection() {
                         <DurationBadge icon={Zap} text="Launch Day" type="success" />
                     </div>
                     <p className="font-sans text-base leading-[1.7] text-gray-300 mb-8">
-                        Your site goes live. We flip the switch, and boom—you're officially
+                        Your web app goes live. We flip the switch, and boom—you're officially
                         commission-free. Time to tell the world.
                     </p>
 
@@ -385,7 +385,7 @@ export function ProcessSection() {
                             Launch Day Checklist:
                         </h4>
                         <div className="flex flex-col gap-3">
-                            <LaunchTask text="Site is live and fast (tested)" />
+                            <LaunchTask text="Web app is live and fast (tested)" />
                             <LaunchTask text="Orders flowing to WhatsApp correctly" />
                             <LaunchTask text="Payment gateway working (test order placed)" />
                             <LaunchTask text="Google Maps linked & showing up" />
@@ -411,7 +411,7 @@ export function ProcessSection() {
                         <Megaphone className="w-5 h-5 text-purple-400 shrink-0 mt-1" />
                         <div>
                             <h5 className="font-[family-name:var(--font-space-grotesk)] text-base font-semibold text-white mb-2">
-                                How to Promote Your New Site:
+                                How to Promote Your New Web App:
                             </h5>
                             <ul className="list-disc pl-4 space-y-2">
                                 <li className="font-sans text-sm text-gray-300">
@@ -425,7 +425,7 @@ export function ProcessSection() {
                                     WhatsApp blast to your regulars: "Order direct, get 10% off"
                                 </li>
                                 <li className="font-sans text-sm text-gray-300">
-                                    Update Google My Business with your new website link
+                                    Update Google My Business with your new web app link
                                 </li>
                             </ul>
                         </div>
@@ -454,7 +454,7 @@ export function ProcessSection() {
                         />
                     </div>
                     <p className="font-sans text-base leading-[1.7] text-gray-300 mb-8">
-                        Your site is live. You're making money. Now what? We're here if you
+                        Your web app is live. You're making money. Now what? We're here if you
                         need us—but most clients rarely do after the first month.
                     </p>
 
@@ -576,7 +576,7 @@ export function ProcessSection() {
                     </p>
                     <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
                         <Link
-                            href="https://wa.me/917901919447?text=Hi%20Dhruv,%20I%20want%20to%20start%20my%20commission-free%20website"
+                            href="https://wa.me/917901919447?text=Hi%20Dhruv,%20I%20want%20to%20start%20my%20commission-free%20web%20app"
                             className="inline-flex items-center gap-3 bg-gradient-to-br from-[#25D366] to-[#128C7E] text-white font-sans text-lg font-semibold px-10 py-5 rounded-xl transition-all duration-300 hover:-translate-y-0.5 hover:shadow-[0_10px_40px_rgba(37,211,102,0.4)]"
                         >
                             <MessageCircle className="w-5 h-5" />

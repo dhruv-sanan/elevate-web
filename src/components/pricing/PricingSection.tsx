@@ -75,7 +75,7 @@ const ADDONS = [
         icon: MessageSquare,
         problem: "Can't reply to 100 WhatsApp messages daily?",
         solution: "Auto-Reply + Broadcast Engine",
-        description: "24/7 auto-replies. \"Menu Pusher\" sends website link. Marketing blasts to 500+ customers with one click.",
+        description: "24/7 auto-replies. \"Menu Pusher\" sends web app link. Marketing blasts to 500+ customers with one click.",
         setupFee: 8000,
         monthlyFee: 0,
         monthlyFeeDisplay: "Message costs",
@@ -231,7 +231,7 @@ export function PricingSection() {
                         Choose Your Monthly Support Level
                     </h3>
                     <p className="font-inter text-lg text-muted-foreground text-center mb-12 max-w-2xl mx-auto">
-                        Keep your site fast, secure, and updated—or manage it yourself. Your choice.
+                        Keep your web app fast, secure, and updated—or manage it yourself. Your choice.
                     </p>
 
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -241,11 +241,11 @@ export function PricingSection() {
                             bestFor="Small Local Shops"
                             price="3,000"
                             features={[
-                                { included: true, text: "\"24/7 Pehra\" (Never Down)", tooltip: "Your website never goes down. If it does, I fix it before you even notice." },
-                                { included: true, text: "\"Lock & Key\" (Firewall)", tooltip: "High-level security (Firewall) so no one can hack your site." },
+                                { included: true, text: "\"24/7 Pehra\" (Never Down)", tooltip: "Your web app never goes down. If it does, I fix it before you even notice." },
+                                { included: true, text: "\"Lock & Key\" (Firewall)", tooltip: "High-level security (Firewall) so no one can hack your web app." },
                                 { included: true, text: "Digital Zameen (Hosting)", tooltip: "High-speed server optimized for up to 5,000 visitors/month." },
-                                { included: true, text: "\"Sarkaari Thappa\" (SSL)", tooltip: "The \"Green Lock\" on the browser that tells customers your site is safe and official." },
-                                { included: true, text: "Daily Safekeeping", tooltip: "I take a backup of your site every night. If anything breaks, we click a button and it’s back." },
+                                { included: true, text: "\"Sarkaari Thappa\" (SSL)", tooltip: "The \"Green Lock\" on the browser that tells customers your web app is safe and official." },
+                                { included: true, text: "Daily Safekeeping", tooltip: "I take a backup of your web app every night. If anything breaks, we click a button and it’s back." },
                                 { included: false, text: "Menu Updates" },
                                 { included: false, text: "Google Ranking" },
                                 { included: false, text: "Festival Banners" }
@@ -260,11 +260,11 @@ export function PricingSection() {
                             bestFor="Ask for: Restaurants & Bakeries"
                             price="5,000"
                             features={[
-                                { included: true, text: "\"24/7 Pehra\" (Never Down)", tooltip: "Your website never goes down. If it does, I fix it before you even notice." },
-                                { included: true, text: "\"Lock & Key\" (Firewall)", tooltip: "High-level security (Firewall) so no one can hack your site." },
+                                { included: true, text: "\"24/7 Pehra\" (Never Down)", tooltip: "Your web app never goes down. If it does, I fix it before you even notice." },
+                                { included: true, text: "\"Lock & Key\" (Firewall)", tooltip: "High-level security (Firewall) so no one can hack your web app." },
                                 { included: true, text: "Digital Zameen (Hosting)", tooltip: "High-speed server optimized for up to 5,000 visitors/month." },
-                                { included: true, text: "Daily Safekeeping & SSL", tooltip: "Daily Backups + Secure \"Green Lock\" so your site is always safe." },
-                                { included: true, text: "Menu Updates (4x/Month)", tooltip: "Just WhatsApp me a photo of your new menu or hand-written prices (e.g., thali price change), and I’ll update the site in 2 hours." },
+                                { included: true, text: "Daily Safekeeping & SSL", tooltip: "Daily Backups + Secure \"Green Lock\" so your web app is always safe." },
+                                { included: true, text: "Menu Updates (4x/Month)", tooltip: "Just WhatsApp me a photo of your new menu or hand-written prices (e.g., thali price change), and I’ll update your web app in 2 hours." },
                                 { included: true, text: "Google Ranking", tooltip: "I ensure that when tourists search \"Best food near me,\" your name shows up higher." },
                                 { included: true, text: "WhatsApp Support", tooltip: "No tickets or emails. Just message me on WhatsApp, and it's done." },
                                 { included: false, text: "Festival Banners" }
@@ -279,13 +279,13 @@ export function PricingSection() {
                             price="8,000"
                             features={[
                                 { included: true, text: "\"24/7 Pehra\" & Security", tooltip: "Complete protection: Never goes down, Firewall security, and 24/7 monitoring." },
-                                { included: true, text: "Daily Safekeeping & SSL", tooltip: "Daily Backups + Secure \"Green Lock\" so your site is always safe." },
+                                { included: true, text: "Daily Safekeeping & SSL", tooltip: "Daily Backups + Secure \"Green Lock\" so your web app is always safe." },
                                 { included: true, text: "Digital Zameen (Hosting)", tooltip: "High-speed server optimized for up to 5,000 visitors/month." },
                                 { included: true, text: "Unlimited Menu Updates", tooltip: "Change your room rates or banquet packages as many times as you want." },
                                 { included: true, text: "Higher Google Ranking", tooltip: "I ensure that when tourists search \"Best food near me,\" your name shows up higher." },
                                 { included: true, text: "Priority VIP Service", tooltip: "Your requests go to the top of my list." },
                                 { included: true, text: "Festival Banners", tooltip: "I design and put up custom banners for Navratri, Uttarayan, Diwali, and Janmashtami automatically." },
-                                { included: true, text: "Monthly Growth Report", tooltip: "I’ll tell you exactly how many people called you or clicked \"Get Directions\" from your site." }
+                                { included: true, text: "Monthly Growth Report", tooltip: "I’ll tell you exactly how many people called you or clicked \"Get Directions\" from your web app." }
                             ]}
                             isSelected={selectedMaintenanceId === 2}
                             onSelect={() => setSelectedMaintenanceId(2)}

@@ -24,8 +24,8 @@ export function IdealClient() {
                     </div>
                     <ul className="space-y-8">
                         <ClientPoint
-                            title="You're looking for a ₹5,000 template website"
-                            desc="Fiverr exists for a reason. We build custom systems that generate ROI, not disposable websites."
+                            title="You're looking for a ₹5,000 template web app"
+                            desc="Fiverr exists for a reason. We build custom systems that generate ROI, not disposable web apps."
                             isGood={false}
                         />
                         <ClientPoint
@@ -68,7 +68,7 @@ export function IdealClient() {
                         />
                         <ClientPoint
                             title="You value quality and understand ROI"
-                            desc="You see your website as an investment that pays for itself in saved commissions within 2-3 months."
+                            desc="You see your web app as an investment that pays for itself in saved commissions within 2-3 months."
                             isGood={true}
                         />
                     </ul>

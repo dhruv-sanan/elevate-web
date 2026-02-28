@@ -34,7 +34,7 @@ import { motion, AnimatePresence } from "framer-motion"
 import { cn } from "@/lib/utils"
 
 export function FAQSection() {
-    const [activeCategory, setActiveCategory] = useState("pricing")
+    const [activeCategory, setActiveCategory] = useState("overview")
     const [openIndex, setOpenIndex] = useState<number | null>(null)
 
     const faqData = [
@@ -109,16 +109,16 @@ export function FAQSection() {
             answer: (
                 <>
                     <p className="mb-6 font-inter text-base text-gray-700 dark:text-gray-300 leading-relaxed">
-                        <strong className="dark:text-white text-gray-900">Average: 14 days from payment to live site.</strong> Your restaurant stays open—
+                        <strong className="dark:text-white text-gray-900">Average: 14 days from payment to live web app.</strong> Your restaurant stays open—
                         we build everything in the background.
                     </p>
 
                     <div className="relative pl-8 mb-6 flex flex-col gap-6 before:content-[''] before:absolute before:left-[11px] before:top-0 before:bottom-0 before:w-0.5 before:bg-gradient-to-b before:from-[#00d9a3] before:to-[#00d9a3]/20">
                         {[
                             { day: "Day 1-4", title: "Discovery Call", desc: "We discuss your menu, branding, photos. We send you a checklist of what we need (logo, menu items, pricing)." },
-                            { day: "Day 5-10", title: "Build & Design", desc: "We build the site. You keep running your restaurant normally—nothing changes on your end yet." },
+                            { day: "Day 5-10", title: "Build & Design", desc: "We build your web app. You keep running your restaurant normally—nothing changes on your end yet." },
                             { day: "Day 11-12", title: "Your Review", desc: "We send you a preview link. You test it, request changes. Usually takes 1-2 revision rounds." },
-                            { day: "Day 14", title: "Go Live", desc: "Site goes live. We train you (or your staff) on how to use the admin panel. You are commission-free from day 1." },
+                            { day: "Day 14", title: "Go Live", desc: "Your web app goes live. We train you (or your staff) on how to use the admin panel. You are commission-free from day 1." },
                         ].map((item, i) => (
                             <div key={i} className="relative">
                                 <div className="absolute -left-12 top-0 w-12 font-space-grotesk text-xs font-bold text-[#00d9a3] text-center">
@@ -213,7 +213,7 @@ export function FAQSection() {
 
                     <div className="flex flex-col gap-4 mb-6">
                         {[
-                            { id: 1, title: "QR Codes on Every Table", desc: '"Scan to Order—No Waiting, No Service Charge." Customers order directly from your site. You save 30% per order.' },
+                            { id: 1, title: "QR Codes on Every Table", desc: '"Scan to Order—No Waiting, No Service Charge." Customers order directly from your web app. You save 30% per order.' },
                             { id: 2, title: "Incentivize Direct Orders", desc: "Offer a 10% discount for direct orders. You're still saving 20% (since Delivery Apps charges 30%). Customers feel rewarded." },
                             { id: 3, title: "WhatsApp Blast Your Regulars", desc: 'Use the WhatsApp Business Suite add-on to send "Order direct and get free dessert" promotions. Converts 60%+ of regulars.' },
                             { id: 4, title: "Phase Out Delivery Apps Gradually", desc: "Month 1: 70% Delivery Apps, 30% direct. Month 3: 50/50. Month 6: 80% direct. You're in control of the transition speed." },
@@ -234,7 +234,7 @@ export function FAQSection() {
                         <TrendingUp className="w-5 h-5 text-[#00d9a3] shrink-0 mt-0.5" />
                         <p className="text-sm text-gray-700 dark:text-gray-300">
                             <strong className="dark:text-white text-gray-900">Real data:</strong> Rann Kitchen kept Delivery Apps for delivery but
-                            pushed dine-in orders through their site. Result: Saved ₹45,000/month.
+                            pushed dine-in orders through their web app. Result: Saved ₹45,000/month.
                         </p>
                     </div>
                 </>
@@ -243,7 +243,7 @@ export function FAQSection() {
         {
             id: 4,
             category: "pricing",
-            question: "Do I own the website? What if I want to switch developers later?",
+            question: "Do I own the web app? What if I want to switch developers later?",
             answer: (
                 <>
                     <p className="mb-6 font-inter text-base text-gray-700 dark:text-gray-300 leading-relaxed">
@@ -287,7 +287,7 @@ export function FAQSection() {
 
                     <div className="flex flex-row overflow-x-auto pb-4 mb-6 gap-4 items-center">
                         {[
-                            { step: 1, text: "Customer orders Butter Chicken on your site" },
+                            { step: 1, text: "Customer orders Butter Chicken on your web app" },
                             { step: 2, text: 'Clicks "Pay Now" → RazorPay secure page opens' },
                             { step: 3, text: "Pays via UPI/Card (encrypted, bank-level security)" },
                             { step: 4, text: "Money goes directly to YOUR bank account" }
@@ -394,7 +394,7 @@ export function FAQSection() {
             answer: (
                 <>
                     <p className="mb-6 font-inter text-base text-gray-700 dark:text-gray-300 leading-relaxed">
-                        <strong className="dark:text-white text-gray-900">Yes—SEO is built into every site.</strong> Here&apos;s what we do:
+                        <strong className="dark:text-white text-gray-900">Yes—SEO is built into every web app.</strong> Here&apos;s what we do:
                     </p>
 
                     <div className="flex flex-col gap-6 mb-6">
@@ -504,6 +504,161 @@ export function FAQSection() {
             )
         },
         {
+            id: 11,
+            category: "overview",
+            question: "What's the difference between a website and a web app?",
+            answer: (
+                <>
+                    <p className="mb-6 font-inter text-base text-gray-700 dark:text-gray-300 leading-relaxed">
+                        <strong className="dark:text-white text-gray-900">A website shows information. A web app lets your customers DO things.</strong> Here&apos;s the simple breakdown:
+                    </p>
+
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
+                        <div className="bg-gray-100 dark:bg-white/5 border border-white/10 rounded-xl p-6">
+                            <div className="flex items-center gap-3 mb-4">
+                                <Layout className="w-6 h-6 text-gray-400" />
+                                <h5 className="font-space-grotesk text-base font-bold dark:text-white text-gray-900">Traditional Website</h5>
+                            </div>
+                            <ul className="space-y-2">
+                                {[
+                                    "Shows your menu (like a brochure)",
+                                    "Customer looks, then calls to order",
+                                    "No cart, no checkout, no payments",
+                                    "Static—you need a developer to update it",
+                                    "Like a poster on the wall"
+                                ].map((item, i) => (
+                                    <li key={i} className="relative pl-6 text-sm text-gray-700 dark:text-gray-300 before:content-['•'] before:absolute before:left-0 before:text-gray-400">
+                                        {item}
+                                    </li>
+                                ))}
+                            </ul>
+                        </div>
+
+                        <div className="bg-[#00d9a3]/10 border border-[#00d9a3]/30 rounded-xl p-6">
+                            <div className="flex items-center gap-3 mb-4">
+                                <Sparkles className="w-6 h-6 text-[#00d9a3]" />
+                                <h5 className="font-space-grotesk text-base font-bold dark:text-white text-gray-900">Web App (What We Build)</h5>
+                            </div>
+                            <ul className="space-y-2">
+                                {[
+                                    "Customers browse, add to cart, and pay",
+                                    "Orders confirmed via WhatsApp automatically",
+                                    "You update menu, prices, and promos yourself",
+                                    "Admin dashboard with analytics & insights",
+                                    "Like having your own Swiggy—but you keep 100%"
+                                ].map((item, i) => (
+                                    <li key={i} className="relative pl-6 text-sm text-gray-700 dark:text-gray-300 before:content-['•'] before:absolute before:left-0 before:text-[#00d9a3]">
+                                        {item}
+                                    </li>
+                                ))}
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div className="flex items-start gap-3 bg-[#00d9a3]/10 border border-[#00d9a3]/30 border-l-[3px] border-l-[#00d9a3] rounded-lg p-4 mt-6">
+                        <Zap className="w-5 h-5 text-[#00d9a3] shrink-0 mt-0.5" />
+                        <p className="text-sm text-gray-700 dark:text-gray-300">
+                            <strong className="dark:text-white text-gray-900">Think of it this way:</strong> A website is like a menu card on the table. A web app is like having a waiter who takes orders, processes payments, and sends kitchen tickets—all automatically.
+                        </p>
+                    </div>
+                </>
+            )
+        },
+        {
+            id: 12,
+            category: "overview",
+            question: "Why do I need a web app instead of just a website?",
+            answer: (
+                <>
+                    <p className="mb-6 font-inter text-base text-gray-700 dark:text-gray-300 leading-relaxed">
+                        <strong className="dark:text-white text-gray-900">Because a website can&apos;t take orders or collect payments.</strong> If you want to stop paying Delivery Apps 30%, you need a system that actually replaces them.
+                    </p>
+
+                    <div className="flex flex-col gap-4 mb-6">
+                        {[
+                            { id: 1, title: "Direct Revenue", desc: "A web app lets customers order and pay directly. No Delivery Apps middleman. You keep 100% of every rupee." },
+                            { id: 2, title: "Customer Data is Yours", desc: "Every order, every email, every phone number—it's in YOUR dashboard. Build a repeat customer base that no platform can take away." },
+                            { id: 3, title: "Automated Operations", desc: "WhatsApp order confirmations, admin dashboard, promo codes, store open/closed toggle—all built in. Zero manual work." },
+                            { id: 4, title: "Higher Perceived Value", desc: "A professional web app with cart + checkout makes customers spend 20% more. It signals \"premium\"—not a basic page with a phone number." },
+                        ].map((item, i) => (
+                            <div key={i} className="flex items-start gap-4">
+                                <div className="w-8 h-8 rounded-full bg-gradient-to-br from-[#00d9a3] to-[#10b981] text-black font-space-grotesk text-sm font-bold flex items-center justify-center shrink-0">
+                                    {item.id}
+                                </div>
+                                <div>
+                                    <h5 className="font-space-grotesk text-base font-semibold dark:text-white text-gray-900 mb-1">{item.title}</h5>
+                                    <p className="text-sm text-gray-400">{item.desc}</p>
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+
+                    <div className="flex items-start gap-3 bg-[#00d9a3]/10 border border-[#00d9a3]/30 border-l-[3px] border-l-[#00d9a3] rounded-lg p-4 mt-6">
+                        <Calculator className="w-5 h-5 text-[#00d9a3] shrink-0 mt-0.5" />
+                        <p className="text-sm text-gray-700 dark:text-gray-300">
+                            <strong className="dark:text-white text-gray-900">The math:</strong> If Delivery Apps takes ₹70,000/month in commissions, a ₹40,000 one-time web app pays for itself in under 3 weeks. A website with no ordering capability saves you ₹0.
+                        </p>
+                    </div>
+                </>
+            )
+        },
+        {
+            id: 13,
+            category: "overview",
+            question: "Is a web app like having my own Swiggy or Zomato?",
+            answer: (
+                <>
+                    <p className="mb-6 font-inter text-base text-gray-700 dark:text-gray-300 leading-relaxed">
+                        <strong className="dark:text-white text-gray-900">Yes—but better, because YOU own it and keep 100% of the revenue.</strong>
+                    </p>
+
+                    <div className="flex flex-col gap-4 mb-6">
+                        <div className="bg-gray-100 dark:bg-white/5 border border-white/10 rounded-xl p-4">
+                            <h5 className="font-space-grotesk text-base font-semibold dark:text-white text-gray-900 mb-2">What&apos;s the same:</h5>
+                            <ul className="space-y-2">
+                                {[
+                                    "Customers browse your menu with photos & descriptions",
+                                    "They add items to cart and checkout",
+                                    "They pay online (UPI, cards) or choose COD",
+                                    "Order confirmation is sent automatically"
+                                ].map((item, i) => (
+                                    <li key={i} className="flex items-center gap-2 text-sm text-gray-700 dark:text-gray-300">
+                                        <Check className="w-4 h-4 text-[#00d9a3]" />
+                                        {item}
+                                    </li>
+                                ))}
+                            </ul>
+                        </div>
+
+                        <div className="bg-[#00d9a3]/10 border border-[#00d9a3]/30 rounded-xl p-4">
+                            <h5 className="font-space-grotesk text-base font-semibold dark:text-white text-gray-900 mb-2">What&apos;s better:</h5>
+                            <ul className="space-y-2">
+                                {[
+                                    "Zero commission—you keep every rupee",
+                                    "YOUR brand, YOUR domain (not swiggy.com/your-restaurant)",
+                                    "You own all customer data (emails, orders, preferences)",
+                                    "No algorithm deciding who sees your restaurant",
+                                    "No competing with 500 other restaurants on the same page"
+                                ].map((item, i) => (
+                                    <li key={i} className="flex items-center gap-2 text-sm text-gray-700 dark:text-gray-300">
+                                        <Star className="w-4 h-4 text-yellow-400" />
+                                        {item}
+                                    </li>
+                                ))}
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div className="flex items-start gap-3 bg-[#00d9a3]/10 border border-[#00d9a3]/30 border-l-[3px] border-l-[#00d9a3] rounded-lg p-4 mt-6">
+                        <TrendingUp className="w-5 h-5 text-[#00d9a3] shrink-0 mt-0.5" />
+                        <p className="text-sm text-gray-700 dark:text-gray-300">
+                            <strong className="dark:text-white text-gray-900">Real talk:</strong> Swiggy and Zomato are great for discovery. But for YOUR regular customers? They should order directly from YOUR web app. That&apos;s where you save ₹50,000-₹1,00,000/month.
+                        </p>
+                    </div>
+                </>
+            )
+        },
+        {
             id: 9,
             category: "support",
             question: "Why should I trust you over a big agency?",
@@ -570,7 +725,7 @@ export function FAQSection() {
                         <Shield className="w-5 h-5 text-[#00d9a3] shrink-0 mt-0.5" />
                         <p className="text-sm text-gray-700 dark:text-gray-300">
                             <strong className="dark:text-white text-gray-900">Bottom line:</strong> We&apos;re always reachable on WhatsApp, we understand
-                            how restaurants actually run, and every site we build is custom-designed for your brand—not a copy-paste template.
+                            how restaurants actually run, and every web app we build is custom-designed for your brand—not a copy-paste template.
                         </p>
                     </div>
                 </>
@@ -628,6 +783,7 @@ export function FAQSection() {
                 {/* Category Filter Tabs */}
                 <div className="flex overflow-x-auto md:flex-wrap justify-start md:justify-center gap-3 mb-12 pb-2 -mx-6 px-6 md:mx-0 md:px-0 [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
                     {[
+                        { id: "overview", label: "Web App Basics", icon: HelpCircle },
                         { id: "pricing", label: "Pricing & Payment", icon: DollarSign },
                         { id: "setup", label: "Setup & Timeline", icon: Wrench },
                         { id: "features", label: "Features & Tech", icon: Sparkles },
@@ -729,7 +885,7 @@ export function FAQSection() {
                                 WhatsApp: "I have a question"
                             </a>
                             <a
-                                href="https://calendly.com/dhruvsanan2001/free-website-demo"
+                                href="https://calendly.com/dhruvsanan2001/free-webapp-demo"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="inline-flex items-center justify-center gap-3 bg-white/10 border dark:border-white/20 border-black/20 dark:text-white text-gray-900 font-inter text-lg font-semibold px-8 py-4 rounded-xl hover:bg-white/15 hover:translate-y-[-2px] backdrop-blur-md transition-all duration-300"
@@ -739,7 +895,7 @@ export function FAQSection() {
                             </a>
                         </div>
                         <p className="font-inter text-sm dark:text-white text-gray-900 italic">
-                            No sales pressure. Just honest answers from a team that actually builds the sites.
+                            No sales pressure. Just honest answers from a team that actually builds the web apps.
                         </p>
                     </div>
                 </div>
